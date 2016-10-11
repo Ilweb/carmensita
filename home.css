@@ -318,6 +318,8 @@ h3
 }	
 .welcome
 {
+	    margin-top: -68px;
+    margin-bottom: 58px;
 	width:21% !important;
 	float:left;
 	
@@ -397,6 +399,7 @@ footer img
 }	
 .left-menu ul li a img
 {
+	    float: right;
 	width:20px !important;
 }	
 .left-menu ul li a:hover
