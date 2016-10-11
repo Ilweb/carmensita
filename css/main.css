@@ -1,0 +1,152 @@
+
+.main {
+    width: 100%;
+    text-align: center;
+}
+.mainNav {
+    margin-top: -22px;
+   
+    float: right;
+
+}
+.mainNav li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.mainNav a {
+    text-decoration: none;
+    padding: 20px;
+    color: #416c7c;
+  }
+.mainNav a:hover {
+    border-bottom: 2px solid #f89921;
+    color: #fff;
+}
+.flower{
+    float: left;
+    width: 20%;
+   
+}
+.city {
+  float: left;
+       margin-left: 272px;
+  margin-top: -71px;
+   padding: 10px;
+   max-width: 439px;
+   height: 300px;
+   display: inline-block;
+   position: relative;
+
+}
+
+#gallery{
+  margin-top: -50px;
+  max-width: 40cm;
+}
+
+
+#gallery img{
+  min-width: autopx;
+  max-height: 120px;
+  margin-left: 20px;
+}
+
+.text p{
+  margin-top: -70px;
+}
+
+
+.text {
+  float: left;
+    max-width: 550px;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+  }
+
+  .mufin{
+    width: 13%;
+    display: inline-block;
+    margin-top: -130px;
+    height: auto;
+  }
+  .milkshake{
+  margin-right: 102px;
+  width: 25%;
+  display: inline;
+  float: right;
+  height: auto;
+  }
+
+  #mohito{
+    width: 20%;
+
+  }
+
+  #mohito2 {
+    width: 20%;
+    top: 0%;
+    left: 79%;
+  }
+
+  .horario{
+    display: inline-block;
+  }
+
+iframe{
+  float: right;
+margin-right: 80px;
+  margin-top: px;
+  display: inline-block;
+}
+
+
+table, td, th{
+  margin-left: 30px;
+  border-bottom: 1px solid #000;
+  font-size: 25px;
+  position: relative;
+  padding-bottom: 10px;
+  
+}
+
+ul.location ul{
+  display: inline-block;
+  float: left;
+}
+
+
+ul.contacts {
+  display: inline-block;
+  
+}
+
+.back4 > img {
+    position: absolute;
+    width: 20%;
+    top:40%;
+  }
+
+  #mufin{
+    left: 50%;
+    top: 50px;
+    width: 9%;
+  }
+
+  #milkshake{
+    left: 70%;
+
+  }
+  .back4 .content > div:first-of-type, .back3 .content > div:nth-of-type(3) {
+    margin-left: 21.5%;
+    margin-right: 20px;
+}
+.back4 .content > div {
+    margin-bottom: 5%;
+    width: 30%;
+    display: inline-block;
+    font-family: 'Dosis',sans-serif;
+    font-weight: bold;
+}
