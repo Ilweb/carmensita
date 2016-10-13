@@ -56,14 +56,24 @@ header
 	text-align:left;
 	
 }
-header div
+ .first-menu li
 {
+	width: 100%;
 	display: inline;
-    font-size: 1.9vw;
+  
     text-transform: uppercase;
     margin-right: 14%;
 	text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
 }
+
+.first-menu li a{
+	  font-size: 20px;
+	  color:#000;
+	  font-weight: 700;
+}
+.first-menu li a:hover{
+	color:#fff;
+ }
 .content
 {
 	margin-left:3%;
@@ -194,7 +204,7 @@ footer
 	width:auto;
 	text-align:left;
 }
-footer img
+me img
 {
 	margin-right:14%;
 }
@@ -216,10 +226,10 @@ footer div img:hover
 }
 
 /*Second page*/
-h2
+/*h2
 {
 	margin-top:60px;
-}	
+}	*/
 h2,h3
 {
 	font-family:DancingScript;
@@ -234,7 +244,7 @@ h3
 {
 	font-size: 3vw;
     position:relative;
-	    margin-top: 30px;
+    margin-top: 30px;
     position: relative;
     float: left;
     margin-right: -200px;
@@ -292,8 +302,9 @@ h3
 	font-family:'Dosis',sans-serif;
 	font-weight:bold;
 }	
-.back3 .content > div:first-of-type,.back3 .content > div:nth-of-type(3)
-{
+.back3 .content > div:first-of-type,
+.back3 .content > div:nth-of-type(3){
+
     margin-left: 21.5%;
 	margin-right: 20px;
 }
@@ -318,10 +329,11 @@ h3
 }	
 .welcome
 {
-	    margin-top: -68px;
+    margin-top: -68px;
     margin-bottom: 58px;
 	width:21% !important;
 	float:left;
+
 	
     margin-right: 0 !important;
 }	
@@ -343,7 +355,7 @@ h3
 {
 	margin-top:0;
 }	
-footer img
+got img
 {
 	color:blue;
 }	
@@ -443,6 +455,16 @@ footer img
 {
 	margin-right:0;
 }	
+ @media only screen and (max-width: 890px){
+.back4 .content > .city {
+    width: auto;
+    font-size: 14px;
+  }
+.back4 img{
+	position: relative;
+}
+}
+
 @media only screen and (max-width:1210px)
 {
 	header div

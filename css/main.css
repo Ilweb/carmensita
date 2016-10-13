@@ -2,10 +2,11 @@
 .main {
     width: 100%;
     text-align: center;
+
 }
 .mainNav {
     margin-top: -22px;
-   
+ 
     float: right;
 
 }
@@ -30,12 +31,12 @@
    
 }
 .city {
+  overflow: initial;
   float: left;
-       margin-left: 272px;
+     margin-left: 272px;
   margin-top: -71px;
    padding: 10px;
-   max-width: 439px;
-   height: 300px;
+  
    display: inline-block;
    position: relative;
 
@@ -48,7 +49,7 @@
 
 
 #gallery img{
-  min-width: autopx;
+  min-width: 200px;
   max-height: 120px;
   margin-left: 20px;
 }
@@ -95,20 +96,17 @@
     display: inline-block;
   }
 
-iframe{
-  float: right;
-margin-right: 80px;
-  margin-top: px;
-  display: inline-block;
-}
 
 
-table, td, th{
-  margin-left: 30px;
+table, td{
+  margin-left: 73px;
   border-bottom: 1px solid #000;
-  font-size: 25px;
+  font-size: 20px;
   position: relative;
   padding-bottom: 10px;
+  margin-top: -100px;
+
+
   
 }
 
@@ -130,6 +128,7 @@ ul.contacts {
   }
 
   #mufin{
+        position: absolute;
     left: 50%;
     top: 50px;
     width: 9%;
@@ -149,4 +148,123 @@ ul.contacts {
     display: inline-block;
     font-family: 'Dosis',sans-serif;
     font-weight: bold;
+}
+
+.social-group li a {
+    display: inline-block;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+     transition: all .3s;
+   }
+.social-group li {
+    float: left;
+        margin: 51px;
+
+}
+.social-group{
+    margin-right: 20px;
+    list-style: none;
+    text-decoration: none;
+    float: center;
+}
+
+footer{
+ 
+clear: both;
+}
+
+.google-maps {
+        position: relative;
+        padding-bottom: 75%;
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 8%;
+        left: 30%;  
+         float: right;
+
+ 
+       
+    }
+  
+
+    .right-side li p{
+    text-decoration: none;
+    margin-bottom: 30px;
+    margin-right: 20px;
+
+}
+
+
+.right-side{
+    padding-bottom: 30px;
+    margin-right: 20px;
+
+}
+.right-side li{
+   
+
+ }
+
+.right-side img{
+    margin-right: 20px;
+        text-decoration: none;
+}
+
+.right-side img {
+    margin-right: 20px;
+    text-decoration: none;
+    }
+
+    .small{
+      width: 33.33%;
+      position: relative;
+    }
+
+    h4{
+       font-family: DancingScript;
+    font-size: 29px;
+    /* display: inline-block; */
+    text-transform: none;
+    }
+
+.fotterNav{
+
+    text-align: center;
+}
+
+.fotterNav li{
+  display: inline-block;
+      padding-right: 161px;
+}
+footer{
+  width: auto;
+  margin-top: 100px;
+}
+
+.worktime {
+    max-width: 396px;
+    float: left;
+}
+
+.aside{
+  max-width: 800px;
+  float: right;
+}
+
+.containt{
+  max-width: 1300px;
+  margin:0 auto;
+}
+
+.s{
+  float: left;
+}
+
+.s img{
+  width: 10%;
+
 }
