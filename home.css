@@ -28,8 +28,9 @@ body
 }
 .back3
 {
-	background:url("images/background3.png");
-	height: 100vh;
+	background:url("images/background3.png") ;
+	
+    height: 200vh;
 	color:#18567f;
     position: relative;
 }
@@ -165,14 +166,14 @@ header div:last-of-type,footer img:last-of-type
 }
 #first_frame
 {
-	position:static;
-	top:0;
-	float:right;
-	vertical-align: top;
+	position: relative;
+    top: -58px;
+    float: right;
+    vertical-align: top;
 }
 .menu
 {
-	width:82%;
+	width:100%;
 	cursor:pointer;
 	display:inline-block;
 }
@@ -230,7 +231,7 @@ footer div img:hover
 h2,h3
 {
 	font-family:DancingScript;
-	font-size: 3vw;
+
 	display:inline-block;
 	float: left;
     position: absolute;
@@ -380,9 +381,9 @@ got img
 }
 .back3 > img
 {
-	position:absolute;
-	width:35%;
-	bottom: 0;
+	    position: absolute;
+    width: 35%;
+    bottom: 521px;
 }	
 .back3 > img:last-of-type
 {
@@ -457,11 +458,10 @@ got img
     width: auto;
     font-size: 14px;
   }
-.back4 img{
-	position: relative;
+.back4 > img{
+	
 }
 }
-
 @media only screen and (max-width:1210px)
 {
 	header div
@@ -508,19 +508,44 @@ got img
 		    display: -webkit-inline-box;
 	}
 	.back3 .content > div:first-of-type,.back3 .content > div:nth-of-type(2)	
-	{
+
+	{   
+
+	 margin-top: 20px;
 		font-size:16px;
 		display:block;
 		width:80%;
 		float:right;
-		margin-right:0;
+		margin-right:42px;
 	}	
 	.back3 .content  div.button
 	{
 		margin-left:23%;
 		width:200px;
 	}	
+
+	.back3 .content > .welcome > ul{
+ width: 200px; 
+ float: left;
+ padding-bottom: 20px;	
+	}
+	.back3 .content > .welcome > ul li{
+	margin-right: 20px;
+    width: 331px;
+    margin-bottom: 3px
 }	
+.back3 .content > .welcome > ul li a{
+	font-size: 20px;
+	font-weight: 700;
+
+}
+
+.back3 .content  > img{
+	  min-width: 200px; 
+     max-height: 200px; 
+   
+}
+}
 @media only screen and (max-width:680px)
 {
 	.menu
@@ -548,7 +573,7 @@ got img
 	.social 
 	{
 		text-align: center;
-		top: -100px;
+	    top: 169px;
 		position: relative;
 		display: block;
 		width:auto;
@@ -615,11 +640,41 @@ got img
 	h2{
 		margin-bottom: 2.12cm;
 	}
-	@media only screen and (max-width: 600px){
-		#gallery {
-			{
-			margin-top: -28px;
-			max-width: 150%;
-			max-height: 300px;	
+	@media only screen and (max-width: 480px){
+
+		.back3 > .content > #gallery{
+			   width: 45%;
+			overflow: hidden;
+			    float: left;
+			   
 		}
+		.back3 > .content > #gallery  img
+{
+			  
+    margin-top: 105px;
+		    width: 318px;
+    max-height: 360px	
+		}
+}
+@media only screen and (max-width: 480px){
+
+		.back3 > .content > #gallery{
+			overflow: hidden;
+			    float: left;
+			    width: auto;
+		}
+		.back3 > .content > #gallery  img
+{
+		 margin-top: 105px;
+		    width: 318px;
+    max-height: 360px	
+		}
+
+	}
+		@media only screen and (max-width: 480px) {
+  .cd-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 10px;
+  }
 }
