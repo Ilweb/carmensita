@@ -166,14 +166,14 @@ header div:last-of-type,footer img:last-of-type
 }
 #first_frame
 {
-	position: relative;
-    top: -58px;
-    float: right;
-    vertical-align: top;
+	position:static;
+	top:0;
+	float:right;
+	vertical-align: top;
 }
 .menu
 {
-	width:100%;
+	width:82%;
 	cursor:pointer;
 	display:inline-block;
 }
