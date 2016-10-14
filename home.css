@@ -58,7 +58,6 @@ header
 }
  .first-menu li
 {
-	width: 100%;
 	display: inline;
   
     text-transform: uppercase;
@@ -71,9 +70,7 @@ header
 	  color:#000;
 	  font-weight: 700;
 }
-.first-menu li a:hover{
-	color:#fff;
- }
+
 .content
 {
 	margin-left:3%;
@@ -286,7 +283,7 @@ h3
 .back2 .content > div
 {
 	display:inline-block;
-	width: calc(35% - 60px);
+	width:calc(65% - 60px);
     vertical-align: top;
     font-size: 1.2vw;
     font-family: Dosis;
@@ -508,6 +505,7 @@ got img
 	{
 		width:auto;
 		font-size: 14px;
+		    display: -webkit-inline-box;
 	}
 	.back3 .content > div:first-of-type,.back3 .content > div:nth-of-type(2)	
 	{
@@ -617,3 +615,11 @@ got img
 	h2{
 		margin-bottom: 2.12cm;
 	}
+	@media only screen and (max-width: 600px){
+		#gallery {
+			{
+			margin-top: -28px;
+			max-width: 150%;
+			max-height: 300px;	
+		}
+}
