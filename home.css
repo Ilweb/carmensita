@@ -29,24 +29,46 @@ body
 .back3
 {
 	background:url("images/background3.png") ;
-	
-    height: 200vh;
-	color:#18567f;
-    position: relative;
+
+	height: 100%;
+	position: relative;
 }
-.back4
+
+.back4{
+
+	background:url("images/background3.png") ;
+	height: 100%;
+	position: relative;
+
+
+}
+.back5
 {
 	background:url("images/background3.png");
-	height: 100vh;
-	color:#18567f;
-    position: relative;
+	height: 100%;
+	position: relative;
+
 }
-.back,.back2
+.back6
+{
+	background:url("images/background3.png");
+	height: 100%;
+	position: relative;
+
+}
+.back7{
+	background:url("images/background3.png");
+	height: 100%;
+	position: relative;
+
+
+}
+.back,.back2 , .back6 , .back4, .back3, .back5, .back7
 {
 	background-size:100% 100%;
 	background-position:bottom;
-	background-repeat:no-repeat;
-    height: 100vh;
+	background-repeat:;
+    height: 100%;
 	margin:0;	
 }
 header
@@ -59,17 +81,20 @@ header
 }
  .first-menu li
 {
-	display: inline;
+	
   
     text-transform: uppercase;
-    margin-right: 14%;
+    margin-right: 12%;
 	text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
 }
 
 .first-menu li a{
-	  font-size: 20px;
+	  font-size: 22px;
 	  color:#000;
 	  font-weight: 700;
+}
+#listMenu ul{
+	margin-right: 7px;
 }
 
 .content
@@ -107,7 +132,7 @@ header div:last-of-type,footer img:last-of-type
     bottom: 0;
 	margin-left: 20px;
 }	
-.button
+.firstt
 {
 	display: inline-block;
     float: right;
@@ -141,13 +166,16 @@ header div:last-of-type,footer img:last-of-type
 	font-size:25px;
 	margin-bottom:5px;
 }
-.third
+.thirds
 {
-	font-family:Dosis;
-	font-size: 30px;
-	font-weight:400;
+	font-family:Dosis, sans-serif;
+	font-size: 20px;
+	font-weight:700;
 	text-transform:uppercase;
+	height: 100%
 }
+
+
 #logo
 {
 	margin-left:5%;
@@ -170,6 +198,21 @@ header div:last-of-type,footer img:last-of-type
 	top:0;
 	float:right;
 	vertical-align: top;
+	    
+}
+
+#first_framee
+{
+	position:static;
+	top:0;
+	float:right;
+	vertical-align: top;
+	    margin-right: -19%;
+}
+.menuu{
+	display: inline-block;
+	cursor: pointer;
+	width:82%;
 }
 .menu
 {
@@ -179,8 +222,7 @@ header div:last-of-type,footer img:last-of-type
 }
 .menu img
 {
-	width: 17vw;
-}	
+	}
 .star
 {
 	float: right;
@@ -195,6 +237,20 @@ header div:last-of-type,footer img:last-of-type
 {
 	width:100%;
 }
+#salad
+{
+	float: right;
+    display: inline-block;
+    position: absolute;
+    right: -5%;
+	visibility:hidden;
+   
+}
+
+#salad img
+{
+	width:100%;
+}
 
 footer
 {
@@ -205,13 +261,6 @@ footer
 me img
 {
 	margin-right:14%;
-}
-.social
-{
-	text-align:center;
-	display:inline-block;
-	width:60%;
-	margin-left:7%;
 }
 
 footer div img:hover
@@ -243,7 +292,7 @@ h3
 	font-size: 3vw;
     position:relative;
     margin-top: 30px;
-    position: relative;
+    position: relative;.
     float: left;
     margin-right: -200px;
     display: inline-block;
@@ -267,7 +316,7 @@ h3
 {
 	text-shadow: 0px 0px 2px black;
 }
-.back2
+.back2, .back3, .back4, .back5, .back6, .back7
 {
 	color:#18567f;
 	position:relative;
@@ -325,9 +374,17 @@ h3
 {
 	width:7%;
 }	
+.welcome1{
+	margin-top: -6px;
+    margin-bottom: 58px;
+    width: 14% !important;
+    float: left;
+    margin-right: 0 !important;
+
+}
 .welcome
 {
-    margin-top: -68px;
+    margin-top: -39px;
     margin-bottom: 58px;
 	width:21% !important;
 	float:left;
@@ -379,12 +436,23 @@ got img
 	margin-right:5%;
 	vertical-align:top;
 }
+.back5 > img{
+	position: absolute;
+    width: 15%;
+    bottom: 130px;
+}
 .back3 > img
 {
 	    position: absolute;
     width: 35%;
-    bottom: 521px;
+    bottom: 0;
 }	
+.back6 > img{
+	position: absolute;
+	width: 35%;
+	bottom: 0
+}
+	
 .back3 > img:last-of-type
 {
 	left:60%;
@@ -400,7 +468,8 @@ got img
 }	
 .left-menu ul
 {
-	padding:0; position:relative;
+	padding:0;
+	 position:relative;
 	z-index:1;
 }	
 .left-menu ul li
@@ -454,7 +523,7 @@ got img
 	margin-right:0;
 }	
  @media only screen and (max-width: 890px){
-.back4 .content > .city {
+.back5 .content > .city {
     width: auto;
     font-size: 14px;
   }
@@ -511,7 +580,7 @@ got img
 
 	{   
 
-	 margin-top: 20px;
+	    margin-top: 20px;
 		font-size:16px;
 		display:block;
 		width:80%;
@@ -524,17 +593,17 @@ got img
 		width:200px;
 	}	
 
-	.back3 .content > .welcome > ul{
+	.back4 .content > .welcome > ul{
  width: 200px; 
  float: left;
- padding-bottom: 20px;	
+margin-top: 101%;
 	}
-	.back3 .content > .welcome > ul li{
+	.back4 .content > .welcome > ul li{
 	margin-right: 20px;
     width: 331px;
     margin-bottom: 3px
 }	
-.back3 .content > .welcome > ul li a{
+.back4 .content > .welcome > ul li a{
 	font-size: 20px;
 	font-weight: 700;
 
@@ -543,6 +612,7 @@ got img
 .back3 .content  > img{
 	  min-width: 200px; 
      max-height: 200px; 
+     display: block;
    
 }
 }
@@ -570,19 +640,7 @@ got img
 		font-size: 18px;
 		margin: 10px;
 	}
-	.social 
-	{
-		text-align: center;
-	    top: 169px;
-		position: relative;
-		display: block;
-		width:auto;
-		margin-left: 0;
-	}
-	footer img
-	{
-		margin-right:5px;
-	}
+
 	#content2 .social img 
 	{
 		width:auto;
@@ -640,34 +698,21 @@ got img
 	h2{
 		margin-bottom: 2.12cm;
 	}
-	@media only screen and (max-width: 480px){
-
-		.back3 > .content > #gallery{
-			   width: 45%;
-			overflow: hidden;
-			    float: left;
-			   
-		}
-		.back3 > .content > #gallery  img
-{
-			  
-    margin-top: 105px;
-		    width: 318px;
-    max-height: 360px	
-		}
-}
+	
 @media only screen and (max-width: 480px){
 
-		.back3 > .content > #gallery{
-			overflow: hidden;
-			    float: left;
-			    width: auto;
+		.back4 > .content > #gallery{
+		    margin-top: -11px;
+    float: left;
+    width: auto;
+    overflow: visible
+
+
 		}
-		.back3 > .content > #gallery  img
+		.back4 > .content > #gallery  img
 {
-		 margin-top: 105px;
-		    width: 318px;
-    max-height: 360px	
+		    max-width: 91px;
+    max-height: 79px
 		}
 
 	}
@@ -678,3 +723,5 @@ got img
     padding-top: 10px;
   }
 }
+
+

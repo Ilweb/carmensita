@@ -1,29 +1,55 @@
+#sidebar {
+    width:100%;
+    float:left;
+}
 
-.main {
-width: 100%;
-text-align: center;
+#content {
+    width:724px;
+    float:right;
+    padding-left:24px;
+}
+
+/* navigation */
+nav {
+    width:100%;
+    
+    padding:0 12px;
+}
+
+nav.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    margin-top:12px;
+}
+
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+nav li {
+  display: inline-block;
 
 }
-.mainNav {
-margin-top: -22px;
 
-float: right;
+nav li a {
+    margin-right: 20px;
+    font-weight:700;
+    text-transform: uppercase;
 
 }
-.mainNav li {
-display: inline-block;
-list-style: none;
-text-transform: uppercase;
-font-size: 30px;
+nav li a:hover
+{
+  color: #fff;
 }
-.mainNav a {
-text-decoration: none;
-padding: 20px;
-color: #416c7c;
+nav li a:active{
+  color: #fff;
 }
-.mainNav a:hover {
-border-bottom: 2px solid #f89921;
-color: #fff;
+
+a.nav-active {
+    color:#ccc;
 }
 .flower{
 float: left;
@@ -31,25 +57,27 @@ width: 20%;
 
 }
 .city {
-overflow: initial;
-float: left;
-margin-left: 272px;
-margin-top: -71px;
-padding: 10px;
 
-display: inline-block;
-position: relative;
-
-}
+    overflow: auto;
+    float: left;
+    margin-left: 16%;
+    margin-top: -28px;
+    padding: 10px;
+    max-width: 349px;
+    display: inline-block;
+    position: relative;
+    font-family: 'Dosis',sans-serif;
+font-weight: bold;
+  }
 
 #gallery{
-margin-top: -50px;
+margin-top: -9px;
 max-width: 40cm;
 }
 
 
 #gallery img{
-min-width: 200px;
+max-width: 200px;
 max-height: 120px;
 margin-left: 20px;
 }
@@ -67,19 +95,6 @@ padding: 10px;
 display: inline-block;
 }
 
-.mufin{
-width: 13%;
-display: inline-block;
-margin-top: -130px;
-height: auto;
-}
-.milkshake{
-margin-right: 102px;
-width: 25%;
-display: inline;
-float: right;
-height: auto;
-}
 
 #mohito{
 width: 20%;
@@ -296,13 +311,25 @@ width: 10%;
 .newspaper {
 
 -webkit-column-count: 2; /* Chrome, Safari, Opera */
--moz-column-count: 2; /* Firefox */
+-moz-column-count: 2;*/ /* Firefox */
 column-count: 2;
 -webkit-column-gap: 67px; /* Chrome, Safari, Opera */
--moz-column-gap: 67px; /* Firefox */
+-moz-column-gap: 67px;*/ /* Firefox */
 column-gap: 67px;;
 overflow: auto;
 margin-top: -19px;
+}
+.newspaper1 {
+
+-webkit-column-count: 2; /* Chrome, Safari, Opera */
+-moz-column-count: 2;*/ /* Firefox */
+column-count: 2;
+-webkit-column-gap: 67px; /* Chrome, Safari, Opera */
+-moz-column-gap: 67px;*/ /* Firefox */
+column-gap: 67px;;
+overflow: auto;
+margin-top: -19px;
+
 }
 .content1{
 margin-left: -19%;
@@ -310,7 +337,7 @@ margin-left: -19%;
 
 #listMenu{
       margin-top: -93px;
-float: right;
+float: left;
   
     width: 100%;
     display: flex;
@@ -328,7 +355,7 @@ display: inline-block;
 }
 
 #menulist{
-  margin: 0;
+ 
     padding: 0;
 }
 .menuitem {
@@ -338,25 +365,34 @@ display: inline-block;
     padding: 2px;
 }
 @media screen and (min-width: 480px) {
-    .welcome {width: 200px; float: left;
+    .welcome >  {width: 200px; float: left;
     }
   }
-
+@media screen and (max-width: 480px){
+  .menulist{
+      margin-left: 16px;
+    border-bottom: none;
+    width: 89%;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 0px;
+    margin-top: 8px;
+    font-weight: 700;
+}
 @media screen and (max-width: 640px){
 #listMenu {
     margin-left: -29px;
     float: left;
-   
-    font-size: 14px;
+    font-size: 18px;
     display: block;
 }
 }
 @media screen and (max-width: 480px) {
    
       table, td {
-   margin-left: 4px;
+   margin-left: 16px;
     border-bottom: none;
-    width: 81%;
+    width: 89%;
     font-size: 20px;
     position: relative;
     padding-bottom: 0px;
@@ -364,17 +400,17 @@ display: inline-block;
     font-weight: 700;
   }
 }
+
+
 .price {
+ 
   float: right;
-      float: right;
-    margin-right: -38px;
-    margin-top: -39px;
-    font-weight: 700;
-    color: #000;
+  margin-right: -38px;
+  margin-top: -39px;
+  font-weight: 700;
+  color: #000;
 }
-#listMenu2{
-  float: left;
-}
+
 
 .work{
   max-width: 1300px;
@@ -383,6 +419,7 @@ display: inline-block;
 
 }
 
-.works {
-  display: inline-block;
+.works{
+
 }
+
