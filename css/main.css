@@ -190,19 +190,7 @@ footer{
 clear: both;
 }
 
-.google-maps {
-  overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.google-maps iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
+
 @media only screen and (max-width: 890px)
 {.google-maps {
   float: left;
@@ -384,7 +372,7 @@ display: inline-block;
 }
 @media screen and (max-width: 640px){
 #listMenu {
-   
+
 
 
     margin-left: -29px;
@@ -480,7 +468,5 @@ margin-top: -19px;
   margin-right:0;
 } 
 
-iframe{
-top: 50%;
-}
+
 

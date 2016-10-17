@@ -39,7 +39,6 @@
 						        </div><!-- /sidebar -->
 					        </div><!--end container-->
 				        </div><!--end main-->
-						
 					</div><!--end first menu-->
 					<img id="first_frame" src="images/decor_1.png">
 			</header>
@@ -54,7 +53,6 @@
 			</div><!--end row-->
 			<div class="star"><img src="images/star.png"></div>
 		</div><!--end content-->
-
 		<img class="madeby" src="images/website.png">
 	</div><!--end back-->
 </section>
@@ -79,7 +77,7 @@
 					        </div><!-- /sidebar -->
 				        </div><!--end container-->
        				 </div><!--end main-->
-					<img class="welcome" id="logo" src="images/logo_blue.png">
+					<img class="welcome"  src="images/logo_blue.png">
 				</div>	<!--end menu other-->
 				<h2>What is “Going tapas"</h2>
 			</header>
@@ -338,7 +336,7 @@
 
             <div class="images">
               -->  
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.25557691535!2d-13.650132049845428!3d28.920461677655926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4625ef57c82b95%3A0x8889046f693c1797!2zQXYuIGRlIGxhcyBQbGF5YXMsIDU1LCAzNTUxMCBUw61hcywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sbg!2sbg!4v1476629593249" width="600" height="350" align="bottom" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.25557691535!2d-13.650132049845428!3d28.920461677655926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4625ef57c82b95%3A0x8889046f693c1797!2zQXYuIGRlIGxhcyBQbGF5YXMsIDU1LCAzNTUxMCBUw61hcywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sbg!2sbg!4v1476629593249" width="300" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -441,6 +439,15 @@ $(document).ready(function(){
         } , 'slow' );
     });
 </script>
+<script type="text/javascript">
+
+    	$(".welcome").click(function(){
+        $("html,body").animate( 
+        {
+        	scrollTop: $("#back").offset().top
+        } , 'slow' );
+    });
+</script>
 
 
 <!--<script >
@@ -528,3 +535,4 @@ $(document).ready(function(){
     });
 });
 </script>
+
