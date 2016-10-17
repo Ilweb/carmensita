@@ -59,7 +59,7 @@ body
 }
 .back7{
 	background:url("images/bg.jpg");
-	height: 100%;
+	overflow: hidden;
 	position: relative;
 }
 
