@@ -16,6 +16,7 @@
 }
 body
 {
+
 	margin:0;
 }
 .back
@@ -26,7 +27,7 @@ body
 {
 	background:url("images/background2.png");
 }
-.back3
+.back3, .back4,
 {
 	background:url("images/background3.png") ;
 
@@ -34,7 +35,7 @@ body
 	position: relative;
 }
 
-.back4{
+{
 
 	background:url("images/background3.png") ;
 	height: 100%;
@@ -58,13 +59,11 @@ body
 }
 .back7{
 	background:url("images/bg.jpg");
-	background-repeat: repeat-x;
-	height: auto;
+	height: 100%;
 	position: relative;
-
-
 }
-.back,.back2 , .back6 , .back4, .back3, .back5, .back7
+
+.back,.back2 , .back6 , .back4, .back3, .back5
 {
 	background-size:100% 100%;
 	background-position:bottom;
@@ -670,6 +669,8 @@ margin-top: 101%;
 	.back2 .content div
 	{
 		margin-left:10%;
+		    margin-top: 3%;
+
 	}
 	.back2 .content div.welcome
 	{
@@ -763,6 +764,7 @@ button{
 	 font-family:Dosis;
 }
 .block{  
+	width: calc(67%-100px);
 	    margin-right: -8%;
   margin-top: -5%;
 	display: table-caption;
@@ -802,4 +804,18 @@ aside{
 	float: left;
 	    margin-top: 7%;
 
+}
+
+
+.con{
+	max-width: 100%;
+}
+
+.price {
+ 
+  float: right;
+  margin-right: -38px;
+  margin-top: -39px;
+  font-weight: 700;
+  color: #000;
 }

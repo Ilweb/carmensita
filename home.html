@@ -18,7 +18,7 @@
 </head>
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 <body data-hijacking="off" data-animation="scaleDown">
-<section class="cd-section visible" id="">
+<section class="cd-section visible" id="back">
 	<div class="back"><!--back-->
 		<div class="content"><!--content-->
 			<header>
@@ -79,7 +79,7 @@
 					        </div><!-- /sidebar -->
 				        </div><!--end container-->
        				 </div><!--end main-->
-					<img class="welcome" src="images/logo_blue.png">
+					<img class="welcome" id="logo" src="images/logo_blue.png">
 				</div>	<!--end menu other-->
 				<h2>What is “Going tapas"</h2>
 			</header>
@@ -132,7 +132,7 @@
 						                    <li><a href="#_menu">menu</a></li>
 						                    <li><a href="#_gallery1">gallery</a></li>
 						                    <li><a href="#_carmencita">la carmencita</a></li>
-						                    <li><a href="#_contacts">contacts & schedule<</a></li>
+						                    <li><a href="#_contacts">contacts & schedule</a></li>
 						                </ul>
 						            </nav>
 					        </div><!-- /sidebar -->
@@ -234,7 +234,7 @@
 						                    <li><a href="#_menu">menu</a></li>
 						                    <li><a href="#_gallery1">gallery</a></li>
 						                    <li><a href="#_carmencita">la carmencita</a></li>
-						                    <li><a href="#_contacts">contacts & schedule<</a></li>
+						                    <li><a href="#_contacts">contacts & schedule</a></li>
 						                </ul>
 						            </nav>
 					        </div><!-- /sidebar -->
@@ -286,6 +286,8 @@
 				<h2>Contacts & schedule</h2>
 			</header>
 			</div>
+
+			<div class="con">
 			<aside>
 <table>
 					<th>HORARIO</th>
@@ -332,16 +334,17 @@
           		 <li><img  class="mail" src="images/mail.png"> <a class="txt">carmencitadelpuerto@gmail.com</a></li>
             </div>
                 
-            </div>  
+            <!-- </div>  
 
             <div class="images">
-               
+              -->  
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.25557691535!2d-13.650132049845428!3d28.920461677655926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4625ef57c82b95%3A0x8889046f693c1797!2zQXYuIGRlIGxhcyBQbGF5YXMsIDU1LCAzNTUxMCBUw61hcywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sbg!2sbg!4v1476629593249" width="600" height="350" align="bottom" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
 
-
 </div>
+</div>
+
 </section>
 		
        		
@@ -438,6 +441,7 @@ $(document).ready(function(){
         } , 'slow' );
     });
 </script>
+
 
 <!--<script >
 	

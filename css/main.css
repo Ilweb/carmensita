@@ -338,11 +338,12 @@ margin-left: -19%;
 }
 
 #listMenu{
-      margin-top: -93px;
+     margin-top: -129px;
 float: left;
   
     width: 100%;
     display: flex;
+  
 }
 
 .mainMenu{
@@ -383,7 +384,8 @@ display: inline-block;
 }
 @media screen and (max-width: 640px){
 #listMenu {
-      margin-top: 90%;
+   
+
 
     margin-left: -29px;
     float: left;
@@ -406,14 +408,7 @@ display: inline-block;
 }
 
 
-.price {
- 
-  float: right;
-  margin-right: -38px;
-  margin-top: -39px;
-  font-weight: 700;
-  color: #000;
-}
+
 
 
 .work{
