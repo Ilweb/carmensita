@@ -31,11 +31,12 @@ nav ul {
 
 nav li {
   display: inline-block;
+      margin-right: 10%;
 
 }
 
 nav li a {
-    margin-right: 20px;
+    font-size: 25px;
     font-weight:700;
     text-transform: uppercase;
 
@@ -139,7 +140,7 @@ display: inline-block;
 .back4 > img {
 position: absolute;
 width: 20%;
-top:40%;
+top:59%;
 }
 
 #mufin{
@@ -202,8 +203,9 @@ clear: both;
     width:100%;
     position:absolute;
 }
-@media (max-width: 600px){
-#galer {
+@media only screen and (max-width: 890px)
+{.google-maps {
+  float: left;
  
   }
   }
@@ -381,6 +383,8 @@ display: inline-block;
 }
 @media screen and (max-width: 640px){
 #listMenu {
+      margin-top: 90%;
+
     margin-left: -29px;
     float: left;
     font-size: 18px;
@@ -421,5 +425,67 @@ display: inline-block;
 
 .works{
 
+}
+}
+
+@media only screen and (max-width:890px){
+  .newspaper  {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+
+-moz-column-count: 1; /* Firefox */
+column-count: 1;
+-webkit-column-gap: 67px; /* Chrome, Safari, Opera */
+-moz-column-gap: 67px;/* Firefox */
+column-gap: 67px;;
+overflow: auto;
+margin-top: 30%;
+
+  }
+
+}
+@media only screen and (max-width:890px){
+  .newspaper1{
+     -webkit-column-count: 1; /* Chrome, Safari, Opera */
+
+-moz-column-count: 1; /* Firefox */
+column-count: 1;
+-webkit-column-gap: 67px; /* Chrome, Safari, Opera */
+-moz-column-gap: 67px; /* Firefox */
+column-gap: 67px;;
+overflow: auto;
+margin-top: -19px;
+}
+
+  }
+
+#gmaps{
+  width:75%;
+  z-index:2;
+  position:relative;
+  margin-top:40%;
+
+ 
+} 
+
+#gmaps div
+{
+  display:inline-block;
+  width:20%;
+  margin-right:4%;
+  margin-bottom:4%;
+  height:100px;
+} 
+#gmaps div img
+{
+  width:100%;
+  
+} 
+#gmaps img:last-of-type
+{
+  margin-right:0;
+} 
+
+iframe{
+top: 50%;
 }
 

@@ -57,8 +57,9 @@ body
 
 }
 .back7{
-	background:url("images/background3.png");
-	height: 100%;
+	background:url("images/bg.jpg");
+	background-repeat: repeat-x;
+	height: auto;
 	position: relative;
 
 
@@ -139,6 +140,10 @@ header div:last-of-type,footer img:last-of-type
     vertical-align: top;
     position: absolute;
     width: 30%;
+    cursor: pointer;
+}
+button[type="button"]{
+	color: #000;
 }
 .back3 .button
 {
@@ -300,8 +305,9 @@ h3
 }	
 #content2 header
 {
-	margin-bottom:0;
-	padding-bottom: 50px;
+	    margin-bottom: -43px;
+
+
 
 }	
 #content2 div.welcome:nth-of-type(2)
@@ -311,6 +317,7 @@ h3
 #content2 div.welcome img
 {
 	width:60%;
+	   
 }	
 #content2 .menu div
 {
@@ -375,16 +382,15 @@ h3
 	width:7%;
 }	
 .welcome1{
-	margin-top: -6px;
-    margin-bottom: 58px;
-    width: 14% !important;
+	margin-top: -11%;
+    /* margin-bottom: 58px; */
+    width: 22% !important;
     float: left;
     margin-right: 0 !important;
 
 }
 .welcome
 {
-    margin-top: -39px;
     margin-bottom: 58px;
 	width:21% !important;
 	float:left;
@@ -528,7 +534,7 @@ got img
     font-size: 14px;
   }
 .back4 > img{
-	
+	margin-top:12%
 }
 }
 @media only screen and (max-width:1210px)
@@ -616,13 +622,13 @@ margin-top: 101%;
    
 }
 }
-@media only screen and (max-width:680px)
+@media only screen and (max-width:890px)
 {
 	.menu
 	{
 		display:none;
 		position:fixed;
-		background:white;
+		
 		z-index:1;
 		top:90px;
 		left: 10px;
@@ -680,6 +686,8 @@ margin-top: 101%;
 	}
 }
 
+
+
 @media only screen and (max-width:480px)
 {
 	.brand
@@ -724,4 +732,74 @@ margin-top: 101%;
   }
 }
 
+button{
+	background-color: none;
+}
 
+.containerf{
+
+  width: 80%;
+  margin:0 auto;
+  float: right;
+}
+.grid{
+	width: 67%;
+}
+.ala img{
+	width: 10%;	
+
+	margin-top: 18%
+}
+.ala a{
+	float: right;
+	 margin-top: -18%;
+	 font-size: 24px;
+
+
+}
+.ala{
+
+	display: inline-block;
+	 font-family:Dosis;
+}
+.block{  
+	    margin-right: -8%;
+  margin-top: -5%;
+	display: table-caption;
+	float: right;
+}
+.block li {
+	list-style-type: none;
+}
+.block  a{
+	margin-top: 2%;
+	 font-family:Dosis;
+	 font-weight: 700;
+	 font-size: 24px;
+
+}
+.block img{
+ margin-top: 2%
+}
+.phone{
+
+    margin: -9%;
+}
+.txt{
+	margin-top: 2%
+}
+.mail{
+	    margin-right: -8%;
+    margin-bottom: -7%;
+}
+.ala{
+	float: left;
+	    margin-top: -10%;
+}
+
+
+aside{
+	float: left;
+	    margin-top: 7%;
+
+}
