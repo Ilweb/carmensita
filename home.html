@@ -284,7 +284,13 @@
 				<h2>Contacts & schedule</h2>
 			</header>
 			</div>
+               
 
+<div class="monday">
+<p>Tuesday-Saturday-1-15h</p>
+<p>Sunday, Monday- Day off</p>
+	
+</div>
 			<div class="con">
 			<aside>
 <table>
@@ -328,20 +334,24 @@
                    <a>Avda. de las Playas 55,<br> CC Marítimo local 21;<br> Puerto del Carmen
 35510 Tías, Lanzarote</a></div>
 			<div class="block">
+
                   <li><img class="phone" src="images/phone.png">  <a>+34 928 51 23 18</a></li>
+
           		 <li><img  class="mail" src="images/mail.png"> <a class="txt">carmencitadelpuerto@gmail.com</a></li>
             </div>
-                
             <!-- </div>  
 
             <div class="images">
               -->  
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.25557691535!2d-13.650132049845428!3d28.920461677655926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4625ef57c82b95%3A0x8889046f693c1797!2zQXYuIGRlIGxhcyBQbGF5YXMsIDU1LCAzNTUxMCBUw61hcywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sbg!2sbg!4v1476629593249" width="300" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.25557691535!2d-13.650132049845428!3d28.920461677655926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4625ef57c82b95%3A0x8889046f693c1797!2zQXYuIGRlIGxhcyBQbGF5YXMsIDU1LCAzNTUxMCBUw61hcywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sbg!2sbg!4v1476629593249" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
 
 </div>
+
 </div>
+ <div id="phone"><span>&nbsp;</span></div>
+                <div id="panel"><p>+34 928 51 23 18</p></div>
 
 </section>
 		
@@ -536,3 +546,10 @@ $(document).ready(function(){
 });
 </script>
 
+<script type="text/javascript">
+	$(document).ready(function(){
+    $("#phone").click(function(){
+        $("#panel").toggle();
+    });
+});
+</script>

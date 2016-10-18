@@ -53,6 +53,7 @@ body
 {
 	background:url("images/background3.png");
 	height: 100%;
+	overflow: hidden;
 	position: relative;
 
 }
@@ -173,7 +174,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-      margin-right: 10%;
+      margin-right: 3%;
 
 }
 
@@ -274,9 +275,7 @@ a.nav-active {
 	cursor:pointer;
 	display:inline-block;
 }
-.menu img
-{
-}
+
 .star
 {
 	float: right;
@@ -306,12 +305,7 @@ a.nav-active {
 	width:100%;
 }
 
-footer
-{
-	clear:both;
-	width:auto;
-	text-align:left;
-}
+
 me img
 {
 	margin-right:14%;
@@ -677,7 +671,6 @@ footer div img:hover
 		{
 			display:none;
 			position:fixed;
-
 			z-index:1;
 			top:90px;
 			left: 10px;
@@ -802,7 +795,7 @@ footer div img:hover
 		margin-top: 18%
 	}
 	.ala a{
-		float: right;
+	
 		margin-top: 9%;
 		font-size: 24px;
 		font-weight: 700;
@@ -847,7 +840,7 @@ footer div img:hover
 	}
 	.ala{
 		float: left;
-		margin-top: -10%;
+		margin-top: -17%;
 	}
 
 
@@ -870,6 +863,13 @@ footer div img:hover
 		font-weight: 700;
 		color: #000;
 	}
+	#phone{
+		display: none;
+	}
+	#panel{
+		display: none;
+	}
+
 
 
 	iframe {
@@ -878,4 +878,74 @@ footer div img:hover
 		left: 0;
 		width: 100% !important;
 		height: 100% !important;
+		margin-top: 20%;
 	}
+@media only screen and (max-width: 480px) {
+	#phone {
+		
+	position: absolute;
+	    top: 73%;
+    left: 8%;
+	z-index: 1000;
+  margin-top: -58px;
+	margin-left: -30px;
+  display: block;
+    width: 117px;
+    height: 117px;
+    cursor: pointer;
+    background: url(images/phoneRing.png) no-repeat top;
+}
+#phone span {
+	background-color: #000;
+	display: inline-block;
+    width: 117px;
+    height: 117px;
+    background: url(images/phone1.png) no-repeat top;
+    -webkit-animation:
+        Rotate 2000ms linear 2000ms 5;
+    animation:
+        Rotate 2000ms linear 2000ms 5;
+}
+@-webkit-keyframes Rotate {
+  0% {-webkit-transform:rotate(0deg);}
+  4% {-webkit-transform:rotate(-45deg);}
+  8% {-webkit-transform:rotate(0deg);}
+  12% {-webkit-transform:rotate(-45deg);}
+  16% {-webkit-transform:rotate(0deg);}
+  20% {-webkit-transform:rotate(-45deg);}
+  24% {-webkit-transform:rotate(0deg);}
+  100% {-webkit-transform:rotate(0deg);}
+}
+
+@keyframes Rotate {
+  0% {transform:rotate(0deg);}
+  4% {transform:rotate(-45deg);}
+  8% {transform:rotate(0deg);}
+  12% {transform:rotate(-45deg);}
+  16% {transform:rotate(0deg);}
+  20% {transform:rotate(-45deg);}
+  24% {transform:rotate(0deg);}
+  100% {transform:rotate(0deg);}
+}
+.containerf{
+	display: none
+}
+}
+
+.monday{
+	display: none;
+}
+
+@media only screen and (max-width: 480px)
+{
+	#panel{
+		font-weight: 700;
+    margin-top: 7%;
+    float: right;
+    margin-right: 28%;	
+
+	}
+	#panel p{
+		font-size: 25px;	
+	}
+}
