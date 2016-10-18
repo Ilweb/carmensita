@@ -401,11 +401,14 @@
 	});
 </script>
 <script>
-	$("html, body").ready(function(scrollAnimation){
-	if ($(".thirdd").hasClass("visible")) 
-	  {
-		$("#salad").animate({left: ''}).css("visibility","visible");
-	  } 
+
+
+jQuery(window).scroll(function()
+{
+	if (jQuery(window).scrollTop() >= jQuery("#salad").offset().top - 300)
+	{
+		jQuery("#salad").animate({left: ''}).css("visibility","visible");
+	}
 });
 </script>
 <script>
