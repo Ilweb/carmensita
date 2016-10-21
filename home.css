@@ -550,13 +550,14 @@
 
 		#gallery
 		{
+
 			width:75%;
 			z-index:2;
 			position:relative;
 			margin-top:40px;
 			max-height:350px;
 			overflow:auto;
-			margin-top: -7%;
+			margin-top: -6%;
 		max-width: 40cm;
 		}	
 		#gallery img
@@ -868,7 +869,7 @@
 	{
 		color:  #8f9296;
 		font-size: 14px;
-		margin: 0;
+		margin-left: -7%;
 	}
 
 	.footerCentered .footerLinks
@@ -894,7 +895,7 @@
 
 	h2
 	{
-		margin-bottom: 2.12cm;
+		margin-bottom: 5vh;
 	}
 
 	footer img
@@ -1486,7 +1487,7 @@
 		.back2 .content > div
 		{
 		    width: auto;
-		    font-size: 2vh;
+		    font-size: 14px;
 		}
 	}
 
