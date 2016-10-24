@@ -179,7 +179,7 @@
 	    padding-left:24px;
 	}
 
-	/* navigation */
+	/************** navigation *********************8*/
 	nav {
 	    width:100%;
 	    
@@ -263,9 +263,9 @@
 		right:0;
 		bottom:0;
 	}
-	.madeby1 {
+	.madeby1 
+	{
     float: right;
- 
     right: 0;
     bottom: 0;
 }
@@ -320,7 +320,8 @@
 
 
 
-	/*******************8Second page******************/
+	/*******************Second page******************/
+
 	.back2 div span
 	{
 		font-family:DancingScript;
@@ -331,6 +332,12 @@
 	{
 		width:94%;
 	}	
+
+	.back2 > img:last-of-type{
+		bottom: 0
+	}
+
+
 
 	.back2 header div
 	{
@@ -426,8 +433,9 @@
 			font-weight: bold;
 			margin-right: 30px;
 			text-align:left;
-			margin-top: -3%;
+			margin-top: -5%;
 		}	
+
 	/******************* page 3*********************************/
 
 	.back3 .content > div:nth-of-type(3)
@@ -464,20 +472,13 @@
 			margin-right:0 !important;
 		}	
 
-		#content2 .social 
-		{
-			position: absolute;
-			top: 90%;
-			left: 20%;
-		}
+	
 		.back3 > img
 		{
 			position: absolute;
 			width: 35%;
 			bottom: 0;
 		}	
-
-
 
 		.text 
 		{
@@ -644,11 +645,7 @@
 			border-bottom:1px solid white;
 			color:white;
 		}	
-				
-
-
-
-
+		
 	/*************************page 5********************************/
 
 	.back5 > img
@@ -702,6 +699,10 @@
 		position: absolute;
 		width: 35%;
 		bottom: 0
+	}
+
+	.back6 > img:last-of-type{
+		width: 15%;
 	}
 	.monday
 	{
@@ -803,7 +804,6 @@
 		margin-top: -9%;
 	}
 
-
 	aside
 	{
 		float: left;
@@ -820,15 +820,12 @@
 		display: none;
 	}
 
-
-
 	iframe 
 	{
 		position: absolute;
 		top: 20%;
 		left: 283px;
 		width: 76% !important;
-
 		height:38% !important;
 		margin-top: 15%;
 	}
@@ -952,12 +949,12 @@
 		left: 35%;
 	}
 
-.madeby img{
+	.madeby img{
 		width: 15%;
 	}
 
 
-		/***********************media query*************/
+		/***********************media query *************/
 		
 
 			@media only screen and (max-width: 480px) and (min-width:10px) {
@@ -1030,6 +1027,8 @@
 				font-size: 14px;
 				display: -webkit-inline-box;
 			}
+
+
 			.back3 .content > div:first-of-type,
 			.back3 .content > div:nth-of-type(2)	
 			{   
@@ -1273,6 +1272,7 @@
 			{
 			    margin-top: 43%;
 			    padding: 0;
+			    z-index: 0;
 			}
 			.back4 .content > .welcome > ul
 			{
@@ -1294,9 +1294,10 @@
 			}
 
 			.back4 > .content > #gallery{
-				margin-top: -27%;
+				margin-top: -16%;
 				float: left;
 				width: auto;
+				z-index: 0;
 				
 	 overflow: auto;
 
@@ -1330,9 +1331,9 @@ width: 100%;
 			#phone
 			 {
 				position: absolute;
-			    top: 32%;
-left: 14%;
-			    z-index: 1000;
+			    top: 27%;
+				left: 14%;
+			    z-index: 0;
 			    margin-top: -58px;
 			    margin-left: -30px;
 			    display: block;
