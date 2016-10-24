@@ -334,7 +334,7 @@
 	}	
 
 	.back2 > img:last-of-type{
-		bottom: 0
+		margin-top: 4%;
 	}
 
 
@@ -520,7 +520,7 @@
 		.back3 > img:last-of-type
 		{
 			left:60%;
-			width: 15%;
+			
 		}	
 		#salad
 		{
@@ -577,7 +577,7 @@
 			z-index:2;
 			position:relative;
 			margin-top:40px;
-			max-height:350px;
+			max-height:327px;
 			overflow:auto;
 			margin-top: -6%;
 		max-width: 40cm;
@@ -964,10 +964,10 @@
 			}
 		}
 		@media only screen and (max-width: 890px) and (min-width: 480px){
-			.back5 .content > .city {
+			.back5 .content > .city 
+			{
 				width: auto;
 				font-size: 14px;
-
 
 			}
 			.back4 > img{
@@ -1298,7 +1298,8 @@
 				float: left;
 				width: auto;
 				z-index: 0;
-				
+				height: 250px;
+			
 	 overflow: auto;
 
 
@@ -1411,7 +1412,7 @@ width: 100%;
 
 			.footerCentered .footerLinks{
 				font-size: 14px;
-				padding: 25px 0 20px;
+				
 			}
 
 			.footerCentered .footerLinks a{
@@ -1520,8 +1521,7 @@ width: 100%;
 		    top: 50%;
 		    left: 13%;
 		  
-		    height: 36% !important;
-		
+		    height: auto;
 		}
 	}
 		@media only screen and (max-width: 670px)
@@ -1589,7 +1589,7 @@ width: 100%;
 			#content2 .social 
 		{
 			    left: 13%;
-			    margin-top: 17%;
+			    margin-top: 10%;
 		}
 	}
 
