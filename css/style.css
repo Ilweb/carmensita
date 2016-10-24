@@ -50,6 +50,16 @@ Main Components
   
 
 }
+
+@media only screen and (max-width: 480px) {
+  .second{
+    height: 100%;
+  }
+ 
+  
+  }
+
+
 .cd-section:first-of-type > div {
   background-color: #2b334f;
 }
@@ -198,7 +208,9 @@ Main Components
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
   margin-bottom: 10px;
+
 }
+
 .cd-vertical-nav a.inactive {
   visibility: hidden;
   opacity: 0;

@@ -25,20 +25,23 @@
 	.back2
 	{
 		background:url("images/background2.png");
+		overflow: hidden;	
+	
 	}
 	.back3
 	{
 		background:url("images/background3.png") ;
 		height: 100%;
 		position: relative;
+		overflow: hidden; 
+
 	}
 	.back4
 	{
 		background:url("images/background3.png") ;
 		height: 100%;
 		position: relative;
-		overflow: hidden;
-	}
+		}
 	.back5
 	{
 		background:url("images/background3.png");
@@ -99,7 +102,7 @@
 		text-transform: none;
 	}
 	.first-menu li
-	{
+	{	
 		text-transform: uppercase;
 		margin-right: 4%;
 		text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
@@ -144,7 +147,9 @@
 		height:70%;
 		padding-left:0;
 	}	
-	.cd-vertical-nav li:last-of-type
+
+	
+	.cd-vertical-nav a:last-of-type
 	{
 		vertical-align: bottom;
 		position: absolute;
@@ -221,20 +226,25 @@
 		font-size:60px;
 		width: 26%;
 	}
+
+	
 	.second
 	{
 		display:block;
 		text-align:center;
 		font-size:25px;
 		margin-bottom:5px;
+
+
+
 	}
-	.thirds
+	.third
 	{
 		font-family:Dosis, sans-serif;
 		font-size: 20px;
 		font-weight:700;
 		text-transform:uppercase;
-		height: 100%
+		
 	}
 	#logo
 	{
@@ -248,10 +258,18 @@
 	}
 	.madeby
 	{
-		position:absolute;
+	float: right;
+	position: absolute;
 		right:0;
 		bottom:0;
 	}
+	.madeby1 {
+    float: right;
+ 
+    right: 0;
+    bottom: 0;
+}
+
 	#first_frame
 	{
 		position:static;
@@ -285,7 +303,7 @@
 		float: right;
 		display: inline-block;
 		position: absolute;
-		right: -5%;
+		right: 0;
 		visibility:hidden;
 		bottom: 6%;
 	}
@@ -327,7 +345,7 @@
 	{
     margin-top: 13vh;
 	}	
-		h2,h3
+		h2
 		{
 			font-family:DancingScript;
 
@@ -340,9 +358,10 @@
 		h3
 		{
 			font-size: 3vw;
+			font-family:DancingScript;
 			position:relative;
-			margin-top: 30px;
-			position: relative;.
+			margin-top: -10px;
+			position: relative;
 			float: left;
 			margin-right: -200px;
 			display: inline-block;
@@ -357,7 +376,7 @@
 			margin-right: 0 !important;
 		}
 
-		.newspaper 
+		.newspaper p
 		{
 			-webkit-column-count: 2; /* Chrome, Safari, Opera */
 			-moz-column-count: 2; /* Firefox */
@@ -366,9 +385,9 @@
 			-moz-column-gap: 67px; /* Firefox */
 			column-gap: 67px;
 			overflow: auto;
-			margin-top: -19px;
+			
 		}
-		.newspaper1
+		.newspaper1 p
 		 {	
 			-webkit-column-count: 2; /* Chrome, Safari, Opera */
 			-moz-column-count: 2; /* Firefox */
@@ -377,7 +396,7 @@
 			-moz-column-gap: 67px; /* Firefox */
 			column-gap: 67px;;
 			overflow: auto;
-			margin-top: -19px;
+			
 		}
 		#leaf
 		{
@@ -416,7 +435,7 @@
 			margin-left:5%;
 			margin-left: 22%;
 		}	
-	.back3 .content > div
+	.back3 .content > .text
 		{
 			margin-bottom: 5%;
 			width: 30%;
@@ -458,6 +477,8 @@
 			bottom: 0;
 		}	
 
+
+
 		.text 
 		{
 			float: left;
@@ -476,7 +497,7 @@
 			float: right;
 			display: inline-block;
 			position: absolute;
-			right: -5%;
+			right: 0;
 		}
 		#salad
 		{
@@ -498,6 +519,7 @@
 		.back3 > img:last-of-type
 		{
 			left:60%;
+			width: 15%;
 		}	
 		#salad
 		{
@@ -525,7 +547,7 @@
 			margin-left: 21.5%;
 			margin-right: 20px;
 		}
-		.back4 .content > div
+		.back4 .content > 
 		 {
 			margin-bottom: 5%;
 			width: 30%;
@@ -537,14 +559,13 @@
 		 {
 			position: absolute;
 			width: 20%;
-			top:59%;
+			bottom: 0;
 		}
 		#plant
 		{
-			float: right;
 			display: inline-block;
 			position: absolute;
-			right: -5%;
+		
 			visibility:hidden;
 		}
 
@@ -635,6 +656,10 @@
 		position: absolute;
 		width: 15%;
 		bottom: 130px;
+	}
+	.back5 > img:last-of-type{
+		bottom: 0;
+	
 	}
 	.flower
 	{
@@ -854,7 +879,7 @@
 		/* width: 100%; */
 		text-align: center;
 		margin-right: 7%;
-		padding: 45px;
+	
 		margin-top: 38px;
 	}
 
@@ -927,18 +952,21 @@
 		left: 35%;
 	}
 
-
+.madeby img{
+		width: 15%;
+	}
 
 
 		/***********************media query*************/
 		
 
-		@media only screen and (max-width: 480px){
+			@media only screen and (max-width: 480px) and (min-width:10px) {
+
 			.city{
-				top: 0;
+				top: -95px;
 			}
 		}
-		@media only screen and (max-width: 890px){
+		@media only screen and (max-width: 890px) and (min-width: 480px){
 			.back5 .content > .city {
 				width: auto;
 				font-size: 14px;
@@ -991,23 +1019,32 @@
 				float:none;
 			}		
 		}
-		@media only screen and (max-width:890px)
+
+	
+		@media only screen and (min-width:10px) and (max-width: 480px)
 		{
 			.back2 .content > div 
 			{
+
 				width:auto;
 				font-size: 14px;
 				display: -webkit-inline-box;
 			}
-			.back3 .content > div:first-of-type,.back3 .content > div:nth-of-type(2)	
+			.back3 .content > div:first-of-type,
+			.back3 .content > div:nth-of-type(2)	
 			{   
 				margin-top: 20px;
-				font-size:16px;
+				font-size:2vh;
 				display:block;
 				width:80%;
 				float:right;
 				margin-right:12%;
 			}	
+			.back3 .content > div:nth-of-type(2)	{
+				margin-top: 40px;
+			}
+
+			
 			.back3 .content  div.button
 			{
 				margin-left:23%;
@@ -1021,17 +1058,60 @@
 
 			}
 		}
+		@media only screen and (min-width:480px) and (max-width: 890px)
+		{
+			.back2 .content > div 
+			{
+
+				width:auto;
+				font-size: 14px;
+				display: -webkit-inline-box;
+			}
+			.back3 .content > div:first-of-type,
+			.back3 .content > div:nth-of-type(2)	
+			{   
+				margin-top: 20px;
+				font-size:2vh;
+				display:block;
+				width:80%;
+				float:right;
+				margin-right:12%;
+			}	
+			.back3 .content > div:nth-of-type(2)	{
+				margin-top: 40px;
+			}
+
+			
+			.back3 .content  div.button
+			{
+				margin-left:23%;
+				width:200px;
+			}	
+			.back3 .content  > img
+			{
+				min-width: 200px; 
+				max-height: 200px; 
+				display: block;
+
+			}
+		}
+	
+	
 
 		@media only screen and (max-width:680px)
 		{
 			.menu
-			{
+			{	
 				display:none;
 				position:fixed;
 				z-index:1;
 				top:90px;
 				left: 10px;
 				background-color: #fff;
+			}
+
+			.menu li {
+				display: block;
 			}
 			.menu.other
 			{
@@ -1125,19 +1205,22 @@
 		}
 	}
 
+
+
 		@media only screen and (max-width:890px)
 		{
-		.newspaper 
+		.newspaper p
 		 {
 			-webkit-column-count: 1; /* Chrome, Safari, Opera */
 			-moz-column-count: 1; /* Firefox */
 			column-count: 1;
 			
 	  	}
-	  	.newspaper1
+	  	.newspaper1 p
 	  	{
 			-webkit-column-count: 1; /* Chrome, Safari, Opera */
 			-moz-column-count: 1; /* Firefox */
+			-moz-font-size: 9px;
 			column-count: 1;
 
 		}	
@@ -1150,7 +1233,7 @@
 			}
 		}	
 
-			@media only screen and (max-width: 890px)
+			@media only screen  and (max-width: 890px)
 			{
 				.back4 .content > .welcome > ul
 				{
@@ -1161,7 +1244,7 @@
 			.back4 .content > .welcome > ul li
 				{
 					margin-right: 20px;
-					width: 331px;
+					width: 370px;
 					margin-bottom: 3px
 				}	
 			.back4 .content > .welcome > ul li a
@@ -1175,7 +1258,8 @@
 					margin-top: -6%;
 					float: left;
 					width: auto;
-					overflow: visible
+					overflow: visible;
+
 				}
 			.back4 > .content > #gallery  img
 				{ 
@@ -1183,8 +1267,8 @@
 	   		 max-height: 140px;
 			}
 		}
-		@media only screen and (max-width: 480px)
-		{
+		@media only screen and (min-width:10px) and (max-width: 480px){
+		
 			#menulist 
 			{
 			    margin-top: 43%;
@@ -1199,28 +1283,29 @@
 			.back4 .content > .welcome > ul li
 			{
 				margin-right: 20px;
-				width: 331px;
+				width: 240px;
 				margin-bottom: 3px
 			}	
 			.back4 .content > .welcome > ul li a
 			{
-				font-size: 20px;
+				font-size: 15px;
 				font-weight: 700;
 
 			}
 
 			.back4 > .content > #gallery{
-				margin-top: -11px;
+				margin-top: -27%;
 				float: left;
 				width: auto;
-				overflow: visible
+				
+	 overflow: auto;
 
 
 			}
 			.back4 > .content > #gallery  img
 			{
-				max-width: 91px;
-				max-height: 79px
+				max-width: 88px;
+				max-height: 79px;
 			}
 
 		}	
@@ -1233,6 +1318,11 @@
 				font-weight: 700;
 				padding-top: 10px;
 			}
+			h3{
+				font-size: 5vw;
+width: 100%;
+			}
+
 		}
 
 		@media only screen and (max-width: 480px) 
@@ -1240,8 +1330,8 @@
 			#phone
 			 {
 				position: absolute;
-			    top: 29%;
-			    left: 6%;
+			    top: 32%;
+left: 14%;
 			    z-index: 1000;
 			    margin-top: -58px;
 			    margin-left: -30px;
@@ -1326,17 +1416,19 @@
 			.footerCentered .footerLinks a{
 				line-height: 1.8;
 			}
+			
+			
 		}
 		@media only screen and (max-width: 890px)
 		{
 			iframe 
 			{
 				position: absolute;
-				top: 43%;
-				left: 166px;
-				width: 81% !important;
+				top: 45%;
+				left: 20%;
+			
 				height: 28% !important;
-				margin-top: 15%;ant;
+				margin-top: 15%;
 				margin-top: 15%;
 			}
 
@@ -1424,11 +1516,11 @@
 			}
 		 iframe {
 		    position: absolute;
-		    top: 40%;
-		    left: 0;
-		    width: 100% !important;
+		    top: 50%;
+		    left: 13%;
+		  
 		    height: 36% !important;
-		    margin-top: 15%;
+		
 		}
 	}
 		@media only screen and (max-width: 670px)
@@ -1469,16 +1561,16 @@
 		}
 		footer img
 		{
-			margin-right:5px;
+			margin-right:-23px;
 		}
 		#content2 .social img 
 		{
 			width:auto;
-		margin-top: 	-7%;
+		margin-top: 	4%;
 		}	
 		#content2 .social
 		{    left: 29%;
-	    margin-top: 3%;
+	
 		}
 	}
 
