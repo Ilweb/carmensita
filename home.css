@@ -431,6 +431,7 @@ margin-left: 25%;
 			float: right;
 			display: inline-block;
 			visibility: hidden;
+			right: 0;
 		}
 		.brand
 		{
@@ -712,10 +713,12 @@ margin-left: 25%;
 		top: 50px;
 		width: 9%;
 		visibility: hidden;
+		right: 0;
 	}
 	#milkshake
 	{
 		visibility: hidden;
+		right: 0;
 	}
 	    
 /******************page 6**********************************/
@@ -745,6 +748,7 @@ margin-left: 25%;
 	{
 		width: 20%;
 		visibility: hidden;
+
 	}
 
 	#mohito2 
@@ -752,6 +756,7 @@ margin-left: 25%;
 		width: 20%;
 		top: 0%;
 		visibility: hidden;
+		right: 0;
 	}
 	table, td
 	{
@@ -926,7 +931,7 @@ margin-left: 25%;
 		list-style: none;
 		font-weight: bold;
 		color:  #ffffff;
-		padding: 35px 0 23px;
+		padding: 64px 0 23px;
 		margin: 0;
 	}
 
@@ -1331,12 +1336,12 @@ text-transform: uppercase;
 		    display: block;
 		}
 	}
-	@media (max-width: 600px)
+	/*@media (max-width: 600px)
 		 {
 			.footerCentered
 			{
 				    /* padding: 24px; */
-		    margin-top: 42%;
+		    /*margin-top:  58%;
 			}
 
 			.footerCentered {
@@ -1357,7 +1362,7 @@ text-transform: uppercase;
 			}
 			
 			
-		}
+		}*/
 
 		@media only screen and (max-width: 480px)
 		{
@@ -1483,13 +1488,8 @@ text-transform: uppercase;
 				width: 60%;
 			}
 
-			.star {
-    float: left;
-    display: inline-block;
-    position: absolute;
-    bottom: 10%;
- 
-	}
+			.star{
+				bottom: 0;
 		
 }
 
