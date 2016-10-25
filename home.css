@@ -202,8 +202,8 @@
 
 	nav li {
 	  display: inline-block;
-    margin-right: -18%;
-    margin-left: 30%;
+   margin-right: -19%;
+margin-left: 25%;
 
 	}
 
@@ -767,7 +767,7 @@
 	.containerf
 	{
 		width: 80%;
-		margin:-40px auto;
+		margin:-71px auto;
 		float: right;
 	}
 	
@@ -1234,6 +1234,11 @@
 			}
 
 			.menu li {
+				
+				margin-right: 35%;
+			}
+
+			#one li{
 				display: block;
 			}
 			.menu.other
@@ -1470,6 +1475,19 @@ width: 100%;
 				    width: 308%;
    					 margin-left: -99%
 			}
+
+			.star.img{
+				width: 55%;
+			}
+
+			.star {
+    float: right;
+    display: inline-block;
+    position: absolute;
+    right: 17px;
+
+    bottom: 7%;
+    margin-right: -14%;
 	}
 	@media only screen and (max-width: 480px) and (min-width:10px) {
 

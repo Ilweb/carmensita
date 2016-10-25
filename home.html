@@ -482,7 +482,7 @@
 		});	
 	</script>
 
-	<script>
+	<!--<script>
 	$(document).ready(function(){
 
 		//menu-butt
@@ -491,17 +491,48 @@
 		($(window).width() < 680)&&$( ".mobile_menu" ).click(function() { 
 		  if($(this).data('clicked') == true)
 		  {
-			  $(".first-menu").toggle(1500);
+			  $(".first-menu").toggle();
 			  $(".mobile_menu").data('clicked', false);
+
+
 			}
 		  else
 		  {
-				$(".first-menu").fadeToggle(1500);
+				$(".first-menu").fadeToggle();
+
 				$(".first-menu div").css("display","block");
+				
 				$(".mobile_menu").data('clicked', true);
+
+				$(".first-menu").tggle('hide');
+		
+				
+			
 		  }
+ 
+		  		
+		  			
+		  	
 		});
 	});
+</script>-->
+<script>
+	$(function() {
+  var menuVisible = false;
+  $('.mobile_menu').click(function() {
+    if (menuVisible) {
+      $('.first-menu').css({'display':'none'});
+      menuVisible = false;
+      return;
+    }
+    $('.first-menu').css({'display':'block'});
+    menuVisible = true;
+  });
+  $('.first-menu').click(function() {
+    $(this).css({'display':'none'});
+    menuVisible = false;
+  });
+});
 	</script>
 
 
