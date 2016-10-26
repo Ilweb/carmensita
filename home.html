@@ -89,7 +89,9 @@
 				</div>
 				<div class="newspaper"><!--welcome-->
 					<p><span>“Going tapas”</span> has nothing to do with the size of your dish, it has to do with what is in your dish and how you eat it.<br/>
+					<br/>
 					<span>“Going tapas”</span> means sharing; slow food; not eating everything at the same time and having different drinks depending on what you are eating.<br>
+					<br>
 					<span>“Going tapas”</span> means a unique gastronomic experience in which you are going to try much more than two courses and a couple of wines.</p>
 				</div><!--end welcome-->
 				<h3>…And thats what we are offering, the ultimate tapas experience</h3>
@@ -271,7 +273,7 @@
 				</header>
 				<div class="city">
 					<p>If you wanna know the legend about Carmencita - you are welcome to our restaurant and ask us. We wanna tell you the story personaly.
-					You will discover the Real Spanish way of eating, new wines </p>
+				</p>
 					<h4>Lanzarote</h4>
 					<p>Arid Lanzarote, one of the Canary islands off the coast of West Africa, is known for its year-round warm weather, beaches and volcanic landscape. East-coast resort Puerto del Carmen has whitewashed villas, a harbor and dive centers. Caletón Blanco is a string of northern coves with calm, clear water for snorkeling, and Famara beach has cliffs for hang gliding and surf schools.</p>
 				</div>
@@ -413,7 +415,7 @@
 	<script>
 		$(document).ready(function(){
 		$(window).load(function() {
-		  $(".star").animate({right: ''}).css("visibility","visible");
+		  $(".star").animate({right: '50px'}).css("visibility","visible");
 		})
 		});
 	</script>
@@ -482,44 +484,47 @@
 		});	
 	</script>
 
-	<!--<script>
+	<script>
 	$(document).ready(function(){
 
-		//menu-butt
-		
-		
+
 		($(window).width() < 680)&&$( ".mobile_menu" ).click(function() { 
+			 
 		  if($(this).data('clicked') == true)
 		  {
+
 			  $(".first-menu").toggle();
 			  $(".mobile_menu").data('clicked', false);
 
+			  
+			
 
-			}
-		  else
+		  }
+		  else 
 		  {
 				$(".first-menu").fadeToggle();
 
-				$(".first-menu div").css("display","block");
-				
+				$(".first-menu ").css("display","block");
+				menuVisible = true;
 				$(".mobile_menu").data('clicked', true);
-
-				$(".first-menu").tggle('hide');
-		
-				
 			
-		  }
- 
-		  		
+				
+		  
+		}
+ 			 // Hide menu after click 
+		  	  $('.first-menu').click(function() {
+    			$(this).hide();
+  				});	
 		  			
 		  	
 		});
 	});
-</script>-->
-<script>
-	$(function() {
+</script>
+
+<!-- <script>
+$(function() {
   var menuVisible = false;
-  $('.mobile_menu').click(function() {
+	($(window).width() < 680) && $( ".mobile_menu" ).click(function() { 
     if (menuVisible) {
       $('.first-menu').css({'display':'none'});
       menuVisible = false;
@@ -529,11 +534,10 @@
     menuVisible = true;
   });
   $('.first-menu').click(function() {
-    $(this).css({'display':'none'});
-    menuVisible = false;
+    $(this).hide();
   });
 });
-	</script>
+	</script> -->
 
 
 
