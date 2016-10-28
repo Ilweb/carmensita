@@ -76,9 +76,14 @@
 		font-size: 44px	;
 		margin: 7px 44px;
 		cursor: pointer;
-		width: 28%;
-		height: auto;
+		width: 30%;
+		   vertical-align: top;
+    position: absolute;
 		position: relative;
+		top: 26%;
+   
+    
+    
 	}
 
 	.button2 a
@@ -573,6 +578,13 @@
 			color:#567993;
 		}
 
+		#sea{
+			width: 15%;
+			position: absolute;
+			    right: 5%;
+    bottom: 2%;
+		}
+
 		/******************* page 3*********************************/
 		.back3 .content > .menu{
 			float: right;
@@ -623,6 +635,7 @@
 			{
 				float: left;
 				max-width: 550px;
+				font-weight: 500;
 				margin: 10px;
 				padding: 10px;
 				display: inline-block;
@@ -1459,6 +1472,9 @@
 				{
 					top: 80%;
 				}
+				.city{
+					max-width: 100%;
+				}
 			}
 	@media only screen and (max-width: 670px)
 			{
@@ -1533,7 +1549,11 @@
 
 
 	.city{
-		font-size: 2vh
+		
+		    font-size: 2vh;
+    max-width: 100%;
+    right: 14%;
+
 	}
 
 				.monday{
@@ -1658,6 +1678,7 @@
 					bottom: 0;
 			
 	}
+}
 
 
 		@media only screen and (max-width: 480px) and (min-width:10px) {
