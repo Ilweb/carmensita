@@ -16,23 +16,37 @@
 		position:fixed;
 		z-index:1;
 		width: 100%;
-		top:20px;
+		top:30px;
+		
+	}
+	.navLeft
+	{
+		position:fixed;
+		z-index:1;
+		width: 100%;
+		top:30px;
 		text-align: center;
 	}
 	.navigation li
 	{
-		color:#18567f;
+		color:#000;
 		display:inline-block;
-		padding: 0 10px;
+		padding: 0 35px;
 		margin-bottom:2px;
 		font-weight:300;
 		-webkit-transition: all .2s ease-in-out;
 		text-align:left;
 	}
-	.navigation li a:hover,.active
+	.navigation li:last-of-type{
+		margin-right: 0;
+	}
+
+	
+	.navigation li a:hover
 	{
 		cursor:pointer;
 		color: #fff;
+	
 	}
 
 	.slide
@@ -48,56 +62,88 @@
 		margin:0 auto;
 		position:relative;
 	}
+
 	
 	.button
+
 	{
 		display:block;
 		width:50px;
 		height:32px;
 		position:absolute;
-		bottom:0px;
+		bottom:56px;
 		right: 0;
 		background-image:url("../img/up_arrow.png");
+	}
+	.button p{
+		position: absolute;
+    font-family: 'Dosis';
+    left: -63px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+
 	}
 	.button:hover
 	{
 	
 		cursor:pointer;
 	}
+	.fa-opened{
+		 font-family: 'FontAwesome', 'Dancing Script', Helvetica, Arial, sans-serif;
+	  color: #18567f;
+	  float: right;
 
-	.button2
+	}
+	.fa-tripadvisor, .fa-facebook, .fa-instagram, .fa-twitter {
+		font-family: 'FontAwesome';
+		  color: #18567f;
+	}
+	.social a{
+		text-decoration: none;
+		    margin-right: 20px;
+
+	}
+
+	.fa-input2 {
+	  font-family: 'FontAwesome', 'Dancing Script', Helvetica, Arial, sans-serif;
+	  color: #FFF;
+	  
+}
+
+
+.text span{
+	font-family: "Dancing Script";
+}
+
+.button2
 	{
-		background-color: none;
-		border: 1px solid #18567f;
-		color: #18567f;
-		text-align: left;
-		padding: 6px;
-		display: inline-block;
-		font-size: 44px	;
-		margin: 7px 44px;
-		cursor: pointer;
-		width: 30%;
-		   vertical-align: top;
-    position: absolute;
-		position: relative;
-		top: 26%;
+	    background-color: transparent;
+	    text-decoration: none;
+	    display: block;
+    border: 1px solid #18567f;
+    color: #18567f;
+    text-align: left;
+    padding: 15px;
+    display: inline-block;
+    font-size: 5vh;
+    left: 23%;
+    margin-right: 11%;
+    margin-bottom: 3%;
+    /* margin: 23px 141px; */
+    cursor: pointer;
+    width: 25%;
+    position: relative;
+   
+    
+   
+    top: 26%;
+
    
     
     
 	}
 
-	.button2 a
-	{
-		color: #336385;
-		margin-left: 2%;
-	    text-decoration: none;
-	}
-
-	.button2 img
-	{
-		float: right;
-		padding: 2%
-	}
 
 
 
@@ -158,6 +204,14 @@
 		width: 100%;
 		height: 100%;
 	}
+	#slide7
+	{
+		background:url("../images/background3.png") ;
+		width: 100%;
+		height: 100%;
+	}
+
+
 	.row
 	{
 		margin-top: 7%;
@@ -169,6 +223,8 @@
 		position: absolute;
 		bottom: 0
 	}
+
+
 
 	
 	.back3
@@ -241,7 +297,8 @@
 		}
 		h4
 		{
-			padding: 9% 0%;
+			padding: 5% 0%;
+			font-weight: 700;
 			font-family: 'Dancing Script';
 			font-size: 29px;
 			display: inline-block; 
@@ -261,9 +318,13 @@
 
 		}
 		#listMenu ul{
-			margin-right: 7px;
+			margin-right: 10%;
 		}
-
+		#listMenu p{
+			line-height: 28px;
+			font-weight: 500;
+			font-family: 'Dosis'
+		}
 		.content
 		{
 			margin-left:3%;
@@ -287,40 +348,32 @@
 			text-align:center;
 			font-size:25px;
 		}
-		.cd-vertical-nav 
-		{
-			height:70%;
-			padding-left:0;
-		}	
-
 		
-		.cd-vertical-nav a:last-of-type
-		{
-			vertical-align: bottom;
-			position: absolute;
-			bottom: 0;
-			margin-left: 20px;
-		}	
-		.firstt
-		{
+	.fa-input {
+	  font-family: 'FontAwesome', 'Dancing Script', Helvetica, Arial, sans-serif;
+	  color: #FFF;
+	  background-color: none;
+}
+		input[type=button] {
+  
 			top: 26%;
 			display: inline-block;
+			right: 3%;
 			float: right;
-			vertical-align: top;
+			
 			position: absolute;
-			width: 30%;
+		
 			cursor: pointer;
+			font-family: "Dancing Script"
 			color: #fff;
 			border: 1px solid #fff;
 			padding:8px;
-			background-color: none;
+			width: auto;
+			background-color: transparent;
 			font-size: 44px	;
+			background-image: ;
 		}
 
-		.firstt a{
-			color: #fff;
-			text-decoration: none;
-		}
 		
 		#sidebar {
 		    width:100%;
@@ -339,11 +392,14 @@
 			font-size:60px;
 			width: 26%;
 		}
-
-		.menu:nth-of-type(3)
-		{
-			float: right;
-		}
+.navRight{
+	width: 70%;
+	float: right;
+	font-size: 18px;
+	margin-right: 0;
+	color: #437281;
+}
+	
 
 		.second
 		{
@@ -543,16 +599,16 @@
 		}
 		#leaf
 		{
-			float: right;
+			float: left;
 			display: inline-block;
-			visibility: hidden;
+		
 			right: 0;
 		}
 		.brand
 		{
 			position:absolute;
 			color:black;
-			top:93%;
+		bottom: 0;
 		}
 
 		.brand div
@@ -570,7 +626,7 @@
 			font-weight: bold;
 			margin-right: 16%;
 			text-align:left;
-			margin-top: -2%;
+			
 			color: #567993;
 		}	
 
@@ -582,6 +638,7 @@
 			width: 15%;
 			position: absolute;
 			    right: 5%;
+
     bottom: 2%;
 		}
 
@@ -596,6 +653,7 @@
 			}	
 		.back3 .content > .text
 			{
+				margin-top: 4%;
 				margin-bottom: 5%;
 				width: 30%;
 				display: inline-block;
@@ -653,23 +711,19 @@
 				right: 0;
 				bottom: 0
 			}
+				.back3 > img
+			 {
+				position: absolute;
+				width: 30%;
+				bottom: 0;
+			}
 			#salad
 			{
-				float: right;
 				display: inline-block;
 				position: absolute;
-				/*right: -5%;*/
-				visibility:visible;
+				bottom:0;
 			}
-			#salad img
-			{
-				width:100%;
-
-			}
-			#salad2 img
-			{
-				width: 100%;
-			}
+			
 			.back3 > img:last-of-type
 			{
 				left:60%;
@@ -717,7 +771,7 @@
 				display: inline-block;
 				position: absolute;
 				bottom:0;
-				visibility:hidden;
+				
 			}
 
 			#paprika{
@@ -733,11 +787,11 @@
 				width:75%;
 				z-index:2;
 				position:relative;
-				margin-top:40px;
+				
 				max-height:327px;
 				overflow:auto;
-				margin-top: -6%;
-			max-width: 40cm;
+			
+			
 			}	
 			#gallery img
 			{
@@ -790,6 +844,8 @@
 			}	
 			.left-menu ul li a{
 				text-decoration: none;
+				font-weight: 700;
+				font-size: 20px;
 				color: #18567f;
 			}
 			.left-menu .fa-folder
@@ -819,14 +875,14 @@
 		.flower
 		{
 			width: 20%;
-			visibility: hidden;
+			
 		}
 		.city 
 		{
 		    overflow: auto;
 		    float: left;
 		    margin-left: 20%;
-		    margin-top: -6%;
+		   
 		    padding: 10px;
 		    max-width: 30%;
 		    display: inline-block;
@@ -844,12 +900,12 @@
 			left: 55%;
 	    top: 15%;
 			width: 9%;
-			visibility: hidden;
+		
 			right: 0;
 		}
 		#milkshake
 		{
-			visibility: hidden;
+			
 			right: 0;
 
 		}
@@ -865,6 +921,18 @@
 			position: absolute;
 			width: 35%;
 			bottom: 0
+		}
+		.fa-map-marker{
+			font-family: 'FontAwesome';	
+			
+
+		}
+		.location p{
+	font-size: 24px;
+    margin-right: -9%;
+    float: right;
+    font-weight: 500;
+
 		}
 
 		.back6 > img:last-of-type{
@@ -883,32 +951,39 @@
 		#mohito
 		{
 			width: 20%;
-			visibility: hidden;
+			
 			left: 0;
 
 		}
 
 		#mohito2 
 		{
-			width: 20%;
+			width: 23%;
 			top: 0%;
-			visibility: hidden;
+		
 			right: 0;
 		}
 		table, td
 		{
-			margin-left: 18px;
-			border-bottom: 1px solid #000;
-			font-size: 20px;
-			position: relative;
-			padding-bottom: 10px;
-			margin-top: -164px;
+			left: 0;
+			font-weight: 500;
+			
+    border-bottom: 1px solid #000;
+    font-size: 20px;
+    position: relative;
+    /* bottom: 117%; */
+    padding:10px;
+ 
 
 		}
-
+		table p{
+			    float: right;
+    margin-right: -17%;
+		}
+		
 		.containerf
 		{
-			width: 80%;
+			width: 76%;
 			margin: auto;
 			float: right;
 		}
@@ -927,11 +1002,12 @@
 		.location
 		{
 			display: inline-block;
-			font-family:Dosis;
+			font-family:'Dosis';
 		}
 		.block
 		{  
 			margin-left: 14%;
+			position: relative;
 		
 			/* display: table-caption; */
 			float: left;
@@ -939,10 +1015,12 @@
 		.block li 
 		{
 			list-style-type: none;
+			    margin-bottom: 6%
 		}
 		.block  a
 		{
 			margin-top: 2%;
+			font-weight: 500;
 		
 		
 			font-size: 24px;
@@ -959,7 +1037,13 @@
 		}
 		.txt
 		{
-			margin-top: 2%
+			float: right;
+    margin-top: 2%;
+    margin-right: -18%;
+		}
+		.pn{
+				float: right;
+    margin-right: 29%;
 		}
 		.mail
 		{
@@ -975,7 +1059,7 @@
 		aside
 		{
 			float: left;
-			margin-top: 12%;
+		
 			
 		}
 		
@@ -991,11 +1075,11 @@
 		iframe 
 		{
 			position: absolute;
-			top: 20%;
-			left: 283px;
-			width: 76% !important;
-			height:38% !important;
-			margin-top: 15%;
+    top: 23%;
+    left: 24%;
+    width: 74% !important;
+    height: 38% !important;
+    margin-top: 15%;
 		}
 
 
@@ -1006,7 +1090,7 @@
 
 		#listMenu
 		{
-			margin-top: -129px;
+			
 			float: left;
 			width: 100%;
 			display: flex;
@@ -1016,8 +1100,18 @@
 		.welcome
 		{
 			margin-top:0;
-			margin-bottom: 58px;
+			margin-bottom: 0;
 			width:21% !important;
+			float:left;
+			    font-family: "Dosis";
+			margin-right: 0 !important;
+			cursor: pointer;
+		}	
+		.welcomePop
+		{
+			margin-top:0;
+			margin-bottom: 0;
+			width:12% !important;
 			float:left;
 			    font-family: "Dosis";
 			margin-right: 0 !important;
@@ -1034,7 +1128,18 @@
 			margin-right: -38px;
 			margin-top: -39px;
 			font-weight: 700;
-			color: #000;
+			color: #18567f;
+		}
+		.fa-close{
+			 position: absolute;
+    font-family: 'FontAwesome';
+    text-decoration: none;
+    float: left;
+    right: 3%;
+    top: 4%;
+   
+    	color: #18567f;
+
 		}
 		.last_2chapters
 		{
@@ -1044,7 +1149,8 @@
 		position:fixed;
 		z-index:1;
 		width: 100%;
-		top:90%;
+		bottom:0;
+		visibility: hidden;
 		
 		}
 		
@@ -1070,6 +1176,7 @@
 			color:  #8f9296;
 			font-size: 14px;
 			margin-left: 3%;
+
 		}
 
 		.footerCentered .footerLinks
@@ -1124,8 +1231,8 @@
 		#content2 .social 
 		{
 		    position: absolute;
-		    top: 90%;
-			left: 35%;
+		bottom: 0;
+			left: 43%;
 		}
 
 		.madeby img{
@@ -1202,6 +1309,17 @@
 	font-weight: 100;
 	text-transform: uppercase;
 		}
+		iframe 
+				{
+					position: absolute;
+					top: 38%;
+					left: 20%;
+				
+					height: 28% !important;
+					margin-top: 15%;
+					margin-top: 15%;
+				}
+			
 	}
 			@media only screen and (max-width: 890px) and (min-width: 480px){
 				.back2 .content > div
@@ -1215,13 +1333,17 @@
 					font-size: 14px;
 
 				}
+				.button{
+					display: none;
+				}
 				.back4 > img{
 					margin-top:12%
 				}
 				.first-menu li a {
 	    font-size: 14px;
-	}
-				
+			}
+			
+
 				 #menulist
 			  {
 	     		 margin-left: 16px;
@@ -1231,6 +1353,7 @@
 			    position: relative;
 			    padding-bottom: 0px;
 			    font-weight: 700;
+			    z-index: 0;
 			}
 			.back3 .content > div:nth-of-type(2)	{
 					margin-top: 40px;
@@ -1238,19 +1361,15 @@
 	.back3 .content > div:first-of-type,
 				.back3 .content > div:nth-of-type(2)	
 				{   
-					margin-top: 20px;
+					
 					font-size:2vh;
 					display:block;
 					width:80%;
-					float:right;
-					margin-right:12%;
+					    float: left;
+    margin-left: 12%
 				}	
 				
-				.back3 .content  div.button
-				{
-					margin-left:23%;
-					width:200px;
-				}	
+					
 				.back3 .content  > img
 				{
 					min-width: 200px; 
@@ -1264,7 +1383,7 @@
 					{
 						width: 200px; 
 						float: left;
-						margin-top: 13%;
+					
 					}
 				.back4 .content > .welcome > ul li
 					{
@@ -1280,10 +1399,11 @@
 					}
 				.back4 > .content > #gallery
 					{
-						margin-top: -6%;
+					
 						float: left;
 						width: auto;
 						overflow: visible;
+						z-index: 0;
 
 					}
 				.back4 > .content > #gallery  img
@@ -1294,10 +1414,13 @@
 				 .brand
 				{
 					 left: 0;
-						width: 41%;
+						width: 39%;
 					
 				}
-			
+				.button2{
+					width: 66%;
+				}
+
 
 				.containerf
 				 {
@@ -1320,10 +1443,12 @@
 					padding-bottom: 10px;
 					margin-top: -100px;
 				}
+
+
 				.monday
 				{
 					display: block;
-					margin-top: -8%;	
+					
 				}
 				.monday p
 				{
@@ -1335,75 +1460,62 @@
 				}
 				.location
 				{
-					margin-top: 0;
-					margin-right: -57%;
+					margin-top: 8%;
+					    margin-right: -74%;
 				}
-				.location a
+				.location p
 				{
 					font-weight: 300;
+					font-size: 18px;
 				}
 				.block
 				{
-					margin-left: 60%;
+					margin-left: 80%;
 					/* margin-right: 42%; */
-					margin-top: 0;
+					margin-top: 8%;
 					/* float: right; */
 					margin-right: -3%;
 				}
+				.block a {
+  
+    font-size: 17px;
+}
 				
 				.social 
 			{
 				text-align: center;
-				top: -100px;
+				
 				position: relative;
 				display: block;
 				width:auto;
 				margin-left: 0;
 			}
-			iframe 
-				{
-					position: absolute;
-					top: 45%;
-					left: 20%;
-				
-					height: 28% !important;
-					margin-top: 15%;
-					margin-top: 15%;
-				}
-			footer img
-			{
-				margin-right:-23px;
-			}
+			
 			#content2 .social img 
 			{
 				width:auto;
 			margin-top: 	4%;
 			}	
 			#content2 .social
-			{    left: 29%;
+
+			{    left: 36%;
+				
 		
 			}
-
-			.firstt{
-				margin-right: 80%;
-    top: 84%;
+			input[type=button] {
+    top: 51%;
     display: inline-block;
-    /* float: left; */
-    /* left: 56%; */
-    /* vertical-align: top; */
-    position: absolute;
-    width: 45%;
-    /* cursor: pointer; */
-    color: #fff;
-    border: 1px solid #fff;
-    /* padding: 8px; */
-    background-color: none;
-    font-size: 30px;
-}
+    right: 23%;
+
+		}
 			}
 			
 	@media only screen and (max-width:680px)
 			{
+
+				.button{
+					display: none;
+				}
 				.menu
 				{	
 					display:none;
@@ -1414,7 +1526,10 @@
 
 					background-color: #fff;
 				}
-
+				.navigation{
+					position: static;
+					background-color: #fff;
+				}
 				.menu li {
 					
 					margin-right: 35%;
@@ -1436,6 +1551,25 @@
 					font-size: 18px;
 					margin: 10px;
 				}
+				.navigation li
+		{	
+
+			display: block;
+			text-transform: uppercase;
+			margin-right: 11%;
+			text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
+		}
+
+		.navigation li a
+		{
+			font-size: 22px;
+			
+
+		}
+		.fa-tripadvisor, .fa-facebook, .fa-instagram, .fa-twitter {
+		font-family: 'FontAwesome';
+		  color: #18567f;
+	}
 
 				#content2 .social img 
 				{
@@ -1444,7 +1578,7 @@
 				
 				.mobile_menu
 				{
-					display:inline-block;
+					display:block;
 					color:white;
 					font-weight:bold;
 					border:3px solid white;
@@ -1468,10 +1602,7 @@
 					font-size:16px;
 					z-index: 10;
 				}	
-				#content2 .social 
-				{
-					top: 80%;
-				}
+				
 				.city{
 					max-width: 100%;
 				}
@@ -1482,13 +1613,20 @@
 			{
 				margin-top: 5vh;
 			}
+			#listMenu {
+    margin-top: 4%;}
+			.back3 .content > .text {
+    margin-top: 7%;
+}
 
 			#menulist 
 			{
-			    margin-top: 36%;
+			    margin-top: 52%;
 			    padding: 0;
 			}
-
+.fa-f{
+	font-family: 'FontAwesome';
+}
 			
 
 			.monday
@@ -1501,7 +1639,7 @@
 			{
 				#listMenu 
 			{
-			    margin-left: -29px;
+		
 			    float: left;
 			    font-size: 18px;
 			    display: block;
@@ -1543,7 +1681,21 @@
 			    color: inherit;
 			        margin-right: 1%;
 
+			  
+    margin-top: -16%;
+
 			  }
+			 iframe 
+				{
+					position: absolute;
+    top: 38%;
+    left: 9%;
+    height: 44% !important;
+    margin-top: 15%;
+    margin-top: 15%;
+				}
+			
+
 			  
 				
 
@@ -1586,9 +1738,13 @@
 			}
 			#panel{
 				    font-weight: 700;
-				    margin-top: -12%;
-				    float: left;
+				    margin-top: -2%;
+				    				    float: left;
 				}
+				#panel a{
+					text-decoration: none;
+				}
+
 				#panel p
 				{
 					font-size: 25px;	
@@ -1639,8 +1795,11 @@
 					24% {transform:rotate(0deg);}
 					100% {transform:rotate(0deg);}
 				}
-				.containerf{
-					display: none
+				.location{
+					display: none;
+				}
+				.block{
+					display: none;
 				}
 				.brand
 				{
@@ -1682,7 +1841,21 @@
 
 
 		@media only screen and (max-width: 480px) and (min-width:10px) {
-
+				.fixed {
+	    position: fixed;
+	    z-index: 1;
+	    width: 100%;
+	    top: 83%;
+	    left: 29%;
+	}
+	#slide2	{
+		height: 130%;
+	}		
+	.madeby{
+		    width: 75%;
+	    left: 2%;
+	    bottom: -39px;
+	}
 				
 				.back2 .content > div 
 				{
@@ -1694,6 +1867,35 @@
 				.back2 .content > .social{
 					margin-left: 0%;
 				} 
+
+				input[type=button]
+				{
+
+				top: 70%;
+				left: 15%;
+				display: inline-block;
+				vertical-align: top;
+				/* right: 20%; */
+				/* float: left; */
+				
+				float: center;
+			position: absolute;	
+				cursor: pointer;
+				font-family: "Dancing Script"
+				color: #fff;
+				border: 1px solid #fff;
+				padding: 8px;
+				width: auto;
+				background-color: transparent;
+				font-size: 29px;
+				
+				}
+			.button2
+				{
+					    width: 57%;
+   						 /* left: 3%; */
+  						  font-size: 3vh
+				}
 				
 
 
@@ -1701,22 +1903,18 @@
 				.back3 .content > div:nth-of-type(2)	
 				{   
 					margin-top: 20px;
-					font-size:2vh;
+					font-size:5vw;
 					display:block;
 					width:80%;
 					float:right;
-					margin-right:12%;
+					margin-right:0;
 				}	
 				.back3 .content > div:nth-of-type(2)	{
 					margin-top: 40px;
 				}
 
 				
-				.back3 .content  div.button
-				{
-					margin-left:23%;
-					width:200px;
-				}	
+					
 				.back3 .content  > img
 				{
 					min-width: 200px; 
@@ -1761,7 +1959,7 @@
 				}
 
 				.back4 > .content > #gallery{
-					margin-top: -16%;
+					
 					float: left;
 					width: auto;
 					z-index: 0;
@@ -1776,24 +1974,10 @@
 					max-width: 88px;
 					max-height: 79px;
 				}
-				.firstt
-		{
-			margin-right: 80%;
-    top: 61%;
-    display: inline-block;
-    /* float: left; */
-    /* left: 56%; */
-    /* vertical-align: top; */
-    position: initial;
-    width: 81%;
-    /* cursor: pointer; */
-    color: #fff;
-    border: 1px solid #fff;
-    /* padding: 8px; */
-    background-color: none;
-    font-size: 22px;
-		}
 
+				
+		
+				
 				}
 			
 
