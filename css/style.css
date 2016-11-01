@@ -46,7 +46,7 @@
 		background-attachment: fixed;
 		width:100%;
 		min-height: 100vh;
-		background-size:100% 100%;
+
 	
 
 		position: relative;
@@ -133,12 +133,12 @@
 	#slide1
 	{
 		background-image:url("../images/background.png");
-	;
+	
 	}
 	/******************************SLIDE 2 *******************************/
 	#slide2
 	{
-		background:url("../images/background2.png");
+		background-image:url("../images/background2.png");
 		
 		
 	}
@@ -147,9 +147,11 @@
 	/****************************** SLIDE 3*******************************/
 	#slide3
 	{
-		background:url("../images/background3.png") ;
-		width: 100%;
-		height: 100%;
+		background-image:url("../images/background3.png") ;
+	
+	
+
+	
 	
 	}
 
@@ -157,32 +159,34 @@
 
 	#slide4
 	{
-		background:url("../images/background3.png") ;
+		background-image:url("../images/background3.png") ;
+		
+
 			
 	}
 
 	#slide5
 	{
-		background:url("../images/background3.png") ;
-		width: 100%;
-		height: 100%;
+		background-image:url("../images/background3.png") ;
+				
+	
 		
 	}
 	#slide6
 	{
-		background:url("../images/background3.png") ;
-		width: 100%;
-		height: 100%;
+		background-image:url("../images/background3.png") ;
+	
 	}
 	#slide7
 	{
-		background:url("../images/background3.png") ;
+		background-image:url("../images/background3.png") ;
 		width: 100%;
 		min-height: 100vh;
 		overflow: hidden;
 	
 	
 	}
+
 
 
 	.row
@@ -196,17 +200,7 @@
 		position: absolute;
 		bottom: 0
 	}
-	.back7{
 
-
-	}
-
-	.back, .back2,  .back6 , .back4, .back3, .back5
-	{
-		
-		height: 100%;
-		margin:0;	
-	}
 	#content2 div.welcome:nth-of-type(2)
 	{
 		width:4vw;
@@ -223,7 +217,7 @@
 	 .back3, .back4, .back5, .back6, .back7
 	{
 		color:#18567f;
-		position:relative;
+	
 		}	
 	header
 	{
