@@ -164,16 +164,16 @@
 	*******************************/
 	#slide1
 	{
-		background-image:url("../images/background.png");
-	
+		background-image:url("../images/background1.png");
+		background-size: 100% 200%;
+		background-position: left top;
 	}
 	/******************************SLIDE 2 *******************************/
 	#slide2
 	{
-		background-image:url("../images/background2.png");
-
-		
-		
+		background-image:url("../images/background1.png");
+		background-size: 100% 200%;
+		background-position: left bottom;
 	}
 
 
