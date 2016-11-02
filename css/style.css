@@ -186,6 +186,7 @@
 	#slide4
 	{
 		background-image:url("../images/background3.png") ;
+
 		
 
 			
@@ -331,6 +332,7 @@
 		width:724px;
 		float:right;
 		padding-left:24px;
+
 	}
 
 
@@ -540,6 +542,8 @@
 		overflow: auto;
 		
 	}
+
+
 	.newspaper1{
 		margin-top: -4%;
 	}
@@ -597,6 +601,7 @@
 	{
 		margin-left:5%;
 		margin-left: 22%;
+
 	}	
 	.back3 .content > .text
 	{margin-top: 0;
@@ -689,6 +694,7 @@
 	 {
 		margin-left: 21.5%;
 		margin-right: 20px;
+		;
 	}
 	.back4 .content > 
 	 {
@@ -764,7 +770,7 @@
 	{
 		list-style-type: none;
 		margin: 4px;
-		padding: 2px;
+		padding: 7px;
 	}
 
 
@@ -1254,17 +1260,6 @@
 	}
 	@media only screen and (max-width: 890px) and (min-width: 480px)
 	{
-
-		.menu
-		{	
-			display:none;
-			position:fixed;
-			z-index:1;
-			top:90px;
-			left: 10px;
-
-			background-color: #fff;
-		}
 		.back2 .content > div
 		{
 		    width: auto;
@@ -1341,6 +1336,7 @@
 		.back4 > .content > #gallery
 		{
 			float: left;
+			height: auto;
 			width: auto;
 			overflow: visible;
 			z-index: 0;
@@ -1460,7 +1456,16 @@
 		.button{
 			display: none;
 		}
-		
+		.menu
+		{	
+			display:none;
+			position:fixed;
+			z-index:1;
+			top:90px;
+			left: 10px;
+
+			background-color: #fff;
+		}
 		.navigation{
 			position: static;
 			background-color: #fff;
@@ -1490,6 +1495,7 @@
 		{	
 
 			display: block;
+			margin-bottom: 10px;
 			text-transform: uppercase;
 			margin-right: 11%;
 			text-shadow: 0px 0px 2px rgba(150, 150, 150, 1);
@@ -1906,8 +1912,6 @@
 			width: auto;
 			z-index: 0;
 			height: auto;
-
-		
 
 
 		}
