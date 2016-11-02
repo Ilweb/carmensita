@@ -1256,6 +1256,13 @@
 			margin-top: 15%;
 			margin-top: 15%;
 		}
+
+		#slide4{
+			height: auto;
+		}
+		#content2{
+			overflow: hidden;
+		}
 			
 	}
 	@media only screen and (max-width: 890px) and (min-width: 480px)
@@ -1344,10 +1351,10 @@
 		}
 		.back4 > .content > #gallery  img
 		{ 
-			    width: calc(24% - 20px);
+			       width: calc(32% - 20px);
     height: auto;
     margin-right: 20px;
-       margin-bottom: 20px;
+    margin-bottom: 20px;
 		}
 	 #gallery  a:nth-of-type(4n) img
 		{ 
@@ -1444,9 +1451,9 @@
 		}
 		input[type=button] 
 		{
-		       top: 80%;
+		      top: 56%;
     display: inline-block;
-    right: 33%;
+    right: 15%;
 		}
 	}
 			
@@ -1923,6 +1930,9 @@
     margin-right: 10px;
        margin-bottom: 10px;
 		}
+		.footerCentered {
+  
+    margin-top: 20px;
 
 		
 
