@@ -16,7 +16,7 @@
 	{
 		position:fixed;
 		z-index:1;
-		width: 100%;
+		width: 94%;
 		top:30px;
 		
 	}
@@ -42,8 +42,16 @@
 
 	.first-menu li a
 	{
-		font-size: 20px;
+		font-size: 18px;
 			
+	}
+	
+	.navigation2{
+	visibility: hidden;
+	}
+
+	.navigation2 li{
+		margin-right: 4%;
 	}
 
 	.slide
@@ -53,11 +61,10 @@
 		height: 100%;
 		background-size: 100% 100%;
 
-	
-
 		position: relative;
 	
 	}
+
 
 	.button
 	{
@@ -106,6 +113,19 @@
 	  color: #FFF;  
 	}
 
+	.past-main {
+		margin: 10px ; */
+    float: right;
+
+    /* text-align: right; */
+    font-size: 15px;
+    width: 70%;
+    /* margin-right: -1%; */
+    color: #18567f;
+    right: 5%;
+}
+
+
 
 	.text span
 	{
@@ -123,9 +143,9 @@
 		padding: 15px;
 		display: inline-block;
 		font-size: 5vh;
-		left: 23%;
-		margin-right: 11%;
-		margin-bottom: 3%;
+		left: 24%;
+		margin-right: 21%;
+		margin-bottom: 6px;
 		/* margin: 23px 141px; */
 		cursor: pointer;
 		width: 25%;
@@ -198,7 +218,7 @@
 
 	.row
 	{
-		margin-top: 7%;
+		margin-top: 5%;
 	}
 
 	.second_decor
@@ -283,7 +303,7 @@
 	input[type=button] 
 	{
 
-		top: 26%;
+		top: 24%;
 		display: inline-block;
 		right: 3%;
 		float: right;
@@ -411,7 +431,7 @@
 		display: inline-block;
 		position: absolute;
 		right: 0;
-		bottom: 6%;
+		bottom: 10px;
 	}
 
 	.star img
@@ -478,7 +498,7 @@
 		font-family:'Dancing Script';
 		position:relative;
 		margin-top: 2%;
-	    margin-bottom: 5%;
+	    margin-bottom: 55px;
 		position: relative;
 		float: left;
 		margin-right: -200px;
@@ -519,6 +539,9 @@
 		column-gap: 66px;
 		overflow: auto;
 		
+	}
+	.newspaper1{
+		margin-top: -4%;
 	}
 	#leaf
 	{
@@ -562,7 +585,7 @@
 		width: 15%;
 		position: absolute;
 		right: 5%;
-		bottom: 2%;
+		bottom: 5px;
 	}
 
 	/******************* page 3*********************************/
@@ -576,19 +599,25 @@
 		margin-left: 22%;
 	}	
 	.back3 .content > .text
-	{
-		margin-top: 4%;
-		margin-bottom: 5%;
-		width: 30%;
-		display: inline-block;
-		font-family:'Dosis',sans-serif;
-		color: #18567f;
+	{margin-top: 0;
+    margin-bottom: 10px;
+    width: 34%;
+    display: inline-block;
+    font-family: 'Dosis',sans-serif;
+    color: #2d5979;
+    /* float: left; */
+    font-weight: 500;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    font-size: 20px;
+		
+	
 	}	
 	.back3 .content > div:first-of-type,
 	.back3 .content > div:nth-of-type(3)
 	{
-		margin-left: 20.5%;
-		margin-right: 20px;
+		    margin-left: 21.5%;
+    margin-right: 8%;
 	}
 
 	.back3 .menu div
@@ -613,20 +642,8 @@
 		bottom: 0;
 	}	
 
-	.text 
-	{
-		float: left;
-		max-width: 550px;
-		font-weight: 500;
-		margin: 10px;
-		padding: 10px;
-		display: inline-block;
-	}
 
-	.text p
-	{
-		margin-top: -70px;
-	}
+
 	#salad2
 	{
 		float: right;
@@ -664,6 +681,8 @@
 		width: 100%;
 	}
 
+	
+
 	/************************ page 4*******************************/
 
 	.back4 .content > div:first-of-type, .back3 .content > div:nth-of-type(3)
@@ -673,7 +692,7 @@
 	}
 	.back4 .content > 
 	 {
-		margin-bottom: 5%;
+		margin-bottom: 10px;
 		width: 30%;
 		display: inline-block;
 		font-family: 'Dosis',sans-serif;
@@ -709,11 +728,18 @@
 		overflow:auto;
 	}	
 	#gallery img
-	{
-		max-width: 200px;
-		max-height: 120px;
-		margin-left: 20px;
+	{	
+		margin-bottom: 10px;
+		width: calc(25% - 60px);
+		height: auto;
+		margin-right: 20px;
 	}
+	 img:nth-of-type(4n+0){
+	 		margin-right: 0;
+
+	}
+
+
 	::-webkit-scrollbar {
 	width: 12px;
 	}
@@ -839,7 +865,7 @@
 	.location p
 	{
 		font-size: 24px;
-		margin-right: -9%;
+		
 		float: right;
 		font-weight: 500;
 	}
@@ -891,7 +917,7 @@
 		
 	.containerf
 	{
-		width: 76%;
+		    width: calc(75% - -35px);
 		margin: auto;
 		float: right;
 	}
@@ -922,7 +948,7 @@
 	.block li 
 	{
 		list-style-type: none;
-	    margin-bottom: 6%
+	    margin-bottom: 10px;
 	}
 	.block  a
 	{
@@ -954,7 +980,7 @@
 	.mail
 	{
 		margin-right: -8%;
-		margin-bottom: -7%;
+		margin-bottom: -12px;
 	}
 	.location
 	{
@@ -1311,8 +1337,12 @@
 		}
 		.back4 > .content > #gallery  img
 		{ 
-			max-width: 114px;
-			max-height: 140px;
+			    width: calc(25% - 60px);
+    height: auto;
+		}
+		.back4 > .content > #gallery  img:nth-of-type(4n+0)
+		{ 
+			margin-right: 0;
 		}
 		 .brand
 		{
@@ -1878,8 +1908,8 @@
 		}
 		.back4 > .content > #gallery  img
 		{
-			max-width: 88px;
-			max-height: 79px;
+			width: calc(42% - 60px);
+			height: auto;
 		}
 
 		
