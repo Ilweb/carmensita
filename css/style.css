@@ -441,6 +441,7 @@
 		position: absolute;
 		right: 0;
 		bottom: 10px;
+		z-index: 0;
 	}
 
 	.star img
@@ -1504,6 +1505,7 @@
 		      top: 56%;
     display: inline-block;
     right: 15%;
+    z-index: 1;
 		}
 	}
 			
