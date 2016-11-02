@@ -724,17 +724,17 @@
 		width:75%;
 		z-index:2;
 		position:relative;
-		max-height:327px;
+		height: calc(100vh - 220px);
 		overflow:auto;
 	}	
 	#gallery img
 	{	
-		margin-bottom: 10px;
-		width: calc(25% - 60px);
+		margin-bottom: 50px;
+		width: calc(25% - 50px);
 		height: auto;
-		margin-right: 20px;
+		margin-right: 50px;
 	}
-	 img:nth-of-type(4n+0){
+	 #gallery a:nth-of-type(4n) img{
 	 		margin-right: 0;
 
 	}
@@ -1254,6 +1254,17 @@
 	}
 	@media only screen and (max-width: 890px) and (min-width: 480px)
 	{
+
+		.menu
+		{	
+			display:none;
+			position:fixed;
+			z-index:1;
+			top:90px;
+			left: 10px;
+
+			background-color: #fff;
+		}
 		.back2 .content > div
 		{
 		    width: auto;
@@ -1337,13 +1348,16 @@
 		}
 		.back4 > .content > #gallery  img
 		{ 
-			    width: calc(25% - 60px);
+			    width: calc(24% - 20px);
     height: auto;
+    margin-right: 20px;
+       margin-bottom: 20px;
 		}
-		.back4 > .content > #gallery  img:nth-of-type(4n+0)
+	 #gallery  a:nth-of-type(4n) img
 		{ 
 			margin-right: 0;
 		}
+		
 		 .brand
 		{
 			left: 0;
@@ -1434,9 +1448,9 @@
 		}
 		input[type=button] 
 		{
-		    top: 51%;
-		    display: inline-block;
-		    right: 23%;
+		       top: 80%;
+    display: inline-block;
+    right: 33%;
 		}
 	}
 			
@@ -1446,16 +1460,7 @@
 		.button{
 			display: none;
 		}
-		.menu
-		{	
-			display:none;
-			position:fixed;
-			z-index:1;
-			top:90px;
-			left: 10px;
-
-			background-color: #fff;
-		}
+		
 		.navigation{
 			position: static;
 			background-color: #fff;
@@ -1900,16 +1905,19 @@
 			float: left;
 			width: auto;
 			z-index: 0;
-			height: 250px;
+			height: auto;
 
-			overflow: auto;
+		
 
 
 		}
 		.back4 > .content > #gallery  img
 		{
-			width: calc(42% - 60px);
+			width: calc(49% - 10px);
 			height: auto;
+
+    margin-right: 10px;
+       margin-bottom: 10px;
 		}
 
 		
