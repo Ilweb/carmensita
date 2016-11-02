@@ -64,8 +64,11 @@
 		position: relative;
 	
 	}
+	#slide1 {
+		background-attachment: scroll;
+	}
 	#slide2{
-		background-attachment: local;
+		background-attachment: scroll;
 	}
 
 
