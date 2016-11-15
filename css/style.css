@@ -20,7 +20,9 @@
 		top:30px;
 		
 	}
-	
+	.active{
+		color: #fff;
+	}
 	
 	.first-menu li:last-of-type{
 		margin-right: 0;
@@ -28,10 +30,14 @@
 
 	.first-menu li a:hover
 	{
-
+z-index: 1;
 		cursor:pointer;
 		color: #fff;
 	}
+	.first-menu li a.active{
+		color: #fff;
+	}
+
 	.first-menu li
 	{	
 		text-transform: uppercase;
@@ -391,10 +397,17 @@
 	}
 	.madeby
 	{
-		float: right;
-		position: absolute;
-		right:0;
-		bottom:0;
+		    text-transform: uppercase;
+    float: right;
+    position: absolute;
+    right: 56px;
+    bottom: 0;
+    color: #000;
+	}
+	.madeby a{
+		text-decoration: none;
+		color: #000;
+		font-weight: 700;
 	}
 	.madeby1 
 	{
@@ -779,6 +792,10 @@
 		list-style-type: none;
 		margin: 4px;
 		padding: 7px;
+		cursor: pointer;
+	}
+	.menuitem:active{
+		color: #fff;
 	}
 
 
@@ -1041,7 +1058,7 @@
 	  
 	}
 	
-	.welcome
+	.welcome, .welcomee
 	{
 		margin-top:0;
 		margin-bottom: 0;
@@ -1049,8 +1066,11 @@
 		float:left;
 		font-family: "Dosis";
 		margin-right: 0 !important;
-		cursor: pointer;
+		
 	}	
+	img.welcome  {
+		cursor: pointer;
+	}
 	.welcomePop
 	{
 		margin-top:0;
@@ -1378,19 +1398,19 @@
 			display: block;
 
 		}	
-		.back4 .content > .welcome > ul
+		.back4 .content > .welcomee>  ul
 		{
 			width: 200px; 
 			float: left;
 		
 		}
-		.back4 .content > .welcome > ul li
+		.back4 .content > .welcomee > ul li
 		{
 			margin-right: 20px;
 			width: 370px;
 			margin-bottom: 3px
 		}	
-		.back4 .content > .welcome > ul li a
+		.back4 .content > .welcomee > ul li a
 		{
 			font-size: 20px;
 			font-weight: 700;
@@ -1946,19 +1966,19 @@
 		    padding: 0;
 		    z-index: 0;
 		}
-		.back4 .content > .welcome > ul
+		.back4 .content > .welcomee > ul
 		{
 			width: 200px; 
 			float: left;
 			margin-top: 101%;
 		}
-		.back4 .content > .welcome > ul li
+		.back4 .content > .welcomee > ul li
 		{
 			margin-right: 20px;
 			width: 240px;
 			margin-bottom: 3px
 		}	
-		.back4 .content > .welcome > ul li a
+		.back4 .content > .welcomee > ul li a
 		{
 			font-size: 15px;
 			font-weight: 700;

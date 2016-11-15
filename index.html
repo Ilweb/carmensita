@@ -136,7 +136,7 @@
 						 <a class="list-group-item" href="#"><span class=" fa-twitter 	" aria-hidden="true"></span></a>
 						
 					</div>
-						<img class="madeby" src="images/website.png">
+						<div class="madeby"> website <a href="http://www.bydanish.com "> by Danish</a></div>
 				</footer>
 			</div><!--end contwnt-->
 		</div><!--end back3-->
@@ -158,13 +158,13 @@
 					</div><!--end menu other-->	
 					<h2>Gallery</h2>
 				</header>
-				<div class="welcome left-menu"><!--welcome menu-->
+				<div class="welcomee left-menu"><!--welcome menu-->
 					<ul id="menulist">
-						<li class="menuitem"><a >OUR CLIENTS AND FRIENDS <i class="fa-opened">&#xf07b;</i></a></li>
+						<li class="menuitem">OUR CLIENTS AND FRIENDS <i class="fa-opened">&#xf07b;</i></li>
 
-						<li class="menuitem"><a href="#">TAPAS <i class="fa-opened">&#xf07b;</i></a></li>
-						<li class="menuitem"><a href="#">THE RESTAURANT <i class="fa-opened">&#xf07b;</i> </a></li>
-						<li class="menuitem"><a href="#">SPAIN <i class="fa-opened">&#xf07b;</i> </a></li>
+						<li class="menuitem">TAPAS <i class="fa-opened">&#xf07b;</i></li>
+						<li class="menuitem">THE RESTAURANT <i class="fa-opened">&#xf07b;</i> </li>
+						<li class="menuitem">SPAIN <i class="fa-opened">&#xf07b;</i> </li>
 					</ul>
 				</div><!--end welcome-->
 				<div id="gallery" ><!--gallery-->
@@ -460,6 +460,32 @@ $(window).on('scroll',function(){
 	        $("#panel").toggle();
 	    });
 	});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    $('.nav li').click(function(event){
+       
+        $('.active').removeClass('active');
+
+  
+        $(this).addClass('active');  
+
+        event.preventDefault();
+    });
+});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+    $('.menuitem ').click(function(event){
+       
+        $('.active').removeClass('active');
+
+  
+        $(this).addClass('active');  
+
+        event.preventDefault();
+    });
+});
 	</script>
 
 
