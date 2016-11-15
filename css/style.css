@@ -232,14 +232,15 @@ z-index: 1;
 
 	.row
 	{
-		margin-top: 5%;
+		margin: 5% 5% 5% 0;
 	}
 
 	.second_decor
 	{
 		float: left;
-		position: absolute;
-		bottom: 0
+		position: fixed;
+		bottom: 0;
+		z-index: 1;
 	}
 
 	#content2 div.welcome:nth-of-type(2)
@@ -299,6 +300,7 @@ z-index: 1;
 		color:white;
 		display:inline-block;
 		vertical-align:top;
+
 	}
 	#logo-stuff
 	{
@@ -353,6 +355,7 @@ z-index: 1;
 	{
 		font-size:60px;
 		width: 26%;
+		margin-left: 3%;
 	}
 
 	
@@ -402,7 +405,13 @@ z-index: 1;
     position: absolute;
     right: 56px;
     bottom: 0;
-    color: #000;
+    color: #fff;
+    font-family: 'Dosis';
+	}
+	.madeby img{
+		width: 60%;
+		cursor: pointer;
+		    vertical-align: bottom;
 	}
 	.madeby a{
 		text-decoration: none;
@@ -418,11 +427,14 @@ z-index: 1;
 
 	#first_frame
 	{
-		position:static;
-		top:0;
-		float:right;
-		vertical-align: top;
-	}
+	position: fixed;
+	z-index: 1;
+    top: 37px;
+    float: right;
+    right: 3%;
+    vertical-align: top;
+   
+   }
 
 	#first_framee
 	{
@@ -445,16 +457,20 @@ z-index: 1;
 	.welcome img
 	{
 		cursor: pointer;
+
 	}
 
 	.star
 	{
 		float: right;
-		display: inline-block;
+		
 		position: absolute;
 		right: 0;
 		bottom: 10px;
-		z-index: 0;
+		z-index:0;
+	}
+	.gallery2{
+		display: none;
 	}
 
 	.star img
@@ -540,6 +556,13 @@ z-index: 1;
 	{
 		top: 10%;
 	}
+	#leaf {
+		position: absolute;
+		
+	}
+	.leafHidden{
+		visibility: hidden;
+	}
 
 	.newspaper p
 	{
@@ -565,16 +588,11 @@ z-index: 1;
 	}
 
 
+
 	.newspaper1{
 		margin-top: -4%;
 	}
-	#leaf
-	{
-		float: left;
-		display: inline-block;
 	
-		right: 0;
-	}
 	.brand
 	{
 		position:absolute;
@@ -594,15 +612,18 @@ z-index: 1;
 		vertical-align: top;
 		font-size: 1.2vw;
 		font-family: Dosis;
-		font-weight: bold;
+		font-weight: 500;
 		margin-right: 16%;
 		text-align:left;
-		color: #567993;
+		color: #18567f;
 	}	
+	#slide2 h3{
+		color: #18567f;
+	}
 
 	.back2 .content h3
 	{
-		color:#567993;
+		color:#18567f;
 	}
 
 	#sea
@@ -745,26 +766,33 @@ z-index: 1;
 		top: 10%;
 		right: 10%;
 	}
+	.gallery3{
+		display: none;
+	}
+	.gallery4{
+		display: none;
+	}
 
-	#gallery
+	#gallery, .gallery2, .gallery3, .gallery4
 	{
 		width:75%;
-		z-index:2;
+	
 		position:relative;
 		height: calc(100vh - 220px);
 		overflow:auto;
 	}	
-	#gallery img
+	#gallery img, .gallery2 img, .gallery3 img, .gallery4 img
 	{	
 		margin-bottom: 50px;
 		width: calc(25% - 50px);
 		height: auto;
 		margin-right: 50px;
 	}
-	 #gallery a:nth-of-type(4n) img{
+	 #gallery a:nth-of-type(4n) img, .gallery2 a:nth-of-type(4n) img, .gallery3 a:nth-of-type(4n) img, .gallery4 a:nth-of-type(4n) img{
 	 		margin-right: 0;
+	 }
 
-	}
+	
 
 
 	::-webkit-scrollbar {
@@ -855,11 +883,12 @@ z-index: 1;
 	    float: left;
 	    margin-left: 20%;
 	    padding: 10px;
-	    max-width: 30%;
+	    max-width: 35%;
 	    display: inline-block;
 	    position: relative;
 	    font-family: "Dosis";
 	    color: #18567f;	
+	    font-weight: 500
 	}
 	#mufin
 	{
@@ -1068,8 +1097,33 @@ z-index: 1;
 		margin-right: 0 !important;
 		
 	}	
+	.welcome
+	{
+		margin-top:0;
+		margin-bottom: 0;
+		width:21% !important;
+		float:left;
+		font-family: "Dosis";
+		margin-right: 0 !important;
+
+
+		
+	}	
 	img.welcome  {
 		cursor: pointer;
+		visibility: hidden;
+		
+
+	}
+	#fixedLogo{
+    float: left;
+    position: fixed;
+    top: 3%;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    cursor: pointer;
+
 	}
 	.welcomePop
 	{
@@ -1198,10 +1252,7 @@ z-index: 1;
 		left: 43%;
 	}
 
-	.madeby img
-	{
-		width: 15%;
-	}
+	
 
 
 	/***********************media query *************/
