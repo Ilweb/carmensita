@@ -598,17 +598,26 @@ var animatingup = false;
 var animatingdown = false;
 	
 $(document).ready(function() {
+	if($(window).width() < 500){
+	return;
+}
 	resizeDiv();
 
 });
 
 window.onresize = function(event) {
+	if($(window).width() < 500){
+	return;
+}
 	resizeDiv();
 	scrolltocurrent();
 }
 
 $(window).bind('mousewheel DOMMouseScroll', function(event) {
 	
+if($(window).width() < 500){
+	return;
+}
 	if (animatingup==true) { 
 	 return;
 	  }
@@ -620,6 +629,7 @@ $(window).bind('mousewheel DOMMouseScroll', function(event) {
 	nextslide = currentslide + 1; if (nextslide > slides) { nextslide = slides; }
 	prevslide = currentslide - 1; if (prevslide < 1) { prevslide = 1; }
 		
+	
 	
 	if (animatingup == false) {
 		if ($(window).scrollTop()+$(window).height()>=$("#slide"+(nextslide)).offset().top+1) {
@@ -633,7 +643,8 @@ $(window).bind('mousewheel DOMMouseScroll', function(event) {
 			}
 		}
 	}
-	
+
+
 	if (animatingdown == false) {
 		if ($(window).scrollTop()<=$("#slide"+(currentslide)).offset().top-1) {
 			if (prevslide < currentslide) {
@@ -654,6 +665,9 @@ function scrolltocurrent() {
 }
 
 function resizeDiv() {
+	if($(window).width() < 500){
+	return;
+}
 	vpw = $(window).width();
 	vph = $(window).height();
 	$('.slide').css({'min-height': vph + 'px'});
