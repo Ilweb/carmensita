@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<div class="slide" id="slide1" data-slide="1" >
+	<div class="slide " id="slide1" data-slide="1" >
 		<div class="back"><!--back-->
 			<div class="content"><!--content-->
 				<header>
@@ -47,8 +47,8 @@
 					<div class="firstt"><input type="button" class="btn fa-input" value="What is Going tapas&#xf103"></div>
 				</div>
 			</div><!--end content-->
-			<div class="star">
-				<img src="images/star.png"  data-stellar-ratio="3" data-stellar-vertical-offset="-2"   alt="">
+			<div class="star"  data-stellar-ratio="3" data-stellar-vertical-offset="-5" >
+				<img src="images/star.png"    alt="">
 			</div>
 			<div class="madeby">website<a href="http://www.bydanish.com" target="_blank"><img src="images/website.png" alt="" /></a></div>
 			<img class="second_decor" src="images/decor_2.png">
@@ -390,6 +390,84 @@
 
 <script src="js/lightbox.min.js"></script>
 <script>
+var slides = 6;
+var currentslide = 1;
+	if (document.location.hash)
+	{ 
+	 currentslide = parseInt(document.location.hash.replace('#', ''));
+	  }
+
+
+
+var nextslide = currentslide + 1; if (nextslide > slides) {nextslide = slides;}
+var prevslide = currentslide - 1; if (prevslide < 1) { prevslide = 1; }
+var animatingup = false;
+var animatingdown = false;
+	
+$(document).ready(function() {
+	resizeDiv();
+
+});
+
+window.onresize = function(event) {
+	resizeDiv();
+	scrolltocurrent();
+}
+
+$(window).bind('mousewheel DOMMouseScroll', function(event) {
+	
+	if (animatingup==true) { 
+	 return;
+	  }
+	if (animatingdown==true) {
+	  return; 
+	}
+	
+	nextslide = currentslide + 1; if (nextslide > slides) { nextslide = slides; }
+	prevslide = currentslide - 1; if (prevslide < 1) { prevslide = 1; }
+		
+	
+	if (animatingup == false) {
+		if ($(window).scrollTop()+$(window).height()>=$("#slide"+(nextslide)).offset().top+1) {
+			if (nextslide > currentslide) {
+				var p2 = $( "#slide"+(nextslide) );
+				var slideheight = p2.position().top;
+				animatingdown = true;
+				$('html, body').animate({ scrollTop: slideheight }, 600, function() { currentslide = nextslide; animatingdown = false; document.location.hash = currentslide;
+				});
+				return;
+			}
+		}
+	}
+	
+	if (animatingdown == false) {
+		if ($(window).scrollTop()<=$("#slide"+(currentslide)).offset().top-1) {
+			if (prevslide < currentslide) {
+				var p2 = $( "#slide"+(currentslide) );
+				var slideheight = p2.position().top-$(window).height();
+				animatingup = true;
+				$('html, body').animate({ scrollTop: slideheight }, 600, function() { currentslide = prevslide; animatingup = false; document.location.hash = currentslide;
+				});
+				return;
+			}
+		}
+	}
+});
+function scrolltocurrent() {
+	var p2 = $( "#slide"+(currentslide) );
+	var slideheight = p2.position().top;
+	$('html, body').animate({ scrollTop: slideheight }, 200);
+}
+
+function resizeDiv() {
+	vpw = $(window).width();
+	vph = $(window).height();
+	$('.slide').css({'min-height': vph + 'px'});
+}
+
+
+</script>
+<script>
 $(function () {
    $(window).stellar({
         horizontalScrolling: false,
@@ -554,7 +632,7 @@ $(window).on('scroll',function(){
 	    	$("	#fixedLogo").click(function(){
 	        $("html,body").animate( 
 	        {
-	        	scrollTop: $("#slide1").offset().top
+	        	scrollTop: $(".slide").offset().top
 	        } , 'slow' );
 	    });
 	</script>
@@ -635,7 +713,8 @@ $(window).on('scroll',function(){
           jQuery('.gallery3').hide();
     });
 });
-</script>-->
+</script>
+
 
 
 </body>
