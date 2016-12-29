@@ -110,28 +110,27 @@ get_header();
 				<div class="text">
 					<?php echo apply_filters('the_content', $page->post_content); ?>
 				</div>
-				<a  class=" activator button2 fa-input2" id="activator" >Menu in English   &#xf0f5</a>
+				<?php
+				$page = get_page_by_path('menu/spanish');
+				?>
+				<a  class=" activator button2 fa-input2" id="activator" ><?php echo $page->post_title; ?>   &#xf0f5;</a>
 				 <div class="overlay" id="overlay" style="display:none;"></div>
         <div class="box" id="box">
             <a class="boxclose" id="boxclose"><i class="fa-close fa-2x"></i></a>
             	<img class="welcomePop" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt="">
-			<?php
-			$page = get_page_by_path('menu/spanish');
-			?>
             <h2><?php echo $page->post_title; ?></h2>
 		<div id="listMenu" >
 		<?php echo apply_filters('the_content', $page->post_content); ?>
         </div>
         </div>
-
-				<a  class="activator button2 fa-input2" id="activator2" >Lista de platos   &#xf0f5</a>
-				<div class="overlay" id="overlay" style="display:none;"></div>
-        <div class="box" id="box">
-            <a class="boxclose" id="boxclose"><i class="fa-close fa-2x"></i></a>
+		<?php
+		$page = get_page_by_path('menu/english');
+		?>
+				<a  class="activator button2 fa-input2" id="activator2" ><?php echo $page->post_title; ?>   &#xf0f5;</a>
+				<div class="overlay" id="overlay2" style="display:none;"></div>
+        <div class="box" id="box2">
+            <a class="boxclose" id="boxclose2"><i class="fa-close fa-2x"></i></a>
             	<img class="welcomePop" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png">
-            <?php
-			$page = get_page_by_path('menu/english');
-			?>
             <h2><?php echo $page->post_title; ?></h2>
 		<div id="listMenu" >
 		<?php echo apply_filters('the_content', $page->post_content); ?>
@@ -295,15 +294,15 @@ get_header();
 	 
             $(function() {
                 $('#activator2').click(function(){
-                	$('#box').toggle('show');
-                    $('#overlay').fadeIn('fast',function(){
-                        $('#box').animate({'top':'0'},500);
+                	$('#box2').toggle('show');
+                    $('#overlay2').fadeIn('fast',function(){
+                        $('#box2').animate({'top':'0'},500);
                     });
                 });
-                $('#boxclose').click(function(){
-                	$('#box').hide();
-                    $('#box').animate({'top':'-200px'},500,function(){
-                        $('#overlay').fadeOut('fast');
+                $('#boxclose2').click(function(){
+                	$('#box2').hide();
+                    $('#box2').animate({'top':'-200px'},500,function(){
+                        $('#overlay2').fadeOut('fast');
                     });
                 });
 
