@@ -831,7 +831,7 @@ z-index: 1;
 		display: none;
 	}
 
-	#gallery, .gallery2, .gallery3, .gallery4
+	.gallery
 	{
 		width:75%;
 	
@@ -839,14 +839,14 @@ z-index: 1;
 		height: calc(100vh - 220px);
 		overflow:auto;
 	}	
-	#gallery img, .gallery2 img, .gallery3 img, .gallery4 img
+	.gallery img
 	{	
 		margin-bottom: 50px;
 		width: calc(25% - 50px);
 		height: auto;
 		margin-right: 50px;
 	}
-	 #gallery a:nth-of-type(4n) img, .gallery2 a:nth-of-type(4n) img, .gallery3 a:nth-of-type(4n) img, .gallery4 a:nth-of-type(4n) img{
+	 .gallery a:nth-of-type(4n) img {
 	 		margin-right: 0;
 	 }
 

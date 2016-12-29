@@ -171,121 +171,45 @@ get_header();
 						
 						<img class="welcome" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt=""/>
 					</div><!--end menu other-->	
-					<h2>Gallery</h2>
+					 <?php
+					$page = get_page_by_path('gallery');
+					?>
+					<h2><?php echo $page->post_title; ?></h2>
 				</header>
 				<div class="welcomee left-menu"><!--welcome menu-->
-					<ul id="menulist"> 
-						<li class=" menuitem clients active">OUR CLIENTS AND FRIENDS <i class="fa-opened">&#xf07b;</i></li>
-
-						<li class="menuitem tapas">TAPAS <i class="fa-opened">&#xf07b;</i></li>
-						<li class="menuitem restourant">THE RESTAURANT <i class="fa-opened">&#xf07b;</i> </li>
-						<li class="menuitem spain">SPAIN <i class="fa-opened">&#xf07b;</i> </li>
+					<ul id="menulist">
+					<?php
+					$pages = get_pages( array( 'child_of' => $page->ID) );
+					foreach ($pages as $p)
+					{
+						?>
+						<li id="g<?php echo $p->ID ?>" class="menuitem"><?php echo $p->post_title; ?> <i class="fa-opened">&#xf07b;</i></li>
+						<?php
+					}
+					?>
 					</ul>
 				</div><!--end welcome-->
-				<div id="gallery" ><!--gallery-->
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="pngimages/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
-
-
-					
-				</div><!--end gallery-->
-				<div class=" gallery2" ><!--gallery-->
-					
-				
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
-					
-					
-
-
-					
-				</div><!--end gallery-->
-		
-				<div class=" gallery3" ><!--gallery-->
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
-					
-				</div>
-					<div class=" gallery4" ><!--gallery-->
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
-						
-				</div>
+				<?php
+				foreach ($pages as $p)
+				{
+					$gallery = get_post_gallery( $p->ID, false );
+					$images = explode(',', $gallery['ids']);
+					?>
+					<div class="gallery g<?php echo $p->ID ?>"><!--gallery-->
+					<?php
+					foreach ($images as $key => $id)
+					{
+						$img = wp_get_attachment_image_url( $id, 'gallery-size' );
+						$large = wp_get_attachment_image_url( $id, 'large');
+						?>
+						<a href="<?php echo $large;; ?>" data-lightbox="g-<?php echo $p->ID ?>"><img src="<?php echo $img; ?>" alt=""/></a>
+						<?php
+					}
+					?>
+					</div><!--end gallery-->
+					<?php
+				}
+				?>
 			</div><!--end contwnt-->
 		</div><!--ens back4-->
 		
@@ -494,21 +418,6 @@ $(function () {
 
 </script>
 	
-<!--<script>
-		$(document).ready(function(){
-		$(window).load(function() {
-		  $(".star").animate({right: '50px'}).css("visibility","visible");
-		})
-		});
-	</script>-->
-	<!--<script>
-		$(document).ready(function(){
-		$(".left-menu a").click(function() {
-		  $(".star").animate({right: ''}).css("visibility","visible");
-		})
-		});
-	</script>-->
-	
 <script>
 	$(document).ready(function(){
 
@@ -563,43 +472,6 @@ $(window).on('scroll',function(){
 
 });
 </script>
-
-
-<!--<script>
-    $(document).ready(function(){
-      $(window).scroll(function() { 
-        if ($(document).scrollTop() > 600)
-         {  
-			$(".navigation").css("width","70%");
-			$(".navigation").css("left","22%");
-			$(".navigation > li").css("padding", "0 54px");
-
-			$(".navigation > li").css("color", "#23597b");
-			$(".navigation > li").css("margin-right","0" );
-			$(".navigation > li > a").css("font-size","18px");
-        } 
-        else{
-        	$(".navigation").css("visibility","visible");
-        }
-      
-      });
-    });
-</script>-->
-<!--<script type="text/javascript">
-	$(document).ready(function(){
-      $(window).scroll(function() { 
-        if ($(document).scrollTop() > 600)
-         {  
-			$(".navigation2").css("visibility","visible");
-			
-        } 
-        else{
-        	$(".navigation2").css("visibility","hidden");
-        }
-      
-      });
-    });
-</script>-->
 <script type="text/javascript">
 	$(document).ready(function(){
       $(window).scroll(function() { 
@@ -650,84 +522,26 @@ $(window).on('scroll',function(){
 	    });
 	</script>
 
-	
 
-</script>
-
-	<script type="text/javascript">
-		$(document).ready(function(){
-	    $("#phone").click(function(){
-	        $("#panel").toggle();
-	    });
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery('#menulist .menuitem').click(function() {        
+		jQuery('#menulist .menuitem.active').removeClass("active");
+		jQuery(this).addClass("active");
+		jQuery(".gallery").hide();
+		jQuery('.gallery.'+jQuery(this).attr("id")).toggle('show');
 	});
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-    $('.nav li').click(function(event){
-       
-        $('.active').removeClass('active');
-
-  
-        $(this).addClass('active');  
-
-        event.preventDefault();
-    });
-});
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function(){
-    $('.menuitem ').click(function(event){
-       
-        $('.active').removeClass('active');
-
-  
-        $(this).addClass('active');  
-
-        event.preventDefault();
-    });
-});
-	</script>
-	<script type="text/javascript">
-	jQuery(document).ready(function(){
-    jQuery('.clients').live('click', function(event) {        
-         jQuery('#gallery').toggle('show');
-         jQuery('.gallery2').hide();
-         jQuery('.gallery3').hide();
-         jQuery('.gallery4').hide();
-    });
-});
-</script>
-<script type="text/javascript">
-	jQuery(document).ready(function(){
-    jQuery('.tapas').live('click', function(event) {        
-         jQuery('.gallery2').toggle('show');
-         jQuery('#gallery').hide();
-          jQuery('.gallery3').hide();
-          jQuery('.gallery4').hide();
-    });
-});
-</script>-->
-<script type="text/javascript">
-	jQuery(document).ready(function(){
-    jQuery('.restourant').live('click', function(event) {        
-         jQuery('.gallery3').toggle('show');
-         jQuery('#gallery').hide();
-          jQuery('.gallery2').hide();
-          jQuery('.gallery4').hide();
-    });
-});
-</script>-->
-<script type="text/javascript">
-	jQuery(document).ready(function(){
-    jQuery('.spain').live('click', function(event) {        
-         jQuery('.gallery4').toggle('show');
-         jQuery('#gallery').hide();
-          jQuery('.gallery2').hide();
-          jQuery('.gallery3').hide();
-    });
+	jQuery('#menulist .menuitem').first().click();
 });
 </script>
 
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#phone").click(function(){
+		$("#panel").toggle();
+	});
+});
+</script>
 <?php
 get_footer();
 ?>
