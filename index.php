@@ -117,40 +117,7 @@ get_header();
             	<img class="welcomePop" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt="">
             <h2>Menu</h2>
 <div id="listMenu" >
-   <ul style="list-style-type: none; display: inline-block;  ">
-   	<h4>Raciones da La Carmencita</h4>
-		<li><p>JAMON IBÉRICO de CEBO de CAMPO con tomate y albahaca</p><span class="price">6.98</span></li>
-		<li><p>LOMO IBÉRICO de CEBO de CAMPO con tomate y aceite</p><span class="price">6.98</span></li>
-		<li><p> CECINA de LEÓN con almendras tostadas, pimienta negra y 
-		mermelada de tomate</p><span class="price">6.98</span></li>
-		<li><p> MOJAMA de ATÚN con aceite ahumado y almendras tostadas</p><span class="price">6.98</span></li>
-		<li><p> SALMON AHUMADO de UGA con queso para untar y alcaparras</p><span class="price">6.98</span></li>
-		<li><p> BACALAO AHUMADO en aceite y alioli</p><span class="price">6.98</span></li>
-	<h4>Tostas</h4>
-		<li><p>JAMON IBÉRICO de CEBO de CAMPO con tomate y albahaca</p><span class="price">6.98</span></li>
-		<li><p>LOMO IBÉRICO de CEBO de CAMPO con tomate y aceite</p><span class="price">6.98</span></li>
-   </ul>
-
-   <ul style="list-style-type: none; display: inline-block;">
-   <h4>Comidas da La casa</h4>
-      <li><p>VITELLO TONNATTO a La Carmencita</p><span class="price">6.98</span></li>
-      <li><p>CHORICITO ASTURIANO a la sidra</p><span class="price">6.98</span></li>
-      <li><p>CARRILLERAS de CERDO con pasas y PX, acompañado de 
-puré de patatas</p><span class="price">6.98</span></li>
-      <li><p>VERDURAS al horno</p></li>
-      <li><p>BACALAO en cama de pisto de verduras</p><span class="price">6.98</span></li>
-      <li><p>BACALAO en cama de pisto de verduras
-VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
-      <li><p>SALMOREJO con virutas de jamón y huevo duro</p><span class="price">6.98</span></li>
-<h4>Ensaladas</h4>
-		<li><p>VITELLO TONNATTO a La Carmencita</p><span class="price">6.98</span></li>
-		<li><p>CHORICITO ASTURIANO a la sidra</p><span class="price">6.98</span></li>
-   </ul>
   
-
-
-           
-        </div>
         <div id="listMenu">
    <ul style="list-style-type: none; display: inline-block;  ">
    	<h4>Raciones da La Carmencita</h4>
@@ -459,60 +426,7 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 					
 					<h2>Contacts & schedule</h2>
 				</header>
-				 <div class="monday">
-					<p>Tuesday-Saturday13-15h</p>
-					<p>Sunday, Monday  Day off</p>
-				</div>
-					<aside>
-					<table>
-						<th><span class="fa fa-clock-o" aria-hidden="true"></span><p>HORARIO</p></th>
-						  <tr>
-						    <td>Monady</td>
-						    <td>dayoff</td>
-						  </tr>
-						   <tr>
-						    <td>Tuesday</td>
-						    <td>5pm-1am</td>
-						  </tr>
-						   <tr>
-						    <td>Wednesday</td>
-						    <td>5pm-1am</td>
-						  </tr>
-						   <tr>
-						    <td>Thursday</td>
-						   <td>5pm-1am</td>
-						  </tr>
-						   <tr>
-						    <td>Friday</td>
-						    <td>5pm-1am</td>
-						  </tr>
-						   <tr>
-						    <td>Saturday</td>
-						    <td>dayoff</td>
-						  </tr>
-						   <tr>
-						    <td>Sunday</td>
-						    <td>dayoff</td>
-						  </tr>
-					</table>
-				</aside>	
-
-				<div class="containerf">
-         		   <div class="location">
-              		 
-               		<i class="fa fa-map-marker fa-2x"></i><p>Avda. de las Playas 55, CC Marítimo<br> local 21; Puerto del Carmen<br>
-						35510 Tías, Lanzarote</p>
-					</div>
-					<div class="block">
-                  		<li><i class="fa fa-mobile fa-2x" aria-hidden="true"></i>  <a class="pn">+34 928 51 23 18</a></li>
-	          		 	<li><i class="fa fa-envelope " aria-hidden="true"></i><a class="txt">carmencitadelpuerto@gmail.com</a></li>
-		            </div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3492.25557691535!2d-13.650132049845428!3d28.920461677655926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc4625ef57c82b95%3A0x8889046f693c1797!2zQXYuIGRlIGxhcyBQbGF5YXMsIDU1LCAzNTUxMCBUw61hcywgTGFzIFBhbG1hcywg0JjRgdC_0LDQvdC40Y8!5e0!3m2!1sbg!2sbg!4v1476629593249" width="600" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-				</div><!--end containerf-->
-		 		<div id="phone"><a href="tel:+34 928 51 23 18"><span>&nbsp;</span></div>
-		        <div id="panel"><a href="tel:+34 928 51 23 18"><p>+34 928 51 23 18</p></a></div>	
-			</div><!--end contwnt-->
-		</div><!--end back6-->
+				 
 		
 	</div>
 			
