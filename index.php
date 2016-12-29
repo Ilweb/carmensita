@@ -115,43 +115,12 @@ get_header();
         <div class="box" id="box">
             <a class="boxclose" id="boxclose"><i class="fa-close fa-2x"></i></a>
             	<img class="welcomePop" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt="">
-            <h2>Menu</h2>
-<div id="listMenu" >
-  
-        <div id="listMenu">
-   <ul style="list-style-type: none; display: inline-block;  ">
-   	<h4>Raciones da La Carmencita</h4>
-		<li><p>JAMON IBÉRICO de CEBO de CAMPO con tomate y albahaca</p><span class="price">6.98</span></li>
-		<li><p>LOMO IBÉRICO de CEBO de CAMPO con tomate y aceite</p><span class="price">6.98</span></li>
-		<li><p> CECINA de LEÓN con almendras tostadas, pimienta negra y 
-		mermelada de tomate</p><span class="price">6.98</span></li>
-		<li><p> MOJAMA de ATÚN con aceite ahumado y almendras tostadas</p><span class="price">6.98</span></li>
-		<li><p> SALMON AHUMADO de UGA con queso para untar y alcaparras</p><span class="price">6.98</span></li>
-		<li><p> BACALAO AHUMADO en aceite y alioli</p><span class="price">6.98</span></li>
-	<h4>Tostas</h4>
-		<li><p>JAMON IBÉRICO de CEBO de CAMPO con tomate y albahaca</p><span class="price">6.98</span></li>
-		<li><p>LOMO IBÉRICO de CEBO de CAMPO con tomate y aceite</p><span class="price">6.98</span></li>
-   </ul>
-
-   <ul style="list-style-type: none; display: inline-block;">
-   <h4>Comidas da La casa</h4>
-      <li><p>VITELLO TONNATTO a La Carmencita</p><span class="price">6.98</span></li>
-      <li><p>CHORICITO ASTURIANO a la sidra</p><span class="price">6.98</span></li>
-      <li><p>CARRILLERAS de CERDO con pasas y PX, acompañado de 
-puré de patatas</p><span class="price">6.98</span></li>
-      <li><p>VERDURAS al horno</p></li>
-      <li><p>BACALAO en cama de pisto de verduras</p><span class="price">6.98</span></li>
-      <li><p>BACALAO en cama de pisto de verduras
-VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
-      <li><p>SALMOREJO con virutas de jamón y huevo duro</p><span class="price">6.98</span></li>
-<h4>Ensaladas</h4>
-		<li><p>VITELLO TONNATTO a La Carmencita</p><span class="price">6.98</span></li>
-		<li><p>CHORICITO ASTURIANO a la sidra</p><span class="price">6.98</span></li>
-   </ul>
-  
-
-
-           
+			<?php
+			$page = get_page_by_path('menu/spanish');
+			?>
+            <h2><?php echo $page->post_title; ?></h2>
+		<div id="listMenu" >
+		<?php echo apply_filters('the_content', $page->post_content); ?>
         </div>
         </div>
 
@@ -160,76 +129,12 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
         <div class="box" id="box">
             <a class="boxclose" id="boxclose"><i class="fa-close fa-2x"></i></a>
             	<img class="welcomePop" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png">
-            <h2>Menu</h2>
-<div id="listMenu" >
-   <ul style="list-style-type: none; display: inline-block;  ">
-   	<h4>Raciones da La Carmencita</h4>
-		<li><p>JAMON IBÉRICO de CEBO de CAMPO con tomate y albahaca</p><span class="price">6.98</span></li>
-		<li><p>LOMO IBÉRICO de CEBO de CAMPO con tomate y aceite</p><span class="price">6.98</span></li>
-		<li><p> CECINA de LEÓN con almendras tostadas, pimienta negra y 
-		mermelada de tomate</p><span class="price">6.98</span></li>
-		<li><p> MOJAMA de ATÚN con aceite ahumado y almendras tostadas</p><span class="price">6.98</span></li>
-		<li><p> SALMON AHUMADO de UGA con queso para untar y alcaparras</p><span class="price">6.98</span></li>
-		<li><p> BACALAO AHUMADO en aceite y alioli</p><span class="price">6.98</span></li>
-	<h4>Tostas</h4>
-		<li><p>JAMON IBÉRICO de CEBO de CAMPO con tomate y albahaca</p><span class="price">6.98</span></li>
-		<li><p>LOMO IBÉRICO de CEBO de CAMPO con tomate y aceite</p><span class="price">6.98</span></li>
-   </ul>
-
-   <ul style="list-style-type: none; display: inline-block;">
-   <h4>Comidas da La casa</h4>
-      <li><p>VITELLO TONNATTO a La Carmencita</p><span class="price">6.98</span></li>
-      <li><p>CHORICITO ASTURIANO a la sidra</p><span class="price">6.98</span></li>
-      <li><p>CARRILLERAS de CERDO con pasas y PX, acompañado de 
-puré de patatas</p><span class="price">6.98</span></li>
-      <li><p>VERDURAS al horno</p></li>
-      <li><p>BACALAO en cama de pisto de verduras</p><span class="price">6.98</span></li>
-      <li><p>BACALAO en cama de pisto de verduras
-VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
-      <li><p>SALMOREJO con virutas de jamón y huevo duro</p><span class="price">6.98</span></li>
-<h4>Ensaladas</h4>
-		<li><p>VITELLO TONNATTO a La Carmencita</p><span class="price">6.98</span></li>
-		<li><p>CHORICITO ASTURIANO a la sidra</p><span class="price">6.98</span></li>
-   </ul>
-  
-
-
-           
-        </div>
-        <div id="listMenu">
-   <ul style="list-style-type: none; display: inline-block;  ">
-   	<h4>Raciones da La Carmencita</h4>
-		<li><p>JAMON IBÉRICO de CEBO de CAMPO con tomate y albahaca</p><span class="price">6.98</span></li>
-		<li><p>LOMO IBÉRICO de CEBO de CAMPO con tomate y aceite</p><span class="price">6.98</span></li>
-		<li><p> CECINA de LEÓN con almendras tostadas, pimienta negra y 
-		mermelada de tomate</p><span class="price">6.98</span></li>
-		<li><p> MOJAMA de ATÚN con aceite ahumado y almendras tostadas</p><span class="price">6.98</span></li>
-		<li><p> SALMON AHUMADO de UGA con queso para untar y alcaparras</p><span class="price">6.98</span></li>
-		<li><p> BACALAO AHUMADO en aceite y alioli</p><span class="price">6.98</span></li>
-	<h4>Tostas</h4>
-		<li><p>JAMON IBÉRICO de CEBO de CAMPO con tomate y albahaca</p><span class="price">6.98</span></li>
-		<li><p>LOMO IBÉRICO de CEBO de CAMPO con tomate y aceite</p><span class="price">6.98</span></li>
-   </ul>
-
-   <ul style="list-style-type: none; display: inline-block;">
-   <h4>Comidas da La casa</h4>
-      <li><p>VITELLO TONNATTO a La Carmencita</p><span class="price">6.98</span></li>
-      <li><p>CHORICITO ASTURIANO a la sidra</p><span class="price">6.98</span></li>
-      <li><p>CARRILLERAS de CERDO con pasas y PX, acompañado de 
-puré de patatas</p><span class="price">6.98</span></li>
-      <li><p>VERDURAS al horno</p></li>
-      <li><p>BACALAO en cama de pisto de verduras</p><span class="price">6.98</span></li>
-      <li><p>BACALAO en cama de pisto de verduras
-VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
-      <li><p>SALMOREJO con virutas de jamón y huevo duro</p><span class="price">6.98</span></li>
-<h4>Ensaladas</h4>
-		<li><p>VITELLO TONNATTO a La Carmencita</p><span class="price">6.98</span></li>
-		<li><p>CHORICITO ASTURIANO a la sidra</p><span class="price">6.98</span></li>
-   </ul>
-  
-
-
-           
+            <?php
+			$page = get_page_by_path('menu/english');
+			?>
+            <h2><?php echo $page->post_title; ?></h2>
+		<div id="listMenu" >
+		<?php echo apply_filters('the_content', $page->post_content); ?>
         </div>
         </div>
 				<footer class="fixed">
@@ -423,22 +328,26 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 						
 							<img class="welcome" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt=""/>
 						</div><!--end main-->	
-					
-					<h2>Contacts & schedule</h2>
+					<?php
+					$page = get_page_by_path('contacts-schedule');
+					?>
+					<h2><?php echo $page->post_title; ?></h2>
 				</header>
-				 
+				 <?php echo apply_filters('the_content', $page->post_content); ?>
+			</div><!--end contwnt-->
+		</div><!--end back6-->
 		
 	</div>
 			
  
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/js.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/waypoints.min.js"></script>
 
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.easing.1.3.js"></script>
 
-<script src="js/lightbox.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/lightbox.min.js"></script>
 <script type="text/javascript">
 	 
             $(function() {
