@@ -1234,7 +1234,10 @@ Version: 1.0
 
 	.text p
 	{
-		column-count: 2;
+		 -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	
     position: relative;
     column-gap: 128px;
 	}
