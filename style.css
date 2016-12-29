@@ -1297,18 +1297,18 @@ column-gap: 128px;
 	}
 	@media only screen and (max-width: 1024px){
 		.back3 .content > .text {
-      margin-top: 0;
-    margin-bottom: 10px;
-    width: 71%;
-    display: inline-block;
-    font-family: 'Dosis',sans-serif;
-    color: #2d5979;
-    /* float: left; */
-    font-weight: 500;
-    /* margin: 10px; */
-    /* padding: 10px; */
-    margin-left: 21%;
-    font-size: 17px;
+		margin-top: 0;
+		margin-bottom: 10px;
+		width: 71%;
+		display: inline-block;
+		font-family: 'Dosis',sans-serif;
+		color: #2d5979;
+		/* float: left; */
+		font-weight: 500;
+		/* margin: 10px; */
+		/* padding: 10px; */
+		margin-left: 21%;
+		font-size: 17px;
 	}
 
 	.first-menu li
@@ -1419,6 +1419,8 @@ column-gap: 128px;
 	}
 	@media only screen and (max-width: 890px) and (min-width: 480px)
 	{
+		
+
 		.back2 .content > div
 		{
 		    width: auto;
@@ -1781,6 +1783,9 @@ column-gap: 128px;
 
 	@media only screen and (max-width: 480px)
 	{
+		.back3 .content > .text {
+		margin-left: 10% !important;			
+		}
 		.footerCentered .footerLinks a
 		 {
 			display: inline-block;
@@ -2035,7 +2040,7 @@ column-gap: 128px;
 			font-size:14px;
 			display:block;
 			width:80%;
-			float:right;
+			/*float:right;*/
 			margin-right:0;
 		}	
 		.back3 .content > div:nth-of-type(2)	
