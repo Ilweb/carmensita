@@ -1326,11 +1326,12 @@ column-gap: 128px;
     width: calc(76% - -9px);
     margin: auto;
     float: right;
-}
-.block {
-    margin-left: 0;
-}
-			
+	}
+	.block {
+	    margin-left: 0;
+
+	}
+}			
 	@media only screen and (max-width:1000px)
 	{
 		header div
@@ -1809,9 +1810,9 @@ column-gap: 128px;
 			margin-top: 15%;
 		}
 		#listMenu ul {
-   	 width: 86%;
-    /* margin-right: 10%; */
-}
+		   	 width: 86%;
+		    /* margin-right: 10%; */
+		}
 
 		.city
 		{
@@ -1952,7 +1953,6 @@ column-gap: 128px;
 			width: 100%;
 		}
 		
-
 		.star img
 		{
 			width: 60%;
@@ -1963,11 +1963,7 @@ column-gap: 128px;
 			bottom: 0;
 	
 		}
-	}
-
-
-	@media only screen and (max-width: 480px)
-	{
+	
 		.fixed 
 		{
 		    position: fixed;
@@ -1989,7 +1985,6 @@ column-gap: 128px;
 		
 		.back2 .content > div 
 		{
-
 			width:auto;
 			font-size: 14px;
 			display: -webkit-inline-box;
@@ -2095,19 +2090,14 @@ column-gap: 128px;
 		{
 			width: calc(49% - 10px);
 			height: auto;
-
-    margin-right: 10px;
-       margin-bottom: 10px;
+			margin-right: 10px;
+			margin-bottom: 10px;
 		}
 		.footerCentered {
-  
-    margin-top: 20px;
-
+    		margin-top: 20px;
 		
-
-		
-	}
-	header{
+		}
+		header{
 			margin-bottom: 30px;
 		}
 }
