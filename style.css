@@ -312,12 +312,7 @@ Version: 1.0
 		text-transform: none;
 
 	}
-	#listMenu p{
-		color: #18567f;
-		line-height: 28px;
-		font-weight: 500;
-		font-family: 'Dosis'
-	}
+	
 	.content
 	{
 		margin-left:3%;
@@ -1415,12 +1410,8 @@ column-gap: 128px;
 			right: 15%;
 			z-index: 1;
 		}
-			
-	}
-	@media only screen and (max-width: 890px) and (min-width: 480px)
-	{
-		
-
+	
+	
 		.back2 .content > div
 		{
 		    width: auto;
@@ -1434,6 +1425,7 @@ column-gap: 128px;
 			
 
 		}
+
 		.button{
 			display: none;
 		}
@@ -1795,17 +1787,15 @@ column-gap: 128px;
 			margin-top: -16%;
 
 		}
-		.text p {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    position: relative;
-    column-gap: 128px;
+		.back3 .content > .text p {
+		    -webkit-column-count: 1;
+		    -moz-column-count: 1;
+		    column-count: 1;
+		    position: relative;
+		    column-gap: 128px;
 }
-		span.price {
+		#listMenu em {
 		    float: right;
-		    margin-right: -20px;
-		    margin-top: -50px;
 		    font-weight: 700;
 		    color: #18567f;
 		}
@@ -1818,6 +1808,10 @@ column-gap: 128px;
 			margin-top: 15%;
 			margin-top: 15%;
 		}
+		#listMenu ul {
+   	 width: 86%;
+    /* margin-right: 10%; */
+}
 
 		.city
 		{
@@ -1972,7 +1966,7 @@ column-gap: 128px;
 	}
 
 
-	@media only screen and (max-width: 480px) and (min-width:10px) 
+	@media only screen and (max-width: 480px)
 	{
 		.fixed 
 		{
