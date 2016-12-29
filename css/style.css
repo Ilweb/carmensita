@@ -314,6 +314,7 @@ z-index: 1;
 	}
 	
 	#listMenu ul{
+		width: 38%;
 		margin-right: 10%;
 	}
 	#listMenu h4{
@@ -696,16 +697,16 @@ z-index: 1;
 	{
 		float: right;
 	}
-	.back3 .content > div:nth-of-type(3)
+	/*.back3 .content > div:nth-of-type(3)
 	{
 		margin-left:5%;
 		margin-left: 22%;
 
-	}	
+	}	*/
 	.back3 .content > .text
 	{margin-top: 0;
     margin-bottom: 10px;
-    width: 34%;
+    width:80%;
     display: inline-block;
     font-family: 'Dosis',sans-serif;
     color: #2d5979;
@@ -717,11 +718,11 @@ z-index: 1;
 		
 	
 	}	
-	.back3 .content > div:first-of-type,
-	.back3 .content > div:nth-of-type(3)
+	.back3 .content > div:first-of-type/*,
+	.back3 .content > div:nth-of-type(3)*/
 	{
 		    margin-left: 21.5%;
-    margin-right: 8%;
+   /* margin-right: 8%;*/
 	}
 
 	.back3 .menu div
@@ -789,7 +790,7 @@ z-index: 1;
 
 	/************************ page 4*******************************/
 
-	.back4 .content > div:first-of-type, .back3 .content > div:nth-of-type(3)
+	.back4 .content > div:first-of-type/*, .back3 .content > div:nth-of-type(3)*/
 	 {
 		margin-left: 21.5%;
 		margin-right: 20px;
@@ -1145,6 +1146,10 @@ z-index: 1;
 		overflow: auto;
 	  
 	}
+	#listMenu ul{
+		list-style-type: none; 
+		display: inline-block;
+	}
 	
 	.welcome, .welcomee
 	{
@@ -1204,11 +1209,10 @@ z-index: 1;
 		line-height: 2
 	}	
 
-	span.price
+#listMenu em
 	 {
 		float: right;
-		margin-right: -38px;
-		margin-top: -39px;
+		
 		font-weight: 700;
 		color: #18567f;
 	}
@@ -1279,7 +1283,9 @@ z-index: 1;
 
 	.text p
 	{
-		position: relative;
+		column-count: 2;
+    position: relative;
+    column-gap: 128px;
 	}
 
 	h2
