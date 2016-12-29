@@ -1790,13 +1790,20 @@ column-gap: 128px;
 			margin-top: -16%;
 
 		}
-		span.price {
-    float: right;
-    margin-right: -20px;
-    margin-top: -50px;
-    font-weight: 700;
-    color: #18567f;
+		.text p {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    position: relative;
+    column-gap: 128px;
 }
+		span.price {
+		    float: right;
+		    margin-right: -20px;
+		    margin-top: -50px;
+		    font-weight: 700;
+		    color: #18567f;
+		}
 		iframe 
 		{
 			position: absolute;
