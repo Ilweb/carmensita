@@ -1,27 +1,11 @@
-
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carmencita</title>
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/lightbox.css">
-<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
-<script type="text/javascript" src="js/lightbox.min.js"></script>
-
-
-</head>
-
-<body>
+<?php
+get_header();
+?>
 	<div class="slide " id="slide1" data-slide="1" >
 		<div class="back"><!--back-->
 			<div class="content"><!--content-->
 				<header>
-				<img id="first_frame" src="images/decor_1.png" alt=""/>
+				<img id="first_frame" src="<?php bloginfo('template_directory'); ?>/images/decor_1.png" alt=""/>
 					<div class="mobile_menu">MENU</div>
 					<div id="navigation2">
 					<div class="menu first-menu">
@@ -41,7 +25,7 @@
 				<div class="row"><!--row-->
 					<div class="begin first col-sm-4">Welcome to</div>
 					<div class="begin" id="logo-stuff"><!--begin-->
-						<div  id="logo" class="col-sm-4"><img  src="images/center_logo.png"></div>
+						<div  id="logo" class="col-sm-4"><img  src="<?php bloginfo('template_directory'); ?>/images/center_logo.png"></div>
 						<div class="begin second">Vino & comidas</div>
 						<div class="begin third">Desde 2016</div>
 					</div><!--end begin-->
@@ -49,16 +33,16 @@
 				</div>
 			</div><!--end content-->
 			<div class="star"  data-stellar-ratio="3" data-stellar-vertical-offset="-5" >
-				<img src="images/star.png"    alt="">
+				<img src="<?php bloginfo('template_directory'); ?>/images/star.png"    alt="">
 			</div>
-			<div class="madeby">website<a href="http://www.bydanish.com" target="_blank"><img src="images/website.png" alt="" /></a></div>
-			<img class="second_decor" src="images/decor_2.png">
+			<div class="madeby">website<a href="http://www.bydanish.com" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/website.png" alt="" /></a></div>
+			<img class="second_decor" src="<?php bloginfo('template_directory'); ?>/images/decor_2.png">
 			<footer class="footerCentered">
 				<p class="footerLinks">
-					<a href="#"><img src="images/fb.png"></a>
-					<a href="#"><img src="images/owl.png"></a>
-					<a href="#"><img src="images/instagram.png"></a>
-					<a href="#"><img src="images/owl.png"></a>
+					<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/fb.png"></a>
+					<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/owl.png"></a>
+					<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png"></a>
+					<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/owl.png"></a>
 				</p>
 			</footer>
 		</div><!--end back-->
@@ -66,41 +50,40 @@
 	</div><!--End Slide 1-->
 	<div class="slide" id="slide2" data-slide="2" >
 		<div class="back2"><!--back2-->
-
 			<div class="content" id="content2"><!--content, id=content2-->
 				<header>
 			
 					<div class="menu other"><!--menu other-->
-						<img class="welcome"  src="images/logo_blue.png">
-						<div id="fixedLogo"><img src="images/logo_blue.png" alt=""/></div>
+						<img class="welcome"  src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png">
+						<div id="fixedLogo"><img src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt=""/></div>
 					</div>	<!--end menu other-->
 
-					<h2>What is “Going tapas"</h2>
+					<?php
+					$page = get_page_by_path('what-is-going-tapas');
+					?>
+					<h2><?php echo $page->post_title; ?></h2>
 				</header>
 				<div class="welcome">
 					<span>Wellcome!!!</span><br/><span>¡¡¡Bienvenido!!!</span>
 				</div>
 				<div class="newspaper"><!--welcome-->
-					<p><span>“Going tapas”</span> has nothing to do with the size of your dish, it has to do with what is in your dish and how you eat it.<br/>
-					<br/>
-					<span>“Going tapas”</span> means sharing; slow food; not eating everything at the same time and having different drinks depending on what you are eating.<br>
-					<br>
-					<span>“Going tapas”</span> means a unique gastronomic experience in which you are going to try much more than two courses and a couple of wines.</p>
+					<?php echo apply_filters('the_content', $page->post_content); ?>
 				</div><!--end welcome-->
 				
-				<h3>…And thats what we are offering, the ultimate tapas experience</h3>
+				<?php
+				$page = get_page_by_path('what-is-going-tapas/and');
+				?>
+				<h3><?php echo $page->post_title; ?></h3>
 				<div class="newspaper1"><!--another <welcome-->
-					<p>	Si puedes leer esto no te vamos a explicar lo que es irse de tapas. Seas Español, de algún país hermano o hallas pasado 		el tiempo suficiente como para aprender el idioma sabes de sobra a lo que nos referimos.
-						Lo único que nos gustaría aclararte es que no estas enfrente
-						del típico negocio orientado a turistas y que por eso su calidad va a ser menor. NO!! Nos gusta tapear, nos gusta nuestra forma de entender la vida, nos gusta nuestro trabajo y en La Carmencita queremos transmitirlo de la mejor manera que sabem	</p>	
+					<?php echo apply_filters('the_content', $page->post_content); ?>
 	 			</div><!--end another welcome-->
 
 	 			<div class="welcome1">
 	 			
-	 			<img id="leaf" src="images/leaf.png" data-stellar-ratio="3" data-stellar-vertical-offset="-5" alt=""/>
-	 			<img class="leafHidden" src="images/leaf.png">
+	 			<img id="leaf" src="<?php bloginfo('template_directory'); ?>/images/leaf.png" data-stellar-ratio="3" data-stellar-vertical-offset="-5" alt=""/>
+	 			<img class="leafHidden" src="<?php bloginfo('template_directory'); ?>/images/leaf.png">
 					
-					<img id="sea" src="images/sea.png"  data-stellar-ratio="3" data-stellar-vertical-offset="-5"  alt="">
+					<img id="sea" src="<?php bloginfo('template_directory'); ?>/images/sea.png"  data-stellar-ratio="3" data-stellar-vertical-offset="-5"  alt="">
 
 				</div>
 
@@ -110,29 +93,28 @@
 	</div><!--End Slide 2-->
 	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
 		<div class="back3"><!--back3-->
-		<img id="salad" src="images/salad.png"  alt=""/>
-		<img id="salad2" src="images/salad2.png"   alt=""/>
+		<img id="salad" src="<?php bloginfo('template_directory'); ?>/images/salad.png"  alt=""/>
+		<img id="salad2" src="<?php bloginfo('template_directory'); ?>/images/salad2.png"   alt=""/>
 			<div class="content" id="content2"><!--content2-->
 				<header>
 				
 					<div class="menu other"><!--anotehr menu-->
 						
-						<img class="welcome" src="images/logo_blue.png" alt=""/>
+						<img class="welcome" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt=""/>
 					</div>	<!--end menu other-->
-					<h2>Menu</h2>
+					<?php
+					$page = get_page_by_path('menu');
+					?>
+					<h2><?php echo $page->post_title; ?></h2>
 				</header>
-				<div class="text"><!--text-->
-					<p>We are going to offer you a diverse range of Spanish tapas and we’re going to advise you how to marry them with the different types of wines to complement the food.
-					You will discover the Real Spanish way of eating, new wines </p>
-				</div><!--end taext-->
-				<div class="text"><!--text-->
-					<p>Wfrom the island and the península and different tastes of food that you will never get at home and do not forget, now you are entering a <span>Spanish way of life</span>, we want you to laugh, talk loud and have a lot of fun with your shirt on! </p>
-				</div><!--end text-->
+				<div class="text">
+					<?php echo apply_filters('the_content', $page->post_content); ?>
+				</div>
 				<a  class=" activator button2 fa-input2" id="activator" >Menu in English   &#xf0f5</a>
 				 <div class="overlay" id="overlay" style="display:none;"></div>
         <div class="box" id="box">
             <a class="boxclose" id="boxclose"><i class="fa-close fa-2x"></i></a>
-            	<img class="welcomePop" src="images/logo_blue.png" alt="">
+            	<img class="welcomePop" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt="">
             <h2>Menu</h2>
 <div id="listMenu" >
    <ul style="list-style-type: none; display: inline-block;  ">
@@ -210,7 +192,7 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 				<div class="overlay" id="overlay" style="display:none;"></div>
         <div class="box" id="box">
             <a class="boxclose" id="boxclose"><i class="fa-close fa-2x"></i></a>
-            	<img class="welcomePop" src="images/logo_blue.png">
+            	<img class="welcomePop" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png">
             <h2>Menu</h2>
 <div id="listMenu" >
    <ul style="list-style-type: none; display: inline-block;  ">
@@ -297,7 +279,7 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 						 <a class="list-group-item" href="#"><span class=" fa-twitter 	" aria-hidden="true"></span></a>
 						
 					</div>
-						<div class="madeby"> website <a href="http://www.bydanish.com" target="_blank"><img src="images/website.png"/></a></div>
+						<div class="madeby"> website <a href="http://www.bydanish.com" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/website.png"/></a></div>
 				</footer>
 			</div><!--end contwnt-->
 		</div><!--end back3-->
@@ -308,14 +290,14 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 
 	<div class="back4"><!--back3-->
 		
-		<img id="paprika" src="images/paprika.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-102" alt=""/>
-		<img id="plant" src="images/plant.png" data-stellar-ratio="2" data-stellar-vertical-offset="-10" alt=""/>
+		<img id="paprika" src="<?php bloginfo('template_directory'); ?>/images/paprika.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-102" alt=""/>
+		<img id="plant" src="<?php bloginfo('template_directory'); ?>/images/plant.png" data-stellar-ratio="2" data-stellar-vertical-offset="-10" alt=""/>
 			<div class="content" id="content2"><!--content-->
 				<header>
 			
 					<div class="menu other">
 						
-						<img class="welcome" src="images/logo_blue.png" alt=""/>
+						<img class="welcome" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt=""/>
 					</div><!--end menu other-->	
 					<h2>Gallery</h2>
 				</header>
@@ -329,18 +311,18 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 					</ul>
 				</div><!--end welcome-->
 				<div id="gallery" ><!--gallery-->
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="pngimages/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
-					<a href="images/gallery/second.png" data-lightbox="example-1"><img src="images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="pngimages/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/gallery/second.png" alt=""/></a>
 
 
 					
@@ -348,29 +330,29 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 				<div class=" gallery2" ><!--gallery-->
 					
 				
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
-					<a href="images/i14.jpg" data-lightbox="example-1"><img src="images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/i14.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/i14.jpg" alt=""/></a>
 					
 					
 
@@ -379,57 +361,57 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 				</div><!--end gallery-->
 		
 				<div class=" gallery3" ><!--gallery-->
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
-					<a href="images/img1.jpg" data-lightbox="example-1"><img src="images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
+					<a href="<?php bloginfo('template_directory'); ?>/images/img1.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img1.jpg" alt=""/></a>
 					
 				</div>
 					<div class=" gallery4" ><!--gallery-->
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
-						<a href="images/img2.jpg" data-lightbox="example-1"><img src="images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
+						<a href="<?php bloginfo('template_directory'); ?>/images/img2.jpg" data-lightbox="example-1"><img src="<?php bloginfo('template_directory'); ?>/images/img2.jpg" alt=""/></a>
 						
 				</div>
 			</div><!--end contwnt-->
@@ -440,23 +422,23 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 	</div><!--End Slide 4-->
 	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0">
 		<div class="back5"><!--back4-->
-			<img class="flower" src="images/flower.png" data-stellar-ratio="1.4" data-stellar-vertical-offset="-102" alt=""/>
-			<img id="mufin" src="images/mufin.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-53" alt=""/>
-			<img id="milkshake" src="images/milkshake.png" data-stellar-ratio="2.7" data-stellar-vertical-offset="-56" alt=""/>
+			<img class="flower" src="<?php bloginfo('template_directory'); ?>/images/flower.png" data-stellar-ratio="1.4" data-stellar-vertical-offset="-102" alt=""/>
+			<img id="mufin" src="<?php bloginfo('template_directory'); ?>/images/mufin.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-53" alt=""/>
+			<img id="milkshake" src="<?php bloginfo('template_directory'); ?>/images/milkshake.png" data-stellar-ratio="2.7" data-stellar-vertical-offset="-56" alt=""/>
 			<div class="content" id="content2"><!--content2-->
 				<header>
 		
 					<div class="menu other">
 						
-						<img class="welcome" src="images/logo_blue.png" alt=""/>
+						<img class="welcome" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt=""/>
 					</div><!--end manu other-->	
-					<h2>La Carmencita</h2>
+					<?php
+					$page = get_page_by_path('la-carmencita');
+					?>
+					<h2><?php echo $page->post_title; ?></h2>
 				</header>
 				<div class="city">
-					<p>If you wanna know the legend about Carmencita - you are welcome to our restaurant and ask us. We wanna tell you the story personaly.
-					</p>
-					<h4>Lanzarote</h4>
-					<p>Arid Lanzarote, one of the Canary islands off the coast of West Africa, is known for its year-round warm weather, beaches and volcanic landscape. East-coast resort Puerto del Carmen has whitewashed villas, a harbor and dive centers. Caletón Blanco is a string of northern coves with calm, clear water for snorkeling, and Famara beach has cliffs for hang gliding and surf schools.</p>
+					<?php echo apply_filters('the_content', $page->post_content); ?>
 				</div>
 			</div><!--end contwnt-->
 		</div><!--end back5-->	
@@ -465,14 +447,14 @@ VINAGRETA con MEJILLONES</p><span class="price">6.98</span></li>
 	</div>
 	<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
 		<div class="back6">
-		<img id="mohito" src="images/mohitoDown.png" data-stellar-ratio="3" data-stellar-vertical-offset="0"   alt=""/>
-		<img id="mohito2" src="images/mohitoUp.png" data-stellar-ratio="3" data-stellar-vertical-offset="-10"  alt=""/>
+		<img id="mohito" src="<?php bloginfo('template_directory'); ?>/images/mohitoDown.png" data-stellar-ratio="3" data-stellar-vertical-offset="0"   alt=""/>
+		<img id="mohito2" src="<?php bloginfo('template_directory'); ?>/images/mohitoUp.png" data-stellar-ratio="3" data-stellar-vertical-offset="-10"  alt=""/>
 			<div class="content" id="content2">
 				<header>
 				
 					<div class="menu other">
 						
-							<img class="welcome" src="images/logo_blue.png" alt=""/>
+							<img class="welcome" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt=""/>
 						</div><!--end main-->	
 					
 					<h2>Contacts & schedule</h2>
@@ -923,9 +905,6 @@ $(window).on('scroll',function(){
 });
 </script>
 
-
-
-</body>
-
-
-</html>
+<?php
+get_footer();
+?>

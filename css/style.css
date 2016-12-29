@@ -184,7 +184,8 @@ z-index: 1;
 
 
 
-	.text span
+	.text span,
+	.text em
 	{
 		font-family: "Dancing Script";
 	}
@@ -530,7 +531,8 @@ z-index: 1;
 
 	/*******************Second page******************/
 
-	.back2 div span
+	.back2 div span,
+	.back2 div em
 	{
 		font-family:'Dancing Script';
 		font-weight:bold;
