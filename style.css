@@ -1666,15 +1666,13 @@ Version: 1.0
 
 		.navigation li a
 		{
-			font-size: 22px;
+			font-size: 18px;
 			padding: 14px;
 			
 		}
 		h2{
 			margin-bottom: 20px;
 		}
-
-		
 		.fa-tripadvisor, .fa-facebook, .fa-instagram, .fa-twitter
 		 {
 			font-family: 'FontAwesome';
