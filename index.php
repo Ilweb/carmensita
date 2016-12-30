@@ -12,6 +12,7 @@ get_header();
 				
 						<ul class="navigation">
 
+							<li data-slide="3"><a>home</a></li>
 							<li data-slide="3"><a>menu</a></li>
 							<li data-slide="4"><a>gallery</a></li>
 							<li data-slide="5"><a>la carmencita</a></li>
@@ -541,6 +542,7 @@ jQuery(document).ready(function(){
 	});
 });
 </script>
+
 <?php
 get_footer();
 ?>

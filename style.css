@@ -48,10 +48,12 @@ Version: 1.0
 		cursor:pointer;
 		color: #fff;
 	}
-	.first-menu li a.active{
+	/*.first-menu li a.active{
 		color: #fff;
+	}*/
+.first-menu li:first-of-type{
+		display: none;
 	}
-
 	.first-menu li
 	{	
 		text-transform: uppercase;
