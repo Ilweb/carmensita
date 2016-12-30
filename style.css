@@ -640,6 +640,7 @@ Version: 1.0
 		color: #18567f;
 	}	
 	#slide2 h3{
+		z-index: 0;	
 		color: #18567f;
 	}
 
@@ -1759,6 +1760,9 @@ Version: 1.0
 	{
 		.back3 .content > .text {
 			margin-left: 10% !important;			
+		}
+		a.activator {
+			z-index: 0;
 		}
 		.footerCentered .footerLinks a
 		 {
