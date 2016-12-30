@@ -1231,11 +1231,11 @@ Version: 1.0
 
 	.text p
 	{
--webkit-column-count: 2; /* Chrome, Safari, Opera */
--moz-column-count: 2; /* Firefox */
-column-count: 2;
-position: relative;
-column-gap: 128px;
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+		-moz-column-count: 2; /* Firefox */
+		column-count: 2;
+		position: relative;
+		column-gap: 128px;
 	}
 
 	h2
@@ -1382,6 +1382,12 @@ column-gap: 128px;
 			margin-right: 0;
 
 		}	
+		.text p {
+			-webkit-column-count: 1; 
+			-moz-column-count: 1;
+			column-count: 1; 
+		}
+
 			
 		nav li a
 		{
@@ -1392,11 +1398,12 @@ column-gap: 128px;
 		iframe 
 		{
 			position: absolute;
-			top: 38%;
-			left: 20%;
+			bottom: 0;
+			top: 55%;
+			left: 8%;
 			height: 28% !important;
-			margin-top: 15%;
-			margin-top: 15%;
+    
+    
 		}
 		
 
@@ -1733,7 +1740,7 @@ column-gap: 128px;
 		.monday
 		{
 		    display: block;
-		    margin-top: 20%;
+		   /* margin-top: 20%;*/
 	    }
 	}
 	@media screen and (max-width: 640px)
@@ -1781,7 +1788,7 @@ column-gap: 128px;
 			left: 9%;
 			height: 44% !important;
 			margin-top: 15%;
-			margin-top: 15%;
+			
 		}
 		#listMenu ul {
 		   	 width: 86%;
