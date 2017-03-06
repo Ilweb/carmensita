@@ -139,12 +139,13 @@ Version: 1.0
 		right: 5%;
 	}
 	 a.activator{
+        background: url(clickme.png) no-repeat top left;
         z-index:1;
         cursor:pointer;
     }
         /* Style for overlay and box */
     .overlay{
-      
+        background:transparent url(images/overlay.png) repeat top left;
         position:fixed;
         top:0px;
         bottom:0px;
@@ -793,8 +794,8 @@ Version: 1.0
 	{	
 		margin-bottom: 50px;
 		width: calc(25% - 50px);
-		height: auto;/*
-		margin-right: 50px;*/
+		height: auto;
+		margin-right: 50px;
 	}
 	 .gallery a:nth-of-type(4n) img {
 	 		margin-right: 0;
@@ -1076,21 +1077,7 @@ Version: 1.0
 		margin-top: 15%;
 	}
 
-.item {
-  width: 60px;
-  height: 60px;
-  float: left;
-  margin: 5px;
-  background: #CCC;
-}
-.item.w2 {
-  width: 225px;
-}
 
-.item.h2 {
-    height: 150px;
-}
-	
 
 
 	/**********************page 7 menu********************************/
@@ -1149,12 +1136,10 @@ Version: 1.0
     z-index: 1;
     visibility: hidden;
     cursor: pointer;
-  
 
 	}
 	#fixedLogo img{
-		  width: 70%;
-		
+		width: 70%;
 
 
 	}
@@ -1522,12 +1507,12 @@ Version: 1.0
 			z-index: 0;
 
 		}
-		/*.back4 > .content > .gallery  img{
+		.back4 > .content > .gallery  img{
 			width: calc(32% - 20px);
 			height: auto;
 			margin-right: 20px;
 			margin-bottom: 20px;
-		}*/
+		}
 	 .gallery  a:nth-of-type(4n) img
 
 		{ 
@@ -1635,8 +1620,7 @@ Version: 1.0
 			margin-bottom: 111px;
 		}
 		.first-menu
-		{	
-			display:none;
+		{	display: none;
 			position:fixed;
 			z-index:1;
 			top:90px;
@@ -1656,15 +1640,7 @@ Version: 1.0
 		#one li{
 			display: block;
 		}
-		#fixedLogo {
-			left: -11%;
-			top: 0;
-
-		}
-		#fixedLogo img{
-		  width: 30%;
-		  z-index: 1;
-	}
+		
 		.menu img
 		{
 			display:block;
@@ -1707,29 +1683,21 @@ Version: 1.0
 		.mobile_menu
 		{
 			display:block;
-			color:#18567f;
+			color:white;
 			font-weight:bold;
-			border:3px solid #18567f;
+			border:3px solid white;
 			border-radius:15px;
 			padding:15px;
 			cursor:pointer;
 			position:fixed;
-			float: right;
-			right: 3%;
-			top:14px;
-		}
-		#first_frame{
-			display: none;	
+			top:40px;
 		}
 		.back2 .content div
 		{
 			margin-left:10%;
 			
 		}
-		.back2 .content div.welcome
-		{
-			display:none;
-		}	
+		
 		.mobile_menu
 		{
 			font-size:16px;
@@ -1788,6 +1756,12 @@ Version: 1.0
 		a.activator {
 			z-index: 0;
 		}
+		#fixedLogo img {
+    width: 25%;
+    margin-left: -53px;
+    float: l,;
+    margin-top: -28px;
+}
 		.footerCentered .footerLinks a
 		 {
 			display: inline-block;
@@ -2094,13 +2068,13 @@ Version: 1.0
 
 
 		}
-		/*.back4 > .content > .gallery  img
+		.back4 > .content > .gallery  img
 		{
 			width: calc(49% - 10px);
 			height: auto;
 			margin-right: 10px;
 			margin-bottom: 10px;
-		}*/
+		}
 		.footerCentered {
     		margin-top: 20px;
 		

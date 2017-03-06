@@ -161,11 +161,14 @@ get_header();
 	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0">
 
 	<div class="back4"><!--back3-->
+		
 		<img id="paprika" src="<?php bloginfo('template_directory'); ?>/images/paprika.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-102" alt=""/>
 		<img id="plant" src="<?php bloginfo('template_directory'); ?>/images/plant.png" data-stellar-ratio="2" data-stellar-vertical-offset="-10" alt=""/>
 			<div class="content" id="content2"><!--content-->
 				<header>
+			
 					<div class="menu other">
+						
 						<img class="welcome" src="<?php bloginfo('template_directory'); ?>/images/logo_blue.png" alt=""/>
 					</div><!--end menu other-->	
 					 <?php
@@ -199,7 +202,7 @@ get_header();
 						$img = wp_get_attachment_image_url( $id, 'gallery-size' );
 						$large = wp_get_attachment_image_url( $id, 'large');
 						?>
-						<a href="<?php echo $large;; ?>" data-lightbox="g-<?php echo $p->ID ?>"><img class="item w2 h2" src="<?php echo $img; ?>" alt=""/></a>
+						<a href="<?php echo $large;; ?>" data-lightbox="g-<?php echo $p->ID ?>"><img src="<?php echo $img; ?>" alt=""/></a>
 						<?php
 					}
 					?>
@@ -209,8 +212,6 @@ get_header();
 				?>
 			</div><!--end contwnt-->
 		</div><!--ens back4-->
-	
-		
 		
 
 		<a class="button" data-slide="5" title=""><p>carmrncita</p></a>
@@ -291,6 +292,7 @@ get_header();
             });
         </script>
         <script type="text/javascript">
+	 
             $(function() {
                 $('#activator2').click(function(){
                 	$('#box2').toggle('show');
@@ -304,6 +306,8 @@ get_header();
                         $('#overlay2').fadeOut('fast');
                     });
                 });
+
+
             });
         </script>
 
@@ -314,6 +318,8 @@ var currentslide = 1;
 	{ 
 	 currentslide = parseInt(document.location.hash.replace('#', ''));
 	  }
+
+
 
 var nextslide = currentslide + 1; if (nextslide > slides) {nextslide = slides;}
 var prevslide = currentslide - 1; if (prevslide < 1) { prevslide = 1; }
@@ -408,18 +414,30 @@ $(function () {
     });
 });
 </script>
+<script type="text/javascript">
+
+</script>
+	
 <script>
 	$(document).ready(function(){
+
+
 		($(window).width() < 680)&&$( ".mobile_menu" ).click(function() { 
+			 
 		  if($(this).data('clicked') == true)
 		  {
 
 			  $(".first-menu").toggle();
 			  $(".mobile_menu").data('clicked', false);
+
+			  
+			
+
 		  }
 		  else 
 		  {
-				$(".first-menu").fadeToggle();
+					$(".first-menu").fadeToggle();
+
 				$(".first-menu ").css("display","block");
 				menuVisible = true;
 				$(".mobile_menu").data('clicked', true);
@@ -463,20 +481,6 @@ $(window).on('scroll',function(){
          }
          else{
          	$(".fixed").css("visibility","hidden");
-         }
-         });
-
-          });
-</script>
-<script type="text/javascript">
-	$(document).ready(function(){
-      $(window).scroll(function() { 
-        if ($(document).scrollTop() > 600)
-         {  
-         	$(".mobile_menu").css("color","#18567f").css("border","3px solid #18567f");
-         }
-         else{
-         	$(".mobile_menu").css("color","#fff").css("border","3px solid #fff");
          }
          });
 
@@ -538,17 +542,6 @@ jQuery(document).ready(function(){
 	});
 });
 </script>
-<script type="text/javascript">
-		$( function() {
-
-			$('.gallery').masonry({
-			itemSelector: '.item',
-			columnWidth: 70
-			});
-
-			});
-		</script>
-
 
 <?php
 get_footer();
