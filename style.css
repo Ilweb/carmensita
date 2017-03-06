@@ -1426,13 +1426,13 @@ Version: 1.0
 		.back2 .content > div
 		{
 		    width: auto;
-		        font-size: 3.4vw;
+		        font-size: 2.4vw;
 		}
 	
 		.back5 .content > .city 
 		{
 			width: 70%;
-			font-size: 3.4vw;
+			font-size: 2.4vw;
 			
 
 		}
@@ -1616,9 +1616,9 @@ Version: 1.0
 		.button{
 			display: none;
 		}
-		header{
+		/*header{
 			margin-bottom: 111px;
-		}
+		}*/
 		.first-menu
 		{	display: none;
 			position:fixed;
@@ -1745,7 +1745,47 @@ Version: 1.0
 		    font-size: 15px;
 		    display: block;
 		}
+		.slide
+	{
+	
+		height: auto;
+		background-size: 100% 100%;
+		position: relative;
+	
 	}
+	#fixedLogo{
+		display: none;
+	}
+	.button2 {
+    left: 12%;
+    width: 28%;
+}
+.back3 .content > div:first-of-type, .back3 .content > div:nth-of-type(2) {
+    font-size: 3.4vh;
+    display: block;
+    width: 80%;
+    float: left;
+    margin-left: 12%;
+
+	}
+	input[type=button] {
+    top: 71%;
+    display: inline-block;
+    right: 28%;
+    z-index: 1;
+     font-size: 34px;
+}
+.welcomee {
+    margin-top: -103px;
+    margin-bottom: 0;
+    width: 21% !important;
+    float: left;
+    font-family: "Dosis";
+    margin-right: 0 !important;
+}
+
+
+}
 		
 
 	@media only screen and (max-width: 480px)
