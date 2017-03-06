@@ -1745,10 +1745,13 @@ Version: 1.0
 		    font-size: 15px;
 		    display: block;
 		}
+		header {
+   margin-bottom: 0;
+}
 		.slide
 	{
 	
-		height: auto;
+		height: 100%;
 		background-size: 100% 100%;
 		position: relative;
 	
@@ -1783,8 +1786,30 @@ Version: 1.0
     font-family: "Dosis";
     margin-right: 0 !important;
 }
+	.back2 .content > div {
+    width: auto;
+    font-size: 1.4vw;
+}
+#leaf{
+	display: none;
+	width: 20%;
+
+}
+.city {
+
+    margin-left: 10%;
+    font-size: 1.4vw;
+   }
+
+.back5 .content > .city {
+    width: 80%;
+    font-size: 2.4vw;
 
 
+}
+.row {
+    margin: -6% 5% 5% 0;
+}
 }
 		
 
@@ -1804,6 +1829,24 @@ Version: 1.0
 		position: relative;
 	
 	}
+	.city {
+
+    margin-left: 20%;
+    font-size: 2.4vw;
+   }
+
+.back5 .content > .city {
+    width: 70%;
+    font-size: 4.4vw;
+
+
+}
+	.row {
+    margin: 5% 5% 5% 0;
+}
+	header {
+    margin-bottom: 30px; 
+}
 		#fixedLogo img {
 		width: 25%;
 		margin-left: -53px;
@@ -1819,6 +1862,7 @@ Version: 1.0
 			margin-top: -16%;
 
 		}
+
 		.back3 .content > .text p {
 		    -webkit-column-count: 1;
 		    -moz-column-count: 1;
