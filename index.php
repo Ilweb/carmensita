@@ -499,6 +499,20 @@ $(window).on('scroll',function(){
 		});
 	});
 </script>
+<script type="text/javascript">
+	$(document).ready(function(){
+      $(window).scroll(function() { 
+        if ($(document).scrollTop() > 600)
+         {  
+         	$(".mobile_menu").css("color","#18567f").css("border","3px solid #18567f");
+         }
+         else{
+         	$(".mobile_menu").css("color","#fff").css("border","3px solid #fff");
+         }
+         });
+
+          });
+</script>
 
 
 
@@ -553,6 +567,19 @@ jQuery(document).ready(function(){
 			});
 		</script>
 
+<!-- <script type="text/javascript">
+$('.gallery').masonry({
+	itemSelector: '.item',
+	columnWidth: 160
+});
+var elem = document.querySelector('.gallery');
+var msnry = new Masonry(elem, {
+     itemSelector: '.item',
+     columnWidth: 200
+});
+var msnry = new Masonry('.gallery', {
+});
+</script> -->
 <?php
 get_footer();
 ?>
