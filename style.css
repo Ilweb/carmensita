@@ -793,9 +793,9 @@ Version: 1.0
 	.gallery img
 	{	
 		margin-bottom: 50px;
-		width: calc(25% - 50px);
-		height: auto;
-		margin-right: 50px;
+		/*width: calc(25% - 50px);
+		height: auto;*/
+		/*margin-right: 50px;*/
 	}
 	 .gallery a:nth-of-type(4n) img {
 	 		margin-right: 0;
@@ -1273,7 +1273,22 @@ Version: 1.0
 		left: 43%;
 	}
 
+	.item {
+  width: 60px;
+  height: 60px;
+ /* float: left;*/
+  margin: 5px;
+  background: #CCC;
+}
+.item.w2 {
+  width: 225px;
+}
+
+.item.h2 {
+    height: 150px;
+}
 	
+
 
 
 	/***********************media query *************/
@@ -1507,12 +1522,12 @@ Version: 1.0
 			z-index: 0;
 
 		}
-		.back4 > .content > .gallery  img{
+		/*.back4 > .content > .gallery  img{
 			width: calc(32% - 20px);
 			height: auto;
 			margin-right: 20px;
 			margin-bottom: 20px;
-		}
+		}*/
 	 .gallery  a:nth-of-type(4n) img
 
 		{ 
@@ -1746,19 +1761,16 @@ Version: 1.0
 		    display: block;
 		}
 		header {
-   margin-bottom: 0;
-}
+  		 margin-bottom: 0;
+		}
 		.slide
-	{
-	
+			{
 		height: auto;
 		background-size: 100% 100%;
 		position: relative;
 	
 	}
-	#fixedLogo{
-		display: none;
-	}
+	
 	.button2 {
     left: 12%;
     width: 28%;
@@ -2153,20 +2165,21 @@ Version: 1.0
 		.back4 > .content > .gallery
 		{
 			
-			float: left;
+		/*	float: left;*/
 			width: auto;
 			z-index: 0;
 			height: auto;
+			text-align: center;
 
 
 		}
-		.back4 > .content > .gallery  img
+		/*.back4 > .content > .gallery  img
 		{
 			width: calc(49% - 10px);
 			height: auto;
 			margin-right: 10px;
 			margin-bottom: 10px;
-		}
+		}*/
 		.footerCentered {
     		margin-top: 20px;
 		

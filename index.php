@@ -202,7 +202,7 @@ get_header();
 						$img = wp_get_attachment_image_url( $id, 'gallery-size' );
 						$large = wp_get_attachment_image_url( $id, 'large');
 						?>
-						<a href="<?php echo $large;; ?>" data-lightbox="g-<?php echo $p->ID ?>"><img src="<?php echo $img; ?>" alt=""/></a>
+						<a href="<?php echo $large;; ?>" data-lightbox="g-<?php echo $p->ID ?>"><img class ="item w2 h2"src="<?php echo $img; ?>" alt=""/></a>
 						<?php
 					}
 					?>
@@ -542,6 +542,16 @@ jQuery(document).ready(function(){
 	});
 });
 </script>
+<script type="text/javascript">
+		$( function() {
+
+			$('.gallery').masonry({
+			itemSelector: '.item',
+			columnWidth: 70
+			});
+
+			});
+		</script>
 
 <?php
 get_footer();
