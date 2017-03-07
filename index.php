@@ -163,7 +163,7 @@ get_header();
 	<div class="back4"><!--back3-->
 		
 		<img id="paprika" src="<?php bloginfo('template_directory'); ?>/images/paprika.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-102" alt=""/>
-		<img id="plant" src="<?php bloginfo('template_directory'); ?>/images/plant.png" data-stellar-ratio="2" data-stellar-vertical-offset="-10" alt=""/>
+		<img id="plant" src="<?php bloginfo('template_directory'); ?>/images/plant.png" data-stellar-ratio="2" data-stellar-vertical-offset="12" alt=""/>
 			<div class="content" id="content2"><!--content-->
 				<header>
 			
@@ -265,12 +265,13 @@ get_header();
 			
  
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/js.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.stellar.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/waypoints.min.js"></script>
 
 <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.easing.1.3.js"></script>
-
 <script src="<?php bloginfo('template_directory'); ?>/js/lightbox.min.js"></script>
 <script type="text/javascript">
 	 
