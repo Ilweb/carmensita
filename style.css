@@ -1751,7 +1751,7 @@ Version: 1.0
 		.slide
 	{
 	
-		height: 100%;
+		height: auto;
 		background-size: 100% 100%;
 		position: relative;
 	
