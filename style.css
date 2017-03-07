@@ -1405,6 +1405,7 @@ footer .footer_part {
     }
     .monday {
         display: block;
+            margin-top: -39px;
         /* margin-top: 20%;*/
     }
 }
