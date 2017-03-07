@@ -1552,7 +1552,7 @@ footer .footer_part {
     }
     .monday {
         display: block;
-        margin-top: 11%;
+        margin-top: 0;
         margin-left: 46%;
     }
     .monday p {
@@ -1575,16 +1575,26 @@ footer .footer_part {
     }
     #panel {
         font-weight: 700;
-        margin-top: -2%;
+        margin-top: -4%;
         float: left;
+        outline: none;
     }
     #panel a {
+    	color: #000;
         text-decoration: none;
+        outline: none;
+        -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
     }
-    #panel p {
-        font-size: 25px;
+    #panel a {
+        font-size: 19px;
+        color:#336385;
     }
-    #phone {
+
+    /*#phone {
         position: absolute;
         top: 27%;
         left: 14%;
@@ -1596,8 +1606,12 @@ footer .footer_part {
         height: 117px;
         cursor: pointer;
         background-color: #000;
-    }
+        */
     #phone {
+    	position: absolute;
+    top: 19%;
+    left: 5%;
+        z-index: 0;
         background-color: #000;
         display: inline-block;
         width: 117px;

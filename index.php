@@ -553,7 +553,8 @@ jQuery(document).ready(function(){
 <script type="text/javascript">
 	$(document).ready(function(){
 	$("#phone").click(function(){
-		$("#panel").toggle();
+		$("#panel").show();
+		
 	});
 });
 </script>
