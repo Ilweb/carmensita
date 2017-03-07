@@ -1802,6 +1802,12 @@ Version: 1.0
     width: auto;
     font-size: 1.4vw;
 }
+#fixedLogo img {
+    width: 29%;
+    float: left;
+    margin-top: -18px;
+    margin-left: -70px;
+}
 #leaf{
 	display: none;
 	width: 20%;
@@ -1821,6 +1827,9 @@ Version: 1.0
 }
 .row {
     margin: -6% 5% 5% 0;
+}
+iframe{
+	display: none;
 }
 }
 		
@@ -1894,6 +1903,7 @@ Version: 1.0
 			left: 9%;
 			height: 44% !important;
 			margin-top: 15%;
+			display: block
 			
 		}
 		#listMenu ul {
