@@ -30,7 +30,7 @@ get_header();
 						<div class="begin second">Vino & comidas</div>
 						<div class="begin third">Desde 2016</div>
 					</div><!--end begin-->
-					<div class="firstt"><input type="button" class="btn fa-input" value="What is Going tapas&#xf103"></div>
+					<div class="firstt"><input type="button" class="btn fa-input" value="What is Going tapas &#xf103"></div>
 				</div>
 			</div><!--end content-->
 			<div class="star"  data-stellar-ratio="3" data-stellar-vertical-offset="-5" >
@@ -40,10 +40,10 @@ get_header();
 			<img class="second_decor" src="<?php bloginfo('template_directory'); ?>/images/decor_2.png">
 			<footer class="footerCentered">
 				<p class="footerLinks">
-					<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/fb.png"></a>
-					<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/owl.png"></a>
-					<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/instagram.png"></a>
-					<a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/owl.png"></a>
+					<a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true" style="color: #FFF;"></i></a>
+					<a href="#"><i class="fa-tripadvisor fa-2x" aria-hidden="true" style="color: #fff; font-style: normal;"></i></a>
+					<a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: #fff;"></i></a>
+					<a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true" style="color: #fff"></i>></a>
 				</p>
 			</footer>
 		</div><!--end back-->
@@ -81,16 +81,16 @@ get_header();
 
 	 			<div class="welcome1">
 	 			
-	 			<img id="leaf" src="<?php bloginfo('template_directory'); ?>/images/leaf.png" data-stellar-ratio="3" data-stellar-vertical-offset="-5" alt=""/>
+	 			<img id="leaf" src="<?php bloginfo('template_directory'); ?>/images/leaf.png" data-stellar-ratio="1" data-stellar-vertical-offset="-5" alt=""/>
 	 			<img class="leafHidden" src="<?php bloginfo('template_directory'); ?>/images/leaf.png">
 					
-					<img id="sea" src="<?php bloginfo('template_directory'); ?>/images/sea.png"  data-stellar-ratio="3" data-stellar-vertical-offset="-5"  alt="">
+					<img id="sea" src="<?php bloginfo('template_directory'); ?>/images/sea.png"    alt="">
 
 				</div>
 
 			</div><!--end contwnt-->
 		</div><!--end back2-->
-		<a class="button" data-slide="3" title=""><p>menu</p></a>
+		<a class="button" data-slide="3" title=""><p>menu</p><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i> </a>
 	</div><!--End Slide 2-->
 	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
 		<div class="back3"><!--back3-->
@@ -156,14 +156,14 @@ get_header();
 			</div><!--end contwnt-->
 		</div><!--end back3-->
 		
-		<a class="button"  data-slide="4" title=""><p>gallery</p></a>
+		<a class="button"  data-slide="4" title=""><p>gallery</p><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a>
 	</div><!--End Slide 3-->
 	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0">
 
 	<div class="back4"><!--back3-->
 		
 		<img id="paprika" src="<?php bloginfo('template_directory'); ?>/images/paprika.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-102" alt=""/>
-		<img id="plant" src="<?php bloginfo('template_directory'); ?>/images/plant.png" data-stellar-ratio="2" data-stellar-vertical-offset="12" alt=""/>
+		<img id="plant" src="<?php bloginfo('template_directory'); ?>/images/plant.png"  alt=""/>
 			<div class="content" id="content2"><!--content-->
 				<header>
 			
@@ -214,13 +214,13 @@ get_header();
 		</div><!--ens back4-->
 		
 
-		<a class="button" data-slide="5" title=""><p>carmrncita</p></a>
+		<a class="button" data-slide="5" title=""><p>carmrncita</p><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i></a>
 	</div><!--End Slide 4-->
 	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0">
 		<div class="back5"><!--back4-->
-			<img class="flower" src="<?php bloginfo('template_directory'); ?>/images/flower.png" data-stellar-ratio="1.4" data-stellar-vertical-offset="-102" alt=""/>
-			<img id="mufin" src="<?php bloginfo('template_directory'); ?>/images/mufin.png" data-stellar-ratio="1.5" data-stellar-vertical-offset="-53" alt=""/>
-			<img id="milkshake" src="<?php bloginfo('template_directory'); ?>/images/milkshake.png" data-stellar-ratio="2.7" data-stellar-vertical-offset="-56" alt=""/>
+			<img class="flower" src="<?php bloginfo('template_directory'); ?>/images/flower.png"  alt=""/>
+			<img id="mufin" src="<?php bloginfo('template_directory'); ?>/images/mufin.png" data-stellar-ratio="1.5"  alt=""/>
+			<img id="milkshake" src="<?php bloginfo('template_directory'); ?>/images/milkshake.png" alt=""/>
 			<div class="content" id="content2"><!--content2-->
 				<header>
 		
@@ -239,7 +239,7 @@ get_header();
 			</div><!--end contwnt-->
 		</div><!--end back5-->	
 	
-		<a class="button" data-slide="6" value=""> <p>Contacts</p> </a>
+		<a class="button" data-slide="6" value=""> <p>Contacts</p><i class="fa fa-angle-double-down fa-2x" aria-hidden="true"></i> </a>
 	</div>
 	<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
 		<div class="back6">

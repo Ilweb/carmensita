@@ -74,14 +74,22 @@ body {
     position: absolute;
     bottom: 56px;
     right: 0;
-    background-image: url("images/up_arrow.png");
+    color: #18567f; 
+
+ /*   background-image: url("images/up_arrow.png");*/
 }
 .button p {
+    top: 45px;
     position: absolute;
     font-family: 'Dosis';
-    right: 51px;
+    right: 34px;
     font-weight: 700;
     text-transform: uppercase;
+}
+.fa-angle-double-down{
+    position: absolute;
+        top: 43px;
+    right: 4px;
 }
 .button:hover {
     cursor: pointer;
@@ -225,9 +233,10 @@ a.boxclose {
     margin: 5% 5% 5% 0;
 }
 .second_decor {
-    float: left;
+      float: left;
+    left: 31px;
     position: fixed;
-    bottom: 0;
+    bottom: 17px;
     z-index: 1;
 }
 #content2 div.welcome:nth-of-type(2) {
@@ -386,7 +395,7 @@ input[type=button] {
     z-index: 1;
     top: 37px;
     float: right;
-    right: 3%;
+    right: 2.5%;
     vertical-align: top;
 }
 #first_framee {
@@ -510,6 +519,7 @@ h3 {
     margin-top: -4%;
 }
 .brand {
+    left: -7px;
     position: absolute;
     color: black;
     bottom: 0;
@@ -719,11 +729,12 @@ h3 {
 
 .back5 > img {
     position: absolute;
-    width: 15%;
-    bottom: 130px;
+    /*width: 15%;
+    bottom: 130px;*/
 }
 .flower {
-    width: 20%;
+    width: 17%;
+    bottom: 130px;
 }
 .city {
     overflow: auto;
@@ -742,11 +753,14 @@ h3 {
     position: absolute;
     left: 55%;
     top: 15%;
-    width: 9%;
+    width: 11%;
     right: 0;
 }
 #milkshake {
-    right: 0;
+   right: 43px;
+    width: 20%;
+    position: absolute;
+    top: 43%;
 }
 /******************page 6**********************************/
 
@@ -782,7 +796,7 @@ h3 {
     left: 0;
 }
 #mohito2 {
-    width: 23%;
+    width: 21%;
     top: 0%;
     right: 0;
 }
@@ -833,6 +847,8 @@ table p {
     margin-top: 2%;
     font-weight: 500;
     font-size: 24px;
+    color: #336385;
+    text-decoration: none;
 }
 .block img {
     margin-top: 2%
@@ -1446,7 +1462,7 @@ footer .footer_part {
         font-size: 34px;
     }
     .welcomee {
-        margin-top: -103px;
+        margin-top: -43px;
         margin-bottom: 0;
         width: 21% !important;
         float: left;
@@ -1486,6 +1502,9 @@ footer .footer_part {
     .back3 .content > .text {
         margin-left: 10% !important;
     }
+    #content2 .welcome{
+        display: none;
+    }
     a.activator {
         z-index: 0;
     }
@@ -1494,6 +1513,13 @@ footer .footer_part {
         background-size: 100% 100%;
         position: relative;
     }
+   .second_decor {
+    float: left;
+    left: 12px;
+    position: fixed;
+    bottom: 17px;
+    z-index: 1;
+}
     .city {
         margin-left: 20%;
         font-size: 2.4vw;
@@ -1533,6 +1559,11 @@ footer .footer_part {
         font-weight: 700;
         color: #18567f;
     }
+    #content2 .social {
+    position: absolute;
+    bottom: 22px;
+    left: 43%;
+}
     iframe {
         position: absolute;
         top: 38%;
@@ -1609,7 +1640,7 @@ footer .footer_part {
         */
     #phone {
     	position: absolute;
-    top: 19%;
+    top: 14%;
     left: 5%;
         z-index: 0;
         background-color: #000;
